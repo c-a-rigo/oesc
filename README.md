@@ -2,6 +2,14 @@
 
 Dashboard público em português para o Observatório da Economia Espacial Catarinense. HTML, CSS e JavaScript sem etapa de build e sem dependências de runtime.
 
+## Publicação
+
+Site: https://www.laioseman.com/oesc/
+
+Repositório: https://github.com/lseman/oesc
+
+GitHub Pages publica automaticamente a raiz da branch `main`. Os arquivos usam caminhos relativos para funcionar em `/oesc/`.
+
 ## Executar
 
 ```sh
