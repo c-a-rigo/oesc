@@ -1,0 +1,20 @@
+[
+  {
+    "label": "BOLSAS",
+    "color": "blue",
+    "status": "Seleção do projeto",
+    "title": "Talentos para a nova economia espacial",
+    "description": "O edital do OESC prevê 41 bolsas nas modalidades IC, DTI-B e DTI-A.",
+    "url": "https://oesc.ufsc.br/oportunidades.html#bolsas",
+    "linkLabel": "Consultar edital e resultados"
+  },
+  {
+    "label": "REDE OESC",
+    "color": "green",
+    "status": "Canal permanente",
+    "title": "Sua competência também tem espaço aqui.",
+    "description": "Registre seu interesse e descubra possibilidades de colaboração.",
+    "url": "https://oesc.ufsc.br/participar.html",
+    "linkLabel": "Conhecer formas de participação"
+  }
+]

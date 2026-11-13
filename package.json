@@ -5,6 +5,7 @@
   "description": "Dashboard público do Observatório da Economia Espacial Catarinense",
   "scripts": {
     "dev": "python3 -m http.server 5174 --bind 0.0.0.0",
-    "check": "node --check app.js"
-  }
+    "check": "node --check app.js && node --check content.js && node --test"
+  },
+  "type": "module"
 }

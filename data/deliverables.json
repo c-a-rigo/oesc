@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Atlas da Economia Espacial",
+    "icon": "map",
+    "description": "Uma visão integrada das competências, estruturas e oportunidades do estado.",
+    "color": "blue",
+    "status": "Entrega prevista"
+  },
+  {
+    "name": "Censo Estadual do Setor Espacial",
+    "icon": "users",
+    "description": "Um retrato dos atores, laboratórios e talentos do ecossistema.",
+    "color": "purple",
+    "status": "Entrega prevista"
+  },
+  {
+    "name": "Plataforma Digital OESC",
+    "icon": "data",
+    "description": "Um ponto de acesso a dados, mapas e indicadores do setor.",
+    "color": "green",
+    "status": "Entrega prevista"
+  },
+  {
+    "name": "Roadmap Estadual",
+    "icon": "route",
+    "description": "Prioridades e caminhos para o desenvolvimento da economia espacial.",
+    "color": "orange",
+    "status": "Entrega prevista"
+  },
+  {
+    "name": "Carteira de Projetos Prioritários",
+    "icon": "box",
+    "description": "Oportunidades para orientar pesquisa, cooperação e investimento.",
+    "color": "pink",
+    "status": "Entrega prevista"
+  },
+  {
+    "name": "Rede Catarinense",
+    "icon": "network",
+    "description": "Conexões duradouras entre pesquisa, setor produtivo e sociedade.",
+    "color": "blue",
+    "status": "Entrega prevista"
+  }
+]

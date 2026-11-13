@@ -10,7 +10,7 @@
     />
     <title>OESC · Painel do Observatório</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
+    <script src="app.js" type="module"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Ir para o conteúdo</a>
@@ -24,21 +24,20 @@
       >
       <div class="workspace">
         <span class="workspace-icon" data-icon="orbit"></span>
-        <div>Economia espacial<span>Santa Catarina, Brasil</span></div>
+        <div></div>
         <span class="status-dot"></span>
       </div>
       <p class="nav-label">EXPLORAR</p>
       <nav id="navigation"></nav>
       <div class="sidebar-bottom">
         <div class="network-prompt">
-          <span data-icon="network"></span
-          ><strong>O próximo passo é conectar.</strong>
-          <p>Faça parte da rede que aproxima Santa Catarina do espaço.</p>
+          <span data-icon="network"></span><strong></strong>
+          <p></p>
           <a
             href="https://oesc.ufsc.br/participar.html"
             target="_blank"
             rel="noopener"
-            >Integrar a rede <span data-icon="arrowUpRight"></span
+            ><span data-icon="arrowUpRight"></span
           ></a>
         </div>
         <a
@@ -46,11 +45,7 @@
           href="https://oesc.ufsc.br/"
           target="_blank"
           rel="noopener"
-          ><span class="institution-mark">UFSC</span
-          ><span
-            >Uma iniciativa SpaceLab / UFSC<small
-              >Apoio FAPESC · CP 027/2026</small
-            ></span
+          ><span class="institution-mark"></span><span><small></small></span
           ><span data-icon="arrowUpRight"></span
         ></a>
       </div>
@@ -82,11 +77,15 @@
           ><span class="avatar" title="Painel público">SC</span>
         </div>
       </header>
-      <main id="main" tabindex="-1"></main>
+      <main id="main" tabindex="-1" aria-busy="true">
+        <p role="status">Carregando o observatório…</p>
+        <noscript
+          >Ative o JavaScript para carregar os conteúdos do
+          observatório.</noscript
+        >
+      </main>
       <footer>
-        <span
-          >OESC <span class="footer-dot">·</span> Inteligência para a economia
-          espacial catarinense.</span
+        <span>OESC <span class="footer-dot">·</span> </span
         ><a href="https://oesc.ufsc.br/" target="_blank" rel="noopener"
           >Fonte: OESC / UFSC <span data-icon="arrowUpRight"></span
         ></a>

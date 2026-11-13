@@ -1,4 +1,5 @@
-"use strict";
+import { loadContent } from "./content.js";
+("use strict");
 const paths = {
   grid: '<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
   orbit:
@@ -37,278 +38,64 @@ const paths = {
     '<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>',
 };
 const icon = (name) =>
-  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name] || paths.grid}</svg>`;
+  `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${Object.hasOwn(paths, name) ? paths[name] : paths.grid}</svg>`;
 function hydrateIcons(root = document) {
   root.querySelectorAll("[data-icon]").forEach((el) => {
     el.innerHTML = icon(el.dataset.icon);
   });
 }
-const sections = [
-  {
-    id: "overview",
-    name: "Visão geral",
-    icon: "grid",
-    eyebrow: "PAINEL DO OBSERVATÓRIO",
-    description: "Um novo olhar para a economia espacial de Santa Catarina.",
-  },
-  {
-    id: "network",
-    name: "Rede OESC",
-    icon: "network",
-    eyebrow: "CONEXÕES QUE TRANSFORMAM",
-    description:
-      "Universidades, empresas, governo e sociedade em uma mesma órbita.",
-  },
-  {
-    id: "areas",
-    name: "Áreas de interesse",
-    icon: "layers",
-    eyebrow: "COMPETÊNCIAS E APLICAÇÕES",
-    description: "Explore as conexões entre o espaço e os setores da economia.",
-  },
-  {
-    id: "regions",
-    name: "Território",
-    icon: "map",
-    eyebrow: "PRESENÇA ESTADUAL",
-    description: "Diferentes regiões. Um ecossistema de possibilidades.",
-  },
-  {
-    id: "deliverables",
-    name: "Entregas",
-    icon: "box",
-    eyebrow: "DO CONHECIMENTO À AÇÃO",
-    description:
-      "Os instrumentos previstos para apoiar decisões e novas conexões.",
-  },
-  {
-    id: "roadmap",
-    name: "Roadmap",
-    icon: "route",
-    eyebrow: "HORIZONTE DO PROJETO",
-    description: "Da mobilização à consolidação de uma rede permanente.",
-  },
-  {
-    id: "opportunities",
-    name: "Oportunidades",
-    icon: "spark",
-    eyebrow: "FAÇA PARTE",
-    description:
-      "Encontre caminhos para participar da economia espacial catarinense.",
-  },
-];
-const areas = [
-  {
-    name: "Sistemas espaciais",
-    full: "Sistemas Espaciais, Indústria e Infraestrutura",
-    icon: "rocket",
-    color: "blue",
-    category: "upstream",
-    tags: ["Sistemas embarcados", "Manufatura", "Sensores"],
-    description:
-      "Da eletrônica às estações de solo: capacidades para desenvolver a infraestrutura espacial.",
-  },
-  {
-    name: "Terra, clima e recursos",
-    full: "Terra, Clima e Recursos Naturais",
-    icon: "planet",
-    color: "green",
-    category: "downstream",
-    tags: ["Agricultura", "Economia do mar", "Defesa civil"],
-    description:
-      "Dados espaciais a serviço dos recursos naturais, do território e da resiliência climática.",
-  },
-  {
-    name: "Conectividade e IoT",
-    full: "Conectividade, IoT e Infraestrutura Territorial",
-    icon: "antenna",
-    color: "purple",
-    category: "downstream",
-    tags: ["Telecomunicações", "GNSS", "Mobilidade"],
-    description:
-      "Conexões para aproximar pessoas, monitorar ativos e integrar territórios.",
-  },
-  {
-    name: "Dados e inteligência",
-    full: "Dados, IA e Inteligência Geoespacial",
-    icon: "data",
-    color: "orange",
-    category: "enabling",
-    tags: ["Inteligência artificial", "GIS", "Sensoriamento remoto"],
-    description:
-      "Transformação de dados em conhecimento para resolver desafios reais.",
-  },
-  {
-    name: "Economia e inovação",
-    full: "Economia, Inovação, Mercado e Políticas Públicas",
-    icon: "chart",
-    color: "pink",
-    category: "enabling",
-    tags: ["Startups", "Investimentos", "Políticas públicas"],
-    description:
-      "Novos negócios, cadeias de valor e políticas para desenvolver o setor.",
-  },
-];
-const regions = [
-  "Oeste Catarinense",
-  "Norte Catarinense",
-  "Serrana",
-  "Vale do Itajaí",
-  "Grande Florianópolis",
-  "Sul Catarinense",
-];
-const deliverables = [
-  [
-    "Atlas da Economia Espacial",
-    "map",
-    "Uma visão integrada das competências, estruturas e oportunidades do estado.",
-  ],
-  [
-    "Censo Estadual do Setor Espacial",
-    "users",
-    "Um retrato dos atores, laboratórios e talentos do ecossistema.",
-  ],
-  [
-    "Plataforma Digital OESC",
-    "data",
-    "Um ponto de acesso a dados, mapas e indicadores do setor.",
-  ],
-  [
-    "Roadmap Estadual",
-    "route",
-    "Prioridades e caminhos para o desenvolvimento da economia espacial.",
-  ],
-  [
-    "Carteira de Projetos Prioritários",
-    "box",
-    "Oportunidades para orientar pesquisa, cooperação e investimento.",
-  ],
-  [
-    "Rede Catarinense",
-    "network",
-    "Conexões duradouras entre pesquisa, setor produtivo e sociedade.",
-  ],
-];
-const phases = [
-  [
-    "Mobilizar",
-    "M1–M3",
-    "Governança, formação da equipe e desenho da plataforma.",
-  ],
-  [
-    "Mapear",
-    "M2–M10",
-    "Levantamento de atores, infraestrutura, demandas e competências.",
-  ],
-  [
-    "Entender",
-    "M8–M18",
-    "Diagnóstico e investigação das conexões e tendências do setor.",
-  ],
-  [
-    "Priorizar e demonstrar",
-    "M12–M24",
-    "Cenários, projetos prioritários e provas de conceito.",
-  ],
-  [
-    "Consolidar",
-    "M20–M26",
-    "Plataforma pública, disseminação e continuidade da rede.",
-  ],
-];
-const institutions = [
-  "UFSC",
-  "UNIVALI",
-  "UDESC",
-  "IFSC",
-  "UNIFA",
-  "UnB",
-  "SATC",
-  "ANATEL",
-  "Webphy",
-  "Instituto START",
-  "Univ. Montpellier",
-];
+let project, copy;
+let sections = [],
+  areas = [],
+  regions = [],
+  deliverables = [],
+  phases = [],
+  institutions = [],
+  opportunityItems = [];
+let ready = false;
+const metric = (id) => project.metrics.find((m) => m.id === id).value;
+const emptyState = () =>
+  '<p class="empty-state">Nenhum conteúdo disponível nesta seção.</p>';
 const state = { section: "overview", area: "all", region: "", view: "map" };
 const main = document.querySelector("main");
 const link = (href, label, cls = "text-link") =>
-  `<a class="${cls}" href="${href}" target="_blank" rel="noopener">${label}${icon("arrowUpRight")}</a>`;
+  `<a class="${cls}" href="${escapeHtml(href)}" target="_blank" rel="noopener">${escapeHtml(label)}${icon("arrowUpRight")}</a>`;
 const sectionLink = (id, label) =>
-  `<a class="text-link" href="#${id}">${label}${icon("arrow")}</a>`;
+  `<a class="text-link" href="#${id}">${escapeHtml(label)}${icon("arrow")}</a>`;
 const panelHeading = (eyebrow, title, action = "") =>
-  `<div class="panel-heading"><div><span class="eyebrow">${eyebrow}</span><h2>${title}</h2></div>${action}</div>`;
+  `<div class="panel-heading"><div><span class="eyebrow">${escapeHtml(eyebrow)}</span><h2>${escapeHtml(title)}</h2></div>${action}</div>`;
 function stats() {
-  return `<div class="stats-grid">${[
-    [
-      "Equipe do projeto",
-      "48",
-      "pesquisadores e profissionais",
-      "users",
-      "blue",
-    ],
-    [
-      "Áreas de interesse",
-      "05",
-      "comunidades de conhecimento",
-      "layers",
-      "purple",
-    ],
-    [
-      "Eixos de execução",
-      "06",
-      "frentes integradas de atuação",
-      "orbit",
-      "green",
-    ],
-    ["Horizonte de execução", "26", "meses no planejamento", "clock", "orange"],
-  ]
-    .map(
-      ([title, value, note, glyph, color]) =>
-        `<article class="stat-card"><div class="stat-label">${title}<span class="icon-tile ${color}">${icon(glyph)}</span></div><div class="stat-value">${value}<span>${title === "Horizonte de execução" ? "meses" : ""}</span></div><p>${note}</p></article>`,
-    )
-    .join("")}</div>`;
+  return `<div class="stats-grid">${project.metrics.map((m) => `<article class="stat-card"><div class="stat-label">${escapeHtml(m.title)}<span class="icon-tile ${m.color}">${icon(m.icon)}</span></div><div class="stat-value">${String(m.value).padStart(2, "0")}<span>${escapeHtml(m.unit)}</span></div><p>${escapeHtml(m.note)}</p></article>`).join("")}</div>`;
 }
 function mapPanel(full = false) {
-  return `<section class="panel map-panel">${panelHeading("INTELIGÊNCIA TERRITORIAL", full ? "O observatório em todo o estado" : "Um estado, muitas possibilidades", `<div class="segmented" aria-label="Visualização territorial"><button data-map-view="map" class="${state.view === "map" ? "selected" : ""}" aria-pressed="${state.view === "map"}">${icon("map")} Mapa</button><button data-map-view="list" class="${state.view === "list" ? "selected" : ""}" aria-pressed="${state.view === "list"}">${icon("layers")} Regiões</button></div>`)}<div class="map-intro"><span><span class="status-dot"></span> Abrangência estadual</span><span>6 mesorregiões</span></div><div class="map-stage ${state.view === "list" ? "list-view" : ""}">${state.view === "map" ? `<span class="map-coordinate">27° S &nbsp; 50° O</span><img src="assets/mapasc.png" alt="Santa Catarina dividida em seis mesorregiões: Oeste, Norte, Serrana, Vale do Itajaí, Grande Florianópolis e Sul."><span class="map-compass">N<br>↑</span><span class="map-watermark">SANTA CATARINA</span>` : `<div class="region-list">${regions.map((r, i) => `<button data-region="${r}" class="region-row ${state.region === r ? "active" : ""}"><span class="region-number">0${i + 1}</span><span>${r}</span>${icon("arrowUpRight")}</button>`).join("")}</div>`}</div><div class="map-bottom"><div><span class="legend-dot"></span><span>Território de abrangência do projeto</span></div>${sectionLink("regions", "Explorar território")}</div>${full ? `<div class="region-filter"><label for="region-select">Explorar uma mesorregião</label><select id="region-select"><option value="">Todas as mesorregiões</option>${regions.map((r) => `<option ${state.region === r ? "selected" : ""}>${r}</option>`).join("")}</select><div id="region-detail" aria-live="polite">${regionDetail()}</div></div>` : ""}</section>`;
+  return `<section class="panel map-panel">${panelHeading(copy.mapEyebrow, full ? copy.mapFullTitle : copy.mapTitle, `<div class="segmented" aria-label="Visualização territorial"><button data-map-view="map" class="${state.view === "map" ? "selected" : ""}" aria-pressed="${state.view === "map"}">${icon("map")} Mapa</button><button data-map-view="list" class="${state.view === "list" ? "selected" : ""}" aria-pressed="${state.view === "list"}">${icon("layers")} Regiões</button></div>`)}<div class="map-intro"><span><span class="status-dot"></span> ${escapeHtml(copy.mapCoverage)}</span><span>${regions.length} mesorregiões</span></div><div class="map-stage ${state.view === "list" ? "list-view" : ""}">${state.view === "map" ? `<span class="map-coordinate">${escapeHtml(project.map.coordinates)}</span><img src="${escapeHtml(project.map.src)}" alt="${escapeHtml(project.map.alt)}"><span class="map-compass">N<br>↑</span><span class="map-watermark">${escapeHtml(project.map.label)}</span>` : `<div class="region-list">${regions.map((r, i) => `<button data-region="${i}" class="region-row ${state.region === r ? "active" : ""}"><span class="region-number">${String(i + 1).padStart(2, "0")}</span><span>${escapeHtml(r)}</span>${icon("arrowUpRight")}</button>`).join("") || emptyState()}</div>`}</div><div class="map-bottom"><div><span class="legend-dot"></span><span>${escapeHtml(copy.mapLegend)}</span></div>${sectionLink("regions", copy.mapLink)}</div>${full ? `<div class="region-filter"><label for="region-select">Explorar uma mesorregião</label><select id="region-select"><option value="">Todas as mesorregiões</option>${regions.map((r) => `<option value="${escapeHtml(r)}" ${state.region === r ? "selected" : ""}>${escapeHtml(r)}</option>`).join("")}</select><div id="region-detail" aria-live="polite">${regionDetail()}</div></div>` : ""}</section>`;
 }
 function regionDetail() {
-  return `<strong>${state.region || "Cobertura estadual"}</strong><p>${state.region ? "Esta mesorregião integra a abrangência prevista do OESC. O levantamento de atores e competências será realizado durante o mapeamento." : "O mapeamento previsto contempla as seis mesorregiões catarinenses. Indicadores locais serão disponibilizados após a coleta e validação dos dados."}</p>`;
+  return `<strong>${escapeHtml(state.region || copy.regionTitle)}</strong><p>${escapeHtml(state.region ? copy.regionDescription : copy.regionOverview)}</p>`;
 }
 function opportunities(compact = false) {
-  return `<section class="panel opportunities-panel">${panelHeading("FIQUE POR DENTRO", compact ? "No radar" : "Conecte-se ao OESC", compact ? sectionLink("opportunities", "Ver tudo") : "")}<div class="opportunity-card"><div class="opportunity-meta"><span class="badge blue">BOLSAS</span><span>Seleção do projeto</span></div><h3>Talentos para a nova economia espacial</h3><p>O edital do OESC prevê 41 bolsas nas modalidades IC, DTI-B e DTI-A.</p>${link("https://oesc.ufsc.br/oportunidades.html#bolsas", "Consultar edital e resultados")}</div><div class="opportunity-card"><div class="opportunity-meta"><span class="badge green">REDE OESC</span><span>Canal permanente</span></div><h3>Sua competência também tem espaço aqui.</h3><p>Registre seu interesse e descubra possibilidades de colaboração.</p>${link("https://oesc.ufsc.br/participar.html", "Conhecer formas de participação")}</div><div class="radar-note">${icon("info")} Consulte prazos e situação no site oficial.</div></section>`;
+  return `<section class="panel opportunities-panel">${panelHeading(copy.opportunitiesEyebrow, compact ? copy.opportunitiesCompactTitle : copy.opportunitiesTitle, compact ? sectionLink("opportunities", "Ver tudo") : "")}${opportunityItems.map((o) => `<div class="opportunity-card"><div class="opportunity-meta"><span class="badge ${o.color}">${escapeHtml(o.label)}</span><span>${escapeHtml(o.status)}</span></div><h3>${escapeHtml(o.title)}</h3><p>${escapeHtml(o.description)}</p>${link(o.url, o.linkLabel)}</div>`).join("") || emptyState()}<div class="radar-note">${icon("info")} ${escapeHtml(copy.opportunitiesNotice)}</div></section>`;
 }
 function areaCards(compact = false) {
   const list = areas.filter(
     (a) => compact || state.area === "all" || a.category === state.area,
   );
-  return `<div class="areas-grid ${compact ? "compact" : ""}">${list.map((a, i) => `<button class="area-card" data-area-detail="${areas.indexOf(a)}"><span class="icon-tile ${a.color}">${icon(a.icon)}</span><span class="area-card-title">${a.name}</span>${!compact ? `<span class="area-description">${a.description}</span>` : `<span class="area-subtitle">${a.tags.slice(0, 2).join(" · ")}</span>`}<span class="area-arrow">${icon("arrowUpRight")}</span></button>`).join("")}</div>`;
+  return `<div class="areas-grid ${compact ? "compact" : ""}">${list.map((a) => `<button class="area-card" data-area-detail="${areas.indexOf(a)}"><span class="icon-tile ${a.color}">${icon(a.icon)}</span><span class="area-card-title">${escapeHtml(a.name)}</span>${!compact ? `<span class="area-description">${escapeHtml(a.description)}</span>` : `<span class="area-subtitle">${escapeHtml(a.tags.slice(0, 2).join(" · "))}</span>`}<span class="area-arrow">${icon("arrowUpRight")}</span></button>`).join("") || emptyState()}</div>`;
 }
 function roadmap(compact = false) {
-  return `<section class="panel roadmap-panel">${panelHeading("DA VISÃO À REALIZAÇÃO", "O caminho do projeto", compact ? sectionLink("roadmap", "Ver roadmap") : '<span class="badge neutral">Planejamento · 26 meses</span>')}<div class="timeline">${phases.map(([name, months, desc], i) => `<article class="phase"><div class="phase-dot">${String(i + 1).padStart(2, "0")}</div><span class="phase-month">${months}</span><h3>${name}</h3>${!compact ? `<p>${desc}</p>` : ""}</article>`).join("")}</div>${!compact ? '<div class="notice">O cronograma apresenta janelas previstas de execução. Não representa acompanhamento de progresso ou etapas concluídas.</div>' : ""}</section>`;
+  return `<section class="panel roadmap-panel">${panelHeading(copy.roadmapEyebrow, copy.roadmapTitle, compact ? sectionLink("roadmap", "Ver roadmap") : `<span class="badge neutral">Planejamento · ${metric("duration")} meses</span>`)}<div class="timeline">${phases.map((phase, i) => `<article class="phase"><div class="phase-dot">${String(i + 1).padStart(2, "0")}</div><span class="phase-month">${escapeHtml(phase.months)}</span><h3>${escapeHtml(phase.name)}</h3>${!compact ? `<p>${escapeHtml(phase.description)}</p>` : ""}</article>`).join("") || emptyState()}</div>${!compact ? `<div class="notice">${escapeHtml(copy.roadmapNotice)}</div>` : ""}</section>`;
 }
 function overview() {
-  return `<section class="welcome-banner"><div class="welcome-content"><span class="hero-eyebrow"><span class="status-dot"></span> CONHECIMENTO QUE CONECTA</span><h2>O futuro espacial também<br>começa em Santa Catarina.</h2><p>Competências locais. Conexões estratégicas.<br>Novas possibilidades para todo o ecossistema.</p><a class="button button-light" href="#network">Conheça a rede OESC ${icon("arrow")}</a></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="planet-core"></div><span class="orbital-point point-one"></span><span class="orbital-point point-two"></span><span class="orbital-point point-three"></span><span class="orbit-caption">MAPEAR. CONECTAR. TRANSFORMAR.</span></div><span class="hero-index">SC / BR &nbsp; — &nbsp; NEW SPACE</span></section>${stats()}<div class="overview-grid">${mapPanel()}${opportunities(true)}</div><section class="areas-section">${panelHeading("UM ECOSSISTEMA MULTIDISCIPLINAR", "Onde o espaço encontra a economia", sectionLink("areas", "Explorar áreas"))}${areaCards(true)}</section>${roadmap(true)}<div class="source-note">${icon("info")} Números e conteúdos do projeto publicados pelo OESC. Dados do censo e indicadores do ecossistema aguardam mapeamento.</div>`;
+  return `<section class="welcome-banner"><div class="welcome-content"><span class="hero-eyebrow"><span class="status-dot"></span> ${escapeHtml(project.hero.eyebrow)}</span><h2>${project.hero.title.map(escapeHtml).join("<br>")}</h2><p>${project.hero.description.map(escapeHtml).join("<br>")}</p><a class="button button-light" href="#network">${escapeHtml(project.hero.linkLabel)} ${icon("arrow")}</a></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="planet-core"></div><span class="orbital-point point-one"></span><span class="orbital-point point-two"></span><span class="orbital-point point-three"></span><span class="orbit-caption">${escapeHtml(project.hero.caption)}</span></div><span class="hero-index">${escapeHtml(project.hero.index)}</span></section>${stats()}<div class="overview-grid">${mapPanel()}${opportunities(true)}</div><section class="areas-section">${panelHeading(copy.areasEyebrow, copy.areasTitle, sectionLink("areas", copy.areasLink))}${areaCards(true)}</section>${roadmap(true)}<div class="source-note">${icon("info")} ${escapeHtml(copy.sourceNote)}</div>`;
 }
 function network() {
-  return `<div class="intro-card"><span class="icon-tile blue">${icon("network")}</span><div><h2>Uma rede de conhecimento. Muitas perspectivas.</h2><p>Uma articulação multidisciplinar coordenada pelo SpaceLab da Universidade Federal de Santa Catarina.</p></div>${link("https://oesc.ufsc.br/participar.html", "Integrar a rede", "button button-primary")}</div>${stats()}<section class="panel">${panelHeading("EQUIPE E ARTICULAÇÃO", "Instituições representadas")}<p class="panel-description">Instituições e organizações citadas na apresentação pública da equipe do projeto.</p><div class="institution-grid">${institutions.map((name, i) => `<article class="institution-card"><span class="institution-initial ${i === 0 ? "lead" : ""}">${name === "Univ. Montpellier" ? "UM" : name.slice(0, 2).toUpperCase()}</span><div><h3>${name}</h3><p>${i === 0 ? "Instituição líder · SpaceLab" : "Representação na equipe"}</p></div></article>`).join("")}</div></section><div class="notice">Este diretório apresenta as instituições mencionadas pelo site oficial; não representa um censo completo de organizações do setor.</div>`;
+  return `<div class="intro-card"><span class="icon-tile blue">${icon("network")}</span><div><h2>${escapeHtml(copy.networkTitle)}</h2><p>${escapeHtml(copy.networkDescription)}</p></div>${link(project.participationUrl, copy.networkLink, "button button-primary")}</div>${stats()}<section class="panel">${panelHeading(copy.institutionsEyebrow, copy.institutionsTitle)}<p class="panel-description">${escapeHtml(copy.institutionsDescription)}</p><div class="institution-grid">${institutions.map((institution) => `<article class="institution-card"><span class="institution-initial ${institution.lead ? "lead" : ""}">${escapeHtml(institution.initials)}</span><div><h3>${escapeHtml(institution.name)}</h3><p>${escapeHtml(institution.description)}</p></div></article>`).join("") || emptyState()}</div></section><div class="notice">${escapeHtml(copy.institutionsNotice)}</div>`;
 }
 function areaPage() {
-  return `<div class="filterbar"><div class="tabs" role="group" aria-label="Filtrar áreas por aplicação">${[
-    ["all", "Todas as áreas"],
-    ["upstream", "Upstream"],
-    ["downstream", "Downstream"],
-    ["enabling", "Tecnologias e negócios"],
-  ]
-    .map(
-      ([id, name]) =>
-        `<button data-area-filter="${id}" class="${state.area === id ? "selected" : ""}" aria-pressed="${state.area === id}">${name}</button>`,
-    )
-    .join(
-      "",
-    )}</div><span class="result-count">${areas.filter((a) => state.area === "all" || a.category === state.area).length} áreas</span></div><p class="panel-description">Explore as cinco comunidades iniciais de interesse. A organização por aplicação abaixo é uma navegação editorial deste painel.</p>${areaCards()}<section class="open-areas"><span class="icon-tile green">${icon("spark")}</span><div><h2>As próximas conexões ainda estão por descobrir.</h2><p>O mapeamento pode revelar novas competências e ampliar as áreas de interesse do observatório.</p></div>${link("https://oesc.ufsc.br/participar.html", "Compartilhar meu interesse")}</section>`;
+  return `<div class="filterbar"><div class="tabs" role="group" aria-label="Filtrar áreas por aplicação">${project.filters.map((f) => `<button data-area-filter="${f.id}" class="${state.area === f.id ? "selected" : ""}" aria-pressed="${state.area === f.id}">${escapeHtml(f.name)}</button>`).join("")}</div><span class="result-count">${areas.filter((a) => state.area === "all" || a.category === state.area).length} áreas</span></div><p class="panel-description">${escapeHtml(copy.areasDescription)}</p>${areaCards()}<section class="open-areas"><span class="icon-tile green">${icon("spark")}</span><div><h2>${escapeHtml(copy.areasOpenTitle)}</h2><p>${escapeHtml(copy.areasOpenDescription)}</p></div>${link(project.participationUrl, copy.areasOpenLink)}</section>`;
 }
 function deliveryPage() {
-  return `<div class="delivery-grid">${deliverables.map(([name, glyph, description], i) => `<article class="panel delivery-card"><div class="delivery-top"><span class="icon-tile ${["blue", "purple", "green", "orange", "pink", "blue"][i]}">${icon(glyph)}</span><span class="badge neutral">Entrega prevista</span></div><span class="eyebrow">0${i + 1} / ENTREGAS DO PROJETO</span><h2>${name}</h2><p>${description}</p></article>`).join("")}</div><div class="notice">As entregas são previstas no projeto. A apresentação neste painel não indica que já estejam publicadas.</div>`;
+  return `<div class="delivery-grid">${deliverables.map((d, i) => `<article class="panel delivery-card"><div class="delivery-top"><span class="icon-tile ${d.color}">${icon(d.icon)}</span><span class="badge neutral">${escapeHtml(d.status)}</span></div><span class="eyebrow">${String(i + 1).padStart(2, "0")} / ENTREGAS DO PROJETO</span><h2>${escapeHtml(d.name)}</h2><p>${escapeHtml(d.description)}</p></article>`).join("") || emptyState()}</div><div class="notice">${escapeHtml(copy.deliverablesNotice)}</div>`;
 }
 function render() {
   const current = sections.find((s) => s.id === state.section) || sections[0];
@@ -317,13 +104,14 @@ function render() {
   document.querySelector("#navigation").innerHTML = sections
     .map(
       (s, i) =>
-        `${i === 6 ? '<p class="nav-label secondary-label">PARTICIPAR</p>' : ""}<a href="#${s.id}" class="nav-item ${s.id === current.id ? "active" : ""}" ${s.id === current.id ? 'aria-current="page"' : ""}>${icon(s.icon)}<span>${s.name}</span>${s.id === "opportunities" ? '<span class="nav-new"></span>' : ""}</a>`,
+        `${s.id === "opportunities" ? '<p class="nav-label secondary-label">PARTICIPAR</p>' : ""}<a href="#${s.id}" class="nav-item ${s.id === current.id ? "active" : ""}" ${s.id === current.id ? 'aria-current="page"' : ""}>${icon(s.icon)}<span>${escapeHtml(s.name)}</span>${s.id === "opportunities" ? '<span class="nav-new"></span>' : ""}</a>`,
     )
     .join("");
-  main.innerHTML = `<div class="page-heading"><div><span class="eyebrow">${current.eyebrow}</span><h1>${current.name}<span class="heading-dot">.</span></h1><p>${current.description}</p></div><div class="page-actions"><span class="public-badge">${icon("globe")} Painel público</span><button class="button button-outline" id="export-button">${icon("download")} Exportar resumo</button></div></div>${{ overview, network, areas: areaPage, regions: () => `${mapPanel(true)}<div class="notice">A divisão em mesorregiões segue a apresentação territorial do projeto no site OESC. O mapa não representa densidade de atores ou cobertura de coleta.</div>`, deliverables: deliveryPage, roadmap: () => roadmap(false), opportunities: () => opportunities(false) }[current.id]()}`;
+  main.innerHTML = `<div class="page-heading"><div><span class="eyebrow">${escapeHtml(current.eyebrow)}</span><h1>${escapeHtml(current.name)}<span class="heading-dot">.</span></h1><p>${escapeHtml(current.description)}</p></div><div class="page-actions"><span class="public-badge">${icon("globe")} Painel público</span><button class="button button-outline" id="export-button">${icon("download")} Exportar resumo</button></div></div>${{ overview, network, areas: areaPage, regions: () => `${mapPanel(true)}<div class="notice">${escapeHtml(copy.regionNotice)}</div>`, deliverables: deliveryPage, roadmap: () => roadmap(false), opportunities: () => opportunities(false) }[current.id]()}`;
   hydrateIcons();
 }
 function navigate() {
+  if (!ready) return;
   state.section = sections.some((s) => s.id === location.hash.slice(1))
     ? location.hash.slice(1)
     : "overview";
@@ -364,15 +152,16 @@ document.querySelector("#navigation").addEventListener("click", (event) => {
 });
 function escapeHtml(value) {
   const span = document.createElement("span");
-  span.textContent = value;
-  return span.innerHTML;
+  span.textContent = String(value);
+  // Text escaping alone does not escape quotes used inside HTML attributes.
+  return span.innerHTML.replace(/"/g, "&quot;").replace(/'/g, "&#39;");
 }
 function showArea(index) {
   const a = areas[index];
   if (!a) return;
   const dialog = document.createElement("dialog");
   dialog.className = "area-dialog";
-  dialog.innerHTML = `<div class="dialog-heading"><span class="icon-tile ${a.color}">${icon(a.icon)}</span><button class="icon-button" aria-label="Fechar detalhes">${icon("close")}</button></div><span class="eyebrow">ÁREA DE INTERESSE</span><h2>${a.full}</h2><p>${a.description}</p><div class="tags">${a.tags.map((t) => `<span>${t}</span>`).join("")}</div><div class="notice">Uma comunidade inicial de interesse do OESC. Organizações e competências serão identificadas pelo mapeamento.</div>${link("https://oesc.ufsc.br/participar.html", "Quero me conectar", "button button-primary")}`;
+  dialog.innerHTML = `<div class="dialog-heading"><span class="icon-tile ${a.color}">${icon(a.icon)}</span><button class="icon-button" aria-label="Fechar detalhes">${icon("close")}</button></div><span class="eyebrow">ÁREA DE INTERESSE</span><h2>${escapeHtml(a.full)}</h2><p>${escapeHtml(a.description)}</p><div class="tags">${a.tags.map((t) => `<span>${escapeHtml(t)}</span>`).join("")}</div><div class="notice">${escapeHtml(copy.areaNotice)}</div>${link(project.participationUrl, copy.areaLink, "button button-primary")}`;
   document.body.append(dialog);
   dialog
     .querySelector("button")
@@ -382,20 +171,19 @@ function showArea(index) {
 }
 function exportSummary() {
   const data = {
-    fonte: "https://oesc.ufsc.br/",
-    natureza:
-      "Resumo de informações públicas do projeto; não é um censo do ecossistema.",
-    equipe: 48,
+    fonte: project.source.url,
+    natureza: project.summaryNote,
+    equipe: metric("team"),
     areas: areas.map((a) => a.full),
-    eixos: 6,
-    horizonte_meses: 26,
-    instituicoes_mencionadas: institutions,
+    eixos: metric("axes"),
+    horizonte_meses: metric("duration"),
+    instituicoes_mencionadas: institutions.map((i) => i.name),
     mesorregioes: regions,
-    entregas_previstas: deliverables.map((d) => d[0]),
-    fases_planejadas: phases.map(([nome, janela, descricao]) => ({
-      nome,
-      janela,
-      descricao,
+    entregas_previstas: deliverables.map((d) => d.name),
+    fases_planejadas: phases.map((p) => ({
+      nome: p.name,
+      janela: p.months,
+      descricao: p.description,
     })),
   };
   const url = URL.createObjectURL(
@@ -418,6 +206,11 @@ function exportSummary() {
   );
 }
 main.addEventListener("click", (event) => {
+  if (event.target.closest("#retry-content")) {
+    initialize();
+    return;
+  }
+  if (!ready) return;
   const filter = event.target.closest("[data-area-filter]");
   if (filter) {
     state.area = filter.dataset.areaFilter;
@@ -434,11 +227,13 @@ main.addEventListener("click", (event) => {
   }
   const region = event.target.closest("[data-region]");
   if (region) {
-    state.region = region.dataset.region;
+    state.region = regions[Number(region.dataset.region)];
     if (state.section !== "regions") location.hash = "regions";
     else {
       render();
-      main.querySelector(`[data-region="${state.region}"]`).focus();
+      main
+        .querySelector(`[data-region="${regions.indexOf(state.region)}"]`)
+        .focus();
     }
   }
   if (event.target.closest("#export-button")) exportSummary();
@@ -451,23 +246,46 @@ main.addEventListener("change", (event) => {
 });
 const searchDialog = document.querySelector("#search-dialog");
 const searchInput = document.querySelector("#global-search");
-const searchEntries = [
-  ...sections.map((s) => ({
-    title: s.name,
-    description: s.description,
-    section: s.id,
-  })),
-  ...areas.map((a) => ({
-    title: a.full,
-    description: a.tags.join(" · "),
-    section: "areas",
-  })),
-  ...deliverables.map((d) => ({
-    title: d[0],
-    description: d[2],
-    section: "deliverables",
-  })),
-];
+function searchEntries() {
+  return [
+    ...opportunityItems.map((o) => ({
+      title: o.title,
+      description: o.description,
+      section: "opportunities",
+    })),
+    ...institutions.map((i) => ({
+      title: i.name,
+      description: i.description,
+      section: "network",
+    })),
+    ...regions.map((name) => ({
+      title: name,
+      description: copy.mapCoverage,
+      section: "regions",
+    })),
+    ...phases.map((p) => ({
+      title: p.name,
+      description: p.description,
+      section: "roadmap",
+    })),
+    ...sections.map((s) => ({
+      title: s.name,
+      description: s.description,
+      section: s.id,
+    })),
+    ...areas.map((a) => ({
+      title: a.full,
+      description: a.tags.join(" · "),
+      section: "areas",
+    })),
+    ...deliverables.map((d) => ({
+      title: d.name,
+      description: d.description,
+      section: "deliverables",
+    })),
+  ];
+}
+
 function search() {
   const normalize = (text) =>
     text
@@ -475,7 +293,7 @@ function search() {
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "");
   const query = normalize(searchInput.value.trim());
-  const results = searchEntries.filter((e) =>
+  const results = searchEntries().filter((e) =>
     normalize(`${e.title} ${e.description}`).includes(query),
   );
   document.querySelector("#search-results").innerHTML = results.length
@@ -488,6 +306,7 @@ function search() {
     : '<p class="empty-state">Nenhum resultado. Tente “dados”, “rede” ou “roadmap”.</p>';
 }
 function openSearch() {
+  if (!ready) return;
   searchInput.value = "";
   search();
   searchDialog.showModal();
@@ -508,4 +327,50 @@ document.addEventListener("keydown", (event) => {
   }
   if (event.key === "Escape") closeMenu();
 });
-navigate();
+function renderShell() {
+  document.querySelector(".workspace div").innerHTML =
+    `${escapeHtml(copy.workspaceTitle)}<span>${escapeHtml(copy.workspaceLocation)}</span>`;
+  document.querySelector(".network-prompt strong").textContent =
+    copy.sidebarTitle;
+  document.querySelector(".network-prompt p").textContent =
+    copy.sidebarDescription;
+  const participation = document.querySelector(".network-prompt a");
+  participation.href = project.participationUrl;
+  participation.innerHTML = `${escapeHtml(copy.networkLink)} ${icon("arrowUpRight")}`;
+  const institution = document.querySelector(".institution");
+  institution.href = project.source.url;
+  institution.innerHTML = `<span class="institution-mark">${escapeHtml(copy.institutionMark)}</span><span>${escapeHtml(copy.institutionCredit)}<small>${escapeHtml(copy.institutionSupport)}</small></span>${icon("arrowUpRight")}`;
+  document.querySelector(".official-link").href = project.source.url;
+  document.querySelector("footer > span").innerHTML =
+    `OESC <span class="footer-dot">·</span> ${escapeHtml(copy.footer)}`;
+  const sourceLink = document.querySelector("footer a");
+  sourceLink.href = project.source.url;
+  sourceLink.innerHTML = `${escapeHtml(project.source.label)} ${icon("arrowUpRight")}`;
+}
+async function initialize() {
+  ready = false;
+  const searchButton = document.querySelector("#open-search");
+  searchButton.disabled = true;
+  main.setAttribute("aria-busy", "true");
+  main.innerHTML =
+    '<section class="panel content-state" role="status"><h1>Carregando o observatório…</h1><p>Buscando os conteúdos do projeto.</p></section>';
+  try {
+    const data = await loadContent();
+    ({ project, sections, areas, regions, deliverables, institutions } = data);
+    copy = project.copy;
+    phases = data.roadmap;
+    opportunityItems = data.opportunities;
+    renderShell();
+    ready = true;
+    searchButton.disabled = false;
+    navigate();
+  } catch (error) {
+    console.error(error);
+    main.innerHTML =
+      '<section class="panel content-state" role="alert"><h1>Não foi possível carregar o conteúdo.</h1><p>Verifique sua conexão e tente novamente. Se o problema persistir, os arquivos de conteúdo podem estar indisponíveis.</p><button class="button button-primary" id="retry-content">Tentar novamente</button></section>';
+  } finally {
+    main.removeAttribute("aria-busy");
+  }
+}
+hydrateIcons();
+initialize();

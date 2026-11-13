@@ -1,0 +1,68 @@
+[
+  {
+    "name": "UFSC",
+    "initials": "UF",
+    "lead": true,
+    "description": "Instituição líder · SpaceLab"
+  },
+  {
+    "name": "UNIVALI",
+    "initials": "UN",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "UDESC",
+    "initials": "UD",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "IFSC",
+    "initials": "IF",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "UNIFA",
+    "initials": "UN",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "UnB",
+    "initials": "UN",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "SATC",
+    "initials": "SA",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "ANATEL",
+    "initials": "AN",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "Webphy",
+    "initials": "WE",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "Instituto START",
+    "initials": "IN",
+    "lead": false,
+    "description": "Representação na equipe"
+  },
+  {
+    "name": "Univ. Montpellier",
+    "initials": "UM",
+    "lead": false,
+    "description": "Representação na equipe"
+  }
+]

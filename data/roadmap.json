@@ -1,0 +1,27 @@
+[
+  {
+    "name": "Mobilizar",
+    "months": "M1–M3",
+    "description": "Governança, formação da equipe e desenho da plataforma."
+  },
+  {
+    "name": "Mapear",
+    "months": "M2–M10",
+    "description": "Levantamento de atores, infraestrutura, demandas e competências."
+  },
+  {
+    "name": "Entender",
+    "months": "M8–M18",
+    "description": "Diagnóstico e investigação das conexões e tendências do setor."
+  },
+  {
+    "name": "Priorizar e demonstrar",
+    "months": "M12–M24",
+    "description": "Cenários, projetos prioritários e provas de conceito."
+  },
+  {
+    "name": "Consolidar",
+    "months": "M20–M26",
+    "description": "Plataforma pública, disseminação e continuidade da rede."
+  }
+]

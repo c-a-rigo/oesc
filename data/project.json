@@ -1,0 +1,127 @@
+{
+  "source": {
+    "url": "https://oesc.ufsc.br/",
+    "label": "Fonte: OESC / UFSC",
+    "consultedAt": "2026-11-13"
+  },
+  "participationUrl": "https://oesc.ufsc.br/participar.html",
+  "summaryNote": "Resumo de informações públicas do projeto; não é um censo do ecossistema.",
+  "hero": {
+    "eyebrow": "CONHECIMENTO QUE CONECTA",
+    "title": ["O futuro espacial também", "começa em Santa Catarina."],
+    "description": [
+      "Competências locais. Conexões estratégicas.",
+      "Novas possibilidades para todo o ecossistema."
+    ],
+    "linkLabel": "Conheça a rede OESC",
+    "caption": "MAPEAR. CONECTAR. TRANSFORMAR.",
+    "index": "SC / BR — NEW SPACE"
+  },
+  "metrics": [
+    {
+      "id": "team",
+      "title": "Equipe do projeto",
+      "value": 48,
+      "unit": "",
+      "note": "pesquisadores e profissionais",
+      "icon": "users",
+      "color": "blue"
+    },
+    {
+      "id": "areas",
+      "title": "Áreas de interesse",
+      "value": 5,
+      "unit": "",
+      "note": "comunidades de conhecimento",
+      "icon": "layers",
+      "color": "purple"
+    },
+    {
+      "id": "axes",
+      "title": "Eixos de execução",
+      "value": 6,
+      "unit": "",
+      "note": "frentes integradas de atuação",
+      "icon": "orbit",
+      "color": "green"
+    },
+    {
+      "id": "duration",
+      "title": "Horizonte de execução",
+      "value": 26,
+      "unit": "meses",
+      "note": "meses no planejamento",
+      "icon": "clock",
+      "color": "orange"
+    }
+  ],
+  "map": {
+    "src": "assets/mapasc.png",
+    "alt": "Santa Catarina dividida em seis mesorregiões: Oeste, Norte, Serrana, Vale do Itajaí, Grande Florianópolis e Sul.",
+    "coordinates": "27° S 50° O",
+    "label": "SANTA CATARINA"
+  },
+  "filters": [
+    {
+      "id": "all",
+      "name": "Todas as áreas"
+    },
+    {
+      "id": "upstream",
+      "name": "Upstream"
+    },
+    {
+      "id": "downstream",
+      "name": "Downstream"
+    },
+    {
+      "id": "enabling",
+      "name": "Tecnologias e negócios"
+    }
+  ],
+  "copy": {
+    "mapEyebrow": "INTELIGÊNCIA TERRITORIAL",
+    "mapTitle": "Um estado, muitas possibilidades",
+    "mapFullTitle": "O observatório em todo o estado",
+    "mapCoverage": "Abrangência estadual",
+    "mapLegend": "Território de abrangência do projeto",
+    "mapLink": "Explorar território",
+    "regionTitle": "Cobertura estadual",
+    "regionDescription": "Esta mesorregião integra a abrangência prevista do OESC. O levantamento de atores e competências será realizado durante o mapeamento.",
+    "regionOverview": "O mapeamento previsto contempla as seis mesorregiões catarinenses. Indicadores locais serão disponibilizados após a coleta e validação dos dados.",
+    "regionNotice": "A divisão em mesorregiões segue a apresentação territorial do projeto no site OESC. O mapa não representa densidade de atores ou cobertura de coleta.",
+    "opportunitiesEyebrow": "FIQUE POR DENTRO",
+    "opportunitiesTitle": "Conecte-se ao OESC",
+    "opportunitiesCompactTitle": "No radar",
+    "opportunitiesNotice": "Consulte prazos e situação no site oficial.",
+    "roadmapEyebrow": "DA VISÃO À REALIZAÇÃO",
+    "roadmapTitle": "O caminho do projeto",
+    "roadmapNotice": "O cronograma apresenta janelas previstas de execução. Não representa acompanhamento de progresso ou etapas concluídas.",
+    "areasEyebrow": "UM ECOSSISTEMA MULTIDISCIPLINAR",
+    "areasTitle": "Onde o espaço encontra a economia",
+    "areasLink": "Explorar áreas",
+    "areasDescription": "Explore as comunidades iniciais de interesse. A organização por aplicação abaixo é uma navegação editorial deste painel.",
+    "areasOpenTitle": "As próximas conexões ainda estão por descobrir.",
+    "areasOpenDescription": "O mapeamento pode revelar novas competências e ampliar as áreas de interesse do observatório.",
+    "areasOpenLink": "Compartilhar meu interesse",
+    "areaNotice": "Uma comunidade inicial de interesse do OESC. Organizações e competências serão identificadas pelo mapeamento.",
+    "areaLink": "Quero me conectar",
+    "sourceNote": "Números e conteúdos do projeto publicados pelo OESC. Dados do censo e indicadores do ecossistema aguardam mapeamento.",
+    "networkTitle": "Uma rede de conhecimento. Muitas perspectivas.",
+    "networkDescription": "Uma articulação multidisciplinar coordenada pelo SpaceLab da Universidade Federal de Santa Catarina.",
+    "networkLink": "Integrar a rede",
+    "institutionsEyebrow": "EQUIPE E ARTICULAÇÃO",
+    "institutionsTitle": "Instituições representadas",
+    "institutionsDescription": "Instituições e organizações citadas na apresentação pública da equipe do projeto.",
+    "institutionsNotice": "Este diretório apresenta as instituições mencionadas pelo site oficial; não representa um censo completo de organizações do setor.",
+    "deliverablesNotice": "As entregas são previstas no projeto. A apresentação neste painel não indica que já estejam publicadas.",
+    "workspaceTitle": "Economia espacial",
+    "workspaceLocation": "Santa Catarina, Brasil",
+    "sidebarTitle": "O próximo passo é conectar.",
+    "sidebarDescription": "Faça parte da rede que aproxima Santa Catarina do espaço.",
+    "institutionMark": "UFSC",
+    "institutionCredit": "Uma iniciativa SpaceLab / UFSC",
+    "institutionSupport": "Apoio FAPESC · CP 027/2026",
+    "footer": "Inteligência para a economia espacial catarinense."
+  }
+}

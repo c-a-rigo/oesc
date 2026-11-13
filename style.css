@@ -1922,3 +1922,25 @@ dialog::backdrop {
     animation: none !important;
   }
 }
+
+.content-state {
+  margin: 25px 0;
+  padding: 32px;
+}
+.content-state h1 {
+  font-family: Manrope, sans-serif;
+  font-size: 22px;
+}
+.content-state p {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+  max-width: 540px;
+}
+.empty-state {
+  grid-column: 1 / -1;
+}
+button:disabled {
+  cursor: wait;
+  opacity: 0.5;
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sistemas espaciais",
+    "full": "Sistemas Espaciais, Indústria e Infraestrutura",
+    "icon": "rocket",
+    "color": "blue",
+    "category": "upstream",
+    "tags": ["Sistemas embarcados", "Manufatura", "Sensores"],
+    "description": "Da eletrônica às estações de solo: capacidades para desenvolver a infraestrutura espacial."
+  },
+  {
+    "name": "Terra, clima e recursos",
+    "full": "Terra, Clima e Recursos Naturais",
+    "icon": "planet",
+    "color": "green",
+    "category": "downstream",
+    "tags": ["Agricultura", "Economia do mar", "Defesa civil"],
+    "description": "Dados espaciais a serviço dos recursos naturais, do território e da resiliência climática."
+  },
+  {
+    "name": "Conectividade e IoT",
+    "full": "Conectividade, IoT e Infraestrutura Territorial",
+    "icon": "antenna",
+    "color": "purple",
+    "category": "downstream",
+    "tags": ["Telecomunicações", "GNSS", "Mobilidade"],
+    "description": "Conexões para aproximar pessoas, monitorar ativos e integrar territórios."
+  },
+  {
+    "name": "Dados e inteligência",
+    "full": "Dados, IA e Inteligência Geoespacial",
+    "icon": "data",
+    "color": "orange",
+    "category": "enabling",
+    "tags": ["Inteligência artificial", "GIS", "Sensoriamento remoto"],
+    "description": "Transformação de dados em conhecimento para resolver desafios reais."
+  },
+  {
+    "name": "Economia e inovação",
+    "full": "Economia, Inovação, Mercado e Políticas Públicas",
+    "icon": "chart",
+    "color": "pink",
+    "category": "enabling",
+    "tags": ["Startups", "Investimentos", "Políticas públicas"],
+    "description": "Novos negócios, cadeias de valor e políticas para desenvolver o setor."
+  }
+]

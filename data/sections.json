@@ -1,0 +1,51 @@
+[
+  {
+    "id": "overview",
+    "name": "Visão geral",
+    "icon": "grid",
+    "eyebrow": "PAINEL DO OBSERVATÓRIO",
+    "description": "Um novo olhar para a economia espacial de Santa Catarina."
+  },
+  {
+    "id": "network",
+    "name": "Rede OESC",
+    "icon": "network",
+    "eyebrow": "CONEXÕES QUE TRANSFORMAM",
+    "description": "Universidades, empresas, governo e sociedade em uma mesma órbita."
+  },
+  {
+    "id": "areas",
+    "name": "Áreas de interesse",
+    "icon": "layers",
+    "eyebrow": "COMPETÊNCIAS E APLICAÇÕES",
+    "description": "Explore as conexões entre o espaço e os setores da economia."
+  },
+  {
+    "id": "regions",
+    "name": "Território",
+    "icon": "map",
+    "eyebrow": "PRESENÇA ESTADUAL",
+    "description": "Diferentes regiões. Um ecossistema de possibilidades."
+  },
+  {
+    "id": "deliverables",
+    "name": "Entregas",
+    "icon": "box",
+    "eyebrow": "DO CONHECIMENTO À AÇÃO",
+    "description": "Os instrumentos previstos para apoiar decisões e novas conexões."
+  },
+  {
+    "id": "roadmap",
+    "name": "Roadmap",
+    "icon": "route",
+    "eyebrow": "HORIZONTE DO PROJETO",
+    "description": "Da mobilização à consolidação de uma rede permanente."
+  },
+  {
+    "id": "opportunities",
+    "name": "Oportunidades",
+    "icon": "spark",
+    "eyebrow": "FAÇA PARTE",
+    "description": "Encontre caminhos para participar da economia espacial catarinense."
+  }
+]
