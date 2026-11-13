@@ -8,6 +8,7 @@ export const contentFiles = [
   "roadmap",
   "institutions",
   "opportunities",
+  "companies",
 ];
 const colors = new Set(["blue", "purple", "green", "orange", "pink"]);
 const sectionIds = [
@@ -193,6 +194,108 @@ export function validateContent(data) {
     );
     requireValue(colors.has(o.color), `opportunities[${i}].color`);
     url(o.url, `opportunities[${i}].url`);
+  });
+  validateCompanies(data.companies);
+  return data;
+}
+export function validateCompanies(data) {
+  requireValue(data && typeof data === "object", "companies");
+  fields(
+    data.metadata,
+    ["asOf", "title", "subtitle", "scope", "notice"],
+    "companies.metadata",
+  );
+  const meta = data.metadata;
+  for (const key of ["roles", "statuses", "segments"]) {
+    requireValue(
+      meta[key] && typeof meta[key] === "object" && !Array.isArray(meta[key]),
+      `companies.metadata.${key}`,
+    );
+    Object.entries(meta[key]).forEach(([id, label]) => {
+      requireValue(
+        /^[a-z][a-z0-9_]*$/.test(id),
+        `companies.metadata.${key}.${id}`,
+      );
+      text(label, `companies.metadata.${key}.${id}`);
+    });
+  }
+  for (const key of ["methodology", "nextSteps"]) {
+    records(meta[key], `companies.metadata.${key}`);
+    meta[key].forEach((v, i) => text(v, `companies.metadata.${key}[${i}]`));
+  }
+  records(data.companies, "companies.companies");
+  const ids = new Set();
+  data.companies.forEach((c, i) => {
+    const path = `companies.companies[${i}]`;
+    fields(
+      c,
+      [
+        "id",
+        "name",
+        "presence",
+        "website",
+        "role",
+        "status",
+        "segment",
+        "description",
+        "notes",
+        "confidence",
+        "usageScope",
+      ],
+      path,
+    );
+    requireValue(
+      /^[a-z][a-z0-9-]*$/.test(c.id) && !ids.has(c.id),
+      `${path}.id`,
+    );
+    ids.add(c.id);
+    requireValue(c.city === null || typeof c.city === "string", `${path}.city`);
+    requireValue(c.state === null || c.state === "SC", `${path}.state`);
+    requireValue(
+      Object.hasOwn(meta.roles, c.role) &&
+        Object.hasOwn(meta.statuses, c.status) &&
+        Object.hasOwn(meta.segments, c.segment),
+      `${path}.classification`,
+    );
+    requireValue(
+      ["high", "medium"].includes(c.confidence),
+      `${path}.confidence`,
+    );
+    requireValue(
+      ["corporate", "local_sc", "not_confirmed", "not_applicable"].includes(
+        c.usageScope,
+      ),
+      `${path}.usageScope`,
+    );
+    for (const key of ["aliases", "technologies", "markets"]) {
+      records(c[key], `${path}.${key}`);
+      c[key].forEach((v, j) => text(v, `${path}.${key}[${j}]`));
+    }
+    url(c.website, `${path}.website`);
+    records(c.sources, `${path}.sources`);
+    requireValue(c.sources.length > 0, `${path}.sources`);
+    c.sources.forEach((s, j) => {
+      const p = `${path}.sources[${j}]`;
+      fields(s, ["url", "title", "kind", "evidence", "checkedAt"], p);
+      url(s.url, `${p}.url`);
+      records(s.supports, `${p}.supports`);
+      s.supports.forEach((v) =>
+        requireValue(
+          ["location", "identity", "offering", "usage"].includes(v),
+          `${p}.supports`,
+        ),
+      );
+      requireValue(
+        s.publishedAt === null || typeof s.publishedAt === "string",
+        `${p}.publishedAt`,
+      );
+    });
+  });
+  records(data.excluded, "companies.excluded");
+  data.excluded.forEach((c, i) => {
+    fields(c, ["name", "reason"], `companies.excluded[${i}]`);
+    records(c.sources, `companies.excluded[${i}].sources`);
+    c.sources.forEach((s) => url(s, `companies.excluded[${i}].sources`));
   });
   return data;
 }

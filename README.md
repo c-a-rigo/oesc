@@ -62,3 +62,13 @@ Textos são tratados como texto simples: caracteres como `<`, `&` e aspas aparec
 Execute `npm run check` para verificar a sintaxe e validar todos os arquivos de conteúdo. A validação também ocorre no navegador. Em caso de falha de rede, JSON inválido ou formato incompatível, o painel mostra uma mensagem e permite tentar novamente. Listas vazias mostram um estado sem conteúdo. A busca e a exportação usam os dados carregados, sem cópias fixas. Os pedidos usam revalidação de cache e os caminhos são relativos ao módulo, para funcionar também sob `/oesc/`.
 
 Sirva a aplicação por HTTP (`npm run dev`); abrir `index.html` diretamente por `file://` não permite carregar os módulos e os arquivos JSON.
+
+## Levantamento downstream catarinense
+
+`data/companies.json` contém a pesquisa documental de empresas, marcas, unidades e usuárias industriais com vínculo catarinense. A seção **Rede OESC → Empresas e aplicações** oferece busca por empresa/cidade/tecnologia, filtros de papel, segmento e evidência, fichas de fontes e download integral. **Instituições do projeto** permanece em aba separada.
+
+O catálogo distingue `role` (`downstream`, `integrator`, `end_user`, `adjacent`) e `status` (`documented`, `historical`, `pending`). `documented` significa evidência pública, não empresa auditada. As métricas de fornecedores documentados excluem usuárias, adjacentes e registros históricos/pendentes. O campo `usageScope` distingue aplicação corporativa, uso local e implantação ainda não comprovada. Contagens são de perfis, não de CNPJs únicos ou da população total do setor.
+
+Cada registro inclui tecnologias, mercados, presença territorial, ressalvas, confiança documental e fontes com título, URL, data e fato sustentado. Marcas adquiridas não são contadas duas vezes. Não se presume filiação ao OESC nem situação cadastral ativa. Edite o arquivo, execute `npm run check` e publique por push em `main`.
+
+O relatório está em [`outputs/downstream-sc.md`](outputs/downstream-sc.md), acompanhado de [`outputs/downstream-sc.provenance.md`](outputs/downstream-sc.provenance.md). As fontes e os casos pendentes devem ser revalidados antes de produzir indicadores oficiais.

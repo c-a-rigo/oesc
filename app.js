@@ -1,3 +1,8 @@
+import {
+  renderCatalog,
+  renderCompanyResults,
+  renderCompanyDetails,
+} from "./catalog.js";
 import { loadContent } from "./content.js";
 ("use strict");
 const paths = {
@@ -44,7 +49,15 @@ function hydrateIcons(root = document) {
     el.innerHTML = icon(el.dataset.icon);
   });
 }
-let project, copy;
+let project, copy, companyDataset;
+const companyFilters = {
+  query: "",
+  role: "downstream",
+  segment: "all",
+  status: "all",
+};
+let networkView = "companies";
+const catalogHelpers = { escapeHtml, icon, link: (...args) => link(...args) };
 let sections = [],
   areas = [],
   regions = [],
@@ -89,6 +102,45 @@ function overview() {
   return `<section class="welcome-banner"><div class="welcome-content"><span class="hero-eyebrow"><span class="status-dot"></span> ${escapeHtml(project.hero.eyebrow)}</span><h2>${project.hero.title.map(escapeHtml).join("<br>")}</h2><p>${project.hero.description.map(escapeHtml).join("<br>")}</p><a class="button button-light" href="#network">${escapeHtml(project.hero.linkLabel)} ${icon("arrow")}</a></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="planet-core"></div><span class="orbital-point point-one"></span><span class="orbital-point point-two"></span><span class="orbital-point point-three"></span><span class="orbit-caption">${escapeHtml(project.hero.caption)}</span></div><span class="hero-index">${escapeHtml(project.hero.index)}</span></section>${stats()}<div class="overview-grid">${mapPanel()}${opportunities(true)}</div><section class="areas-section">${panelHeading(copy.areasEyebrow, copy.areasTitle, sectionLink("areas", copy.areasLink))}${areaCards(true)}</section>${roadmap(true)}<div class="source-note">${icon("info")} ${escapeHtml(copy.sourceNote)}</div>`;
 }
 function network() {
+  return `<div class="filterbar network-tabs"><div class="tabs" role="group" aria-label="Conteúdo da rede"><button data-network-view="companies" class="${networkView === "companies" ? "selected" : ""}" aria-pressed="${networkView === "companies"}">Empresas e aplicações</button><button data-network-view="institutions" class="${networkView === "institutions" ? "selected" : ""}" aria-pressed="${networkView === "institutions"}">Instituições do projeto</button></div></div>${networkView === "companies" ? renderCatalog(companyDataset, companyFilters, catalogHelpers) : institutionsPage()}`;
+}
+function showCompany(id) {
+  const company = companyDataset.companies.find((c) => c.id === id);
+  if (!company) return;
+  const dialog = document.createElement("dialog");
+  dialog.className = "area-dialog company-dialog";
+  dialog.innerHTML = renderCompanyDetails(
+    company,
+    companyDataset,
+    catalogHelpers,
+  );
+  document.body.append(dialog);
+  dialog
+    .querySelector("button")
+    .addEventListener("click", () => dialog.close());
+  dialog.addEventListener("close", () => dialog.remove());
+  dialog.showModal();
+}
+function updateCompanyResults() {
+  document.querySelector("#company-results").innerHTML = renderCompanyResults(
+    companyDataset,
+    companyFilters,
+    catalogHelpers,
+  );
+}
+function downloadCompanyDataset() {
+  const url = URL.createObjectURL(
+    new Blob([JSON.stringify(companyDataset, null, 2)], {
+      type: "application/json;charset=utf-8",
+    }),
+  );
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = "oesc-levantamento-downstream.json";
+  anchor.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+}
+function institutionsPage() {
   return `<div class="intro-card"><span class="icon-tile blue">${icon("network")}</span><div><h2>${escapeHtml(copy.networkTitle)}</h2><p>${escapeHtml(copy.networkDescription)}</p></div>${link(project.participationUrl, copy.networkLink, "button button-primary")}</div>${stats()}<section class="panel">${panelHeading(copy.institutionsEyebrow, copy.institutionsTitle)}<p class="panel-description">${escapeHtml(copy.institutionsDescription)}</p><div class="institution-grid">${institutions.map((institution) => `<article class="institution-card"><span class="institution-initial ${institution.lead ? "lead" : ""}">${escapeHtml(institution.initials)}</span><div><h3>${escapeHtml(institution.name)}</h3><p>${escapeHtml(institution.description)}</p></div></article>`).join("") || emptyState()}</div></section><div class="notice">${escapeHtml(copy.institutionsNotice)}</div>`;
 }
 function areaPage() {
@@ -211,6 +263,25 @@ main.addEventListener("click", (event) => {
     return;
   }
   if (!ready) return;
+  const networkTab = event.target.closest("[data-network-view]");
+  if (networkTab) {
+    networkView = networkTab.dataset.networkView;
+    render();
+    main.querySelector(`[data-network-view="${networkView}"]`).focus();
+  }
+  const companyDetail = event.target.closest("[data-company-detail]");
+  if (companyDetail) showCompany(companyDetail.dataset.companyDetail);
+  if (event.target.closest("#export-companies")) downloadCompanyDataset();
+  if (event.target.closest("#clear-company-filters")) {
+    Object.assign(companyFilters, {
+      query: "",
+      role: "all",
+      segment: "all",
+      status: "all",
+    });
+    render();
+    main.querySelector("#company-query").focus();
+  }
   const filter = event.target.closest("[data-area-filter]");
   if (filter) {
     state.area = filter.dataset.areaFilter;
@@ -238,7 +309,22 @@ main.addEventListener("click", (event) => {
   }
   if (event.target.closest("#export-button")) exportSummary();
 });
+main.addEventListener("submit", (event) => {
+  if (event.target.matches(".catalog-filters")) event.preventDefault();
+});
+main.addEventListener("input", (event) => {
+  if (event.target.id === "company-query") {
+    companyFilters.query = event.target.value;
+    updateCompanyResults();
+  }
+});
 main.addEventListener("change", (event) => {
+  for (const field of ["role", "segment", "status"]) {
+    if (event.target.id === `company-${field}`) {
+      companyFilters[field] = event.target.value;
+      updateCompanyResults();
+    }
+  }
   if (event.target.id === "region-select") {
     state.region = event.target.value;
     document.querySelector("#region-detail").innerHTML = regionDetail();
@@ -248,6 +334,12 @@ const searchDialog = document.querySelector("#search-dialog");
 const searchInput = document.querySelector("#global-search");
 function searchEntries() {
   return [
+    ...companyDataset.companies.map((c) => ({
+      title: c.name,
+      description: [c.city || "", ...c.technologies].join(" · "),
+      section: "network",
+      companyId: c.id,
+    })),
     ...opportunityItems.map((o) => ({
       title: o.title,
       description: o.description,
@@ -300,7 +392,7 @@ function search() {
     ? results
         .map(
           (e) =>
-            `<a class="search-result" href="#${e.section}"><span><strong>${escapeHtml(e.title)}</strong><small>${escapeHtml(e.description)}</small></span>${icon("arrow")}</a>`,
+            `<a class="search-result" href="#${e.section}" ${e.companyId ? `data-company-result="${e.companyId}"` : ""}><span><strong>${escapeHtml(e.title)}</strong><small>${escapeHtml(e.description)}</small></span>${icon("arrow")}</a>`,
         )
         .join("")
     : '<p class="empty-state">Nenhum resultado. Tente “dados”, “rede” ou “roadmap”.</p>';
@@ -319,6 +411,12 @@ document
 searchInput.addEventListener("input", search);
 document.querySelector("#search-results").addEventListener("click", (event) => {
   if (event.target.closest("a")) searchDialog.close();
+  const companyResult = event.target.closest("[data-company-result]");
+  if (companyResult) {
+    networkView = "companies";
+    if (state.section === "network") render();
+    showCompany(companyResult.dataset.companyResult);
+  }
 });
 document.addEventListener("keydown", (event) => {
   if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
@@ -357,6 +455,7 @@ async function initialize() {
   try {
     const data = await loadContent();
     ({ project, sections, areas, regions, deliverables, institutions } = data);
+    companyDataset = data.companies;
     copy = project.copy;
     phases = data.roadmap;
     opportunityItems = data.opportunities;

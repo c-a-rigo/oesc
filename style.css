@@ -1944,3 +1944,246 @@ button:disabled {
   cursor: wait;
   opacity: 0.5;
 }
+
+.network-tabs {
+  margin-bottom: 23px;
+}
+.catalog-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.catalog-intro h2 {
+  font-family: Manrope, sans-serif;
+  font-size: 23px;
+  letter-spacing: -0.6px;
+  margin: 10px 0;
+}
+.catalog-intro p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.catalog-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 13px;
+}
+.catalog-metrics > .panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.catalog-metrics strong {
+  font-family: Manrope, sans-serif;
+  font-size: 29px;
+}
+.catalog-metrics span {
+  font-size: 10px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+.catalog-footnote {
+  font-size: 9px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+.catalog-method {
+  margin: 20px 0;
+  font-size: 11px;
+  color: #71857e;
+  line-height: 1.9;
+}
+.catalog-method summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-weight: 600;
+}
+.catalog-method li {
+  margin-bottom: 9px;
+}
+.catalog-method ul {
+  padding-left: 20px;
+}
+.catalog-filters {
+  display: grid;
+  grid-template-columns: 2fr 1.5fr 1.3fr 1.3fr;
+  gap: 11px;
+  align-items: end;
+  margin-top: 25px;
+}
+.catalog-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 9px;
+  color: #7e8d98;
+}
+.catalog-filters input,
+.catalog-filters select {
+  min-width: 0;
+  width: 100%;
+  font-size: 10px;
+  padding: 11px;
+  border: 1px solid #dce4e1;
+  border-radius: 6px;
+  color: var(--ink);
+  background: white;
+}
+.catalog-filters button {
+  justify-self: start;
+}
+.catalog-result-count {
+  font-size: 10px;
+  color: var(--muted);
+  margin: 20px 0 14px;
+}
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.company-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 20px;
+}
+.company-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 8px;
+  color: #8b9b99;
+}
+.company-card h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 17px 0 4px;
+  letter-spacing: -0.3px;
+}
+.company-card > p {
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+.company-card > .company-segment {
+  font-size: 9px;
+  color: #4c9683;
+  margin-top: 0;
+  margin-bottom: 2px;
+}
+.company-card .tags {
+  margin-top: auto;
+}
+.company-card .tags span {
+  font-size: 8px;
+}
+.company-bottom {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 19px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+.company-bottom > span {
+  font-size: 8px;
+  color: #95a19c;
+}
+.company-bottom button {
+  font-size: 9px;
+  padding: 3px 0;
+}
+.company-dialog {
+  width: min(740px, calc(100% - 30px));
+}
+.company-facts {
+  font-size: 11px;
+  line-height: 1.8;
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 10px;
+}
+.company-facts dt {
+  color: #92a19b;
+}
+.company-facts dd {
+  margin: 0;
+}
+.company-dialog > h3 {
+  font-family: Manrope, sans-serif;
+  font-size: 16px;
+}
+.company-sources article {
+  border-bottom: 1px solid var(--line);
+  padding: 15px 0;
+}
+.company-sources .text-link {
+  white-space: normal;
+  line-height: 1.7;
+}
+.company-sources p {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--muted);
+}
+.company-sources small {
+  font-size: 9px;
+  color: #9aa5a0;
+}
+.company-dialog > .button {
+  margin-top: 20px;
+}
+@media (max-width: 1200px) {
+  .company-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .catalog-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .catalog-intro {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 650px) {
+  .catalog-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .catalog-metrics > .panel {
+    padding: 17px;
+  }
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+  .catalog-filters {
+    grid-template-columns: 1fr;
+  }
+  .catalog-intro h2 {
+    font-size: 21px;
+  }
+  .catalog-intro .eyebrow {
+    line-height: 1.9;
+    display: block;
+  }
+  .company-facts {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+  .company-facts dd {
+    margin-bottom: 13px;
+  }
+  .catalog-method {
+    padding: 17px;
+  }
+  .company-card h3 {
+    font-size: 16px;
+  }
+}

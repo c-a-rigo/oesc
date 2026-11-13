@@ -1,0 +1,1812 @@
+{
+  "metadata": {
+    "asOf": "2026-11-13",
+    "title": "Empresas e aplicações downstream",
+    "subtitle": "Levantamento documental da economia espacial em Santa Catarina",
+    "scope": "Empresas, marcas e unidades com oferta comercial ou uso industrial de dados e serviços espaciais e vínculo catarinense documentado ou explicitamente pendente.",
+    "notice": "Levantamento documental preliminar; não é censo, certificação, relação de membros da Rede OESC ou confirmação cadastral. Contagens representam registros desta pesquisa, não o total de empresas do estado.",
+    "roles": {
+      "downstream": "Produtos e serviços downstream",
+      "integrator": "Integração, equipamentos e serviços GNSS",
+      "end_user": "Indústrias e organizações usuárias",
+      "adjacent": "Geotecnologias e casos adjacentes"
+    },
+    "statuses": {
+      "documented": "Oferta ou aplicação documentada",
+      "historical": "Evidência histórica / revalidar",
+      "pending": "Validação pendente"
+    },
+    "segments": {
+      "earth_observation": "Observação da Terra",
+      "gnss": "GNSS e posicionamento",
+      "satellite_communications": "Comunicação por satélite",
+      "weather_intelligence": "Inteligência climática",
+      "geospatial": "Geotecnologias e atividades adjacentes"
+    },
+    "methodology": [
+      "Buscar oferta comercial explícita baseada em imagens orbitais, navegação GNSS ou comunicação via satélite. GIS, IA, drones e sensoriamento remoto sem identificação do insumo orbital não bastam.",
+      "Registrar separadamente evidência da aplicação e da presença em SC. Atender clientes catarinenses não comprova sede; filial, endereço comercial e origem histórica não equivalem a sede atual.",
+      "Documentada significa existência de evidência pública, frequentemente autodeclarada; não comprova operação atual, desempenho, receitas, independência jurídica ou situação cadastral.",
+      "Separar fornecedores downstream, integradores/distribuidores, prestadores especializados GNSS e usuários industriais. Não somar os papéis como empresas espaciais equivalentes.",
+      "Não duplicar marcas adquiridas: Agrosatélite/Serasa, Arvus/Hexagon e ORN/NOR. Registrar dúvidas de identidade e unidade de contagem antes do censo.",
+      "Registrar data de consulta e, quando disponível, data da fonte. Histórico ou promessa de implantação não comprova atividade atual. Ausência de evidência não prova inexistência."
+    ],
+    "nextSteps": [
+      "Confirmar CNPJ e estabelecimento ativo em Receita/JUCESC, com sede, filial e grupo econômico.",
+      "Solicitar validação voluntária de produtos, sensores, constelações, clientes públicos e presença de equipe local.",
+      "Identificar receita, emprego e carteira de projetos especificamente relacionados a atividades espaciais, sem atribuir o porte global do grupo a SC.",
+      "Ampliar prospecção no Oeste, Norte, Vale, Serra e Sul por associações setoriais, parques tecnológicos e compras públicas.",
+      "Atualizar fontes e registrar confirmação, correção, fusão ou encerramento com histórico de revisões."
+    ]
+  },
+  "companies": [
+    {
+      "id": "canopy",
+      "name": "Canopy Remote Sensing Solutions",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://canopyrss.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Combina dados orbitais, aéreos e de campo para mapeamento, inventário e monitoramento florestal; oferece plataformas como Canopy Insight.",
+      "technologies": [
+        "Imagens de satélite",
+        "Sensoriamento remoto",
+        "LiDAR",
+        "InSAR",
+        "WebGIS"
+      ],
+      "markets": [
+        "Florestas plantadas",
+        "Papel e celulose",
+        "Carbono",
+        "Meio ambiente"
+      ],
+      "notes": "Nem todos os produtos da empresa são exclusivamente orbitais; separar coleta LiDAR aérea de observação da Terra por satélite.",
+      "sources": [
+        {
+          "url": "https://canopyrss.com.br/sobre/",
+          "title": "Canopy — Sobre",
+          "kind": "company",
+          "evidence": "A própria empresa declara uso de dados coletados por satélite, avião e drone em produtos comerciais para indústria, governos e ONGs.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://canopyrss.com.br/solucoes-de-geotecnologia-da-canopy-estarao-na-expoforest/",
+          "title": "Canopy — Soluções de geotecnologia na Expoforest",
+          "kind": "company",
+          "evidence": "A empresa informa sede em Florianópolis e oferta da plataforma Canopy Insight.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2024-05-30"
+        },
+        {
+          "url": "https://contratos.ufes.br/sites/contratoseconvenios.ufes.br/files/field/anexo/projeto_basico_7661-2022-09.pdf",
+          "title": "UFES — Projeto de evolução arquitetural Canopy Insight",
+          "kind": "university",
+          "evidence": "Documento institucional confirma Florianópolis, monitoramento florestal por satélite e aplicações de LiDAR e radar interferométrico.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://fest.org.br/projeto/1069-projeto-da-ufes-avanca-na-evolucao-do-sistema-canopy-insight-para-inteligencia-geografica-no-setor-de-florestas-plantadas/",
+          "title": "FEST — Projeto 1069 Canopy Insight",
+          "kind": "university",
+          "evidence": "A fundação relata iniciativa financiada pela Canopy e levantamento nacional com imagens de satélite de alta resolução.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "carmon",
+      "name": "Carmon Rastreamento e Segurança",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "local_publicado",
+      "website": "https://www.carmon.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Oferta comercial de rastreamento e telemetria GPS para veículos, máquinas, barcos e ativos, além de equipamento satelital portátil.",
+      "technologies": ["GPS", "GSM/GPRS"],
+      "markets": ["Frotas", "Logística"],
+      "notes": "Distinguir produtos GPS/4G da oferta específica satelital; não atribuir conectividade satelital a todo o portfólio.",
+      "sources": [
+        {
+          "url": "https://www.carmon.com.br/",
+          "title": "www.carmon.com.br",
+          "kind": "primary",
+          "evidence": "Site oferece GPS/4G, plataforma web/app e rastreador satelital portátil; publica contato na Rodovia José Carlos Daux, 4150, Florianópolis/SC.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fama-sistemas",
+      "name": "Fama Sistemas / FAMA Rastreamento",
+      "aliases": [],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "local_publicado",
+      "website": "https://www.famasistemas.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Serviço de monitoramento/localização de veículos usando GPS, comunicação celular e plataforma internet.",
+      "technologies": ["GPS", "GSM/GPRS"],
+      "markets": ["Frotas", "Logística"],
+      "notes": "Fonte corporativa curta e sem data editorial. Verificar contato operacional no censo; não inferir telecomunicação satelital.",
+      "sources": [
+        {
+          "url": "https://www.famasistemas.com.br/",
+          "title": "www.famasistemas.com.br",
+          "kind": "primary",
+          "evidence": "Página corporativa descreve FAMA Rastreamento com GPS e GSM/GPRS; identifica Joinville, SC, Brasil.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fronza-geo",
+      "name": "Fronza Geo Inteligência Geoespacial",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://fronzageo.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Integra dados de satélite, campo e GIS corporativo em monitoramento territorial, aplicações agrícolas e dashboards ambientais.",
+      "technologies": [
+        "Dados satelitais",
+        "NDVI",
+        "Séries temporais",
+        "WebGIS",
+        "Inteligência artificial"
+      ],
+      "markets": [
+        "Agronegócio",
+        "Meio ambiente",
+        "Operações territoriais",
+        "ESG"
+      ],
+      "notes": "Oferta comprovada em fontes públicas; a identificação como integrante formal da Rede OESC não foi verificada.",
+      "sources": [
+        {
+          "url": "https://fronzageo.com.br/",
+          "title": "Fronza Geo — Inteligência territorial",
+          "kind": "company",
+          "evidence": "O site explicita satélites, NDVI e monitoramento automatizado, além de razão social, CNPJ e localização Florianópolis/SC.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.acate.com.br/associados/associado/?a=XK21XYJvIyEJx18To2ZrjFB5VGpZWUZWbVVFNm1meU1mZmpJWEE9PQ",
+          "title": "ACATE — Fronza Geo Inteligência Geoespacial",
+          "kind": "association",
+          "evidence": "O cadastro associativo descreve aplicações comerciais de imagens de satélite e apresenta endereço em Florianópolis.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fs-geotecnologias",
+      "name": "FS Geotecnologias",
+      "aliases": [],
+      "city": "São José",
+      "state": "SC",
+      "presence": "Base declarada no site comercial",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Oferece análise de dados orbitais e desenvolvimento de aplicações de inteligência geoespacial.",
+      "technologies": [
+        "Imagens de satélite",
+        "IA geoespacial",
+        "WebGIS",
+        "GNSS"
+      ],
+      "markets": [
+        "Meio ambiente",
+        "Engenharia",
+        "Mineração",
+        "Saneamento",
+        "Logística"
+      ],
+      "notes": "Evidência autodeclarada no site comercial. Clientes, escala operacional e registro empresarial não foram auditados.",
+      "sources": [
+        {
+          "url": "https://www.fsgeotecnologias.com.br/",
+          "title": "FS Geotecnologias — empresa e serviços",
+          "evidence": "O site apresenta endereço em São José e serviços de integração de imagens orbitais, drones e sensores para análises e alertas.",
+          "supports": ["location", "offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://www.fsgeotecnologias.com.br/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "hexagon-agriculture",
+      "name": "Hexagon Agriculture — unidade de Florianópolis",
+      "aliases": ["Arvus, aquisição histórica"],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Unidade de atendimento e operação local",
+      "website": "https://hexagon.com/company/divisions/agriculture",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Desenvolve e dá suporte a guiamento e automação agrícola e florestal baseados em posicionamento por satélite.",
+      "technologies": [
+        "GNSS",
+        "GPS",
+        "Correção TerraStar",
+        "Piloto automático",
+        "Agricultura de precisão"
+      ],
+      "markets": [
+        "Guiamento e automação de máquinas agrícolas",
+        "Silvicultura de precisão",
+        "Correção de posicionamento"
+      ],
+      "notes": "Contar como unidade operacional catarinense, sem atribuir ao estado todos os resultados globais da Hexagon. Arvus foi adquirida em 2014. Não contar Arvus e Hexagon Agriculture como atores atuais independentes sem validação societária.",
+      "sources": [
+        {
+          "url": "https://helpcenter.hexagonagriculture.com/1389574/en-us/Content/Frequently%20asked%20questions/FAQ.htm",
+          "title": "helpcenter.hexagonagriculture.com",
+          "kind": "corporate_support",
+          "evidence": "Endereço de atendimento em Florianópolis; suporte para compra de correção GNSS TerraStar e equipamentos Ti5/Ti7/Ti10.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://hexagon.com/es/company/divisions/agriculture",
+          "title": "hexagon.com",
+          "kind": "corporate",
+          "evidence": "Lista escritório de Florianópolis e portfólio Agriculture.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://hexagon.com/company/newsroom/press-releases/2014/hexagon-acquire-arvus",
+          "title": "hexagon.com",
+          "kind": "corporate_acquisition",
+          "evidence": "Aquisição da Arvus sediada em Florianópolis, produtos de agricultura e floresta apoiados em GPS.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "horus",
+      "name": "Horus Smart Detections",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://horus.global/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Mantém oferta comercial de monitoramento urbano e ambiental com satélites e drones, além de inspeções aéreas de infraestrutura.",
+      "technologies": [
+        "Imagens de satélite",
+        "Drones",
+        "Inteligência artificial",
+        "Visão computacional"
+      ],
+      "markets": ["Cidades", "Meio ambiente", "Energia", "Telecomunicações"],
+      "notes": "Mappa aparece como plataforma/parceria no case histórico: não contar como segunda empresa sem comprovar identidade societária. Muitas ofertas atuais são exclusivamente aéreas e não devem ser descritas como satelitais.",
+      "sources": [
+        {
+          "url": "https://horus.global/en/homepage/",
+          "title": "Horus — Página comercial atual",
+          "kind": "company",
+          "evidence": "A seção Smart Cities anuncia monitoramento com satélites e drones; o rodapé informa endereço em Florianópolis e CNPJ 19.664.563/0001-02.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://horus.global/blog/sistema-monitoramento-prefeituras/",
+          "title": "Horus — Sistema Monitora para prefeituras",
+          "kind": "company",
+          "evidence": "Case de implantação municipal descreve análise temporal por satélite combinada a drones e base cadastral da prefeitura.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2019-10-09"
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ilhageo",
+      "name": "IlhaGeo Geotecnologias",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Base declarada em Jurerê",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Oferece geoprocessamento e interpretação de imagens orbitais para aplicações geológicas e ambientais.",
+      "technologies": [
+        "Imagens de satélite",
+        "Deep learning",
+        "WebGIS",
+        "Sentinel-2"
+      ],
+      "markets": [
+        "Geologia",
+        "Meio ambiente",
+        "Imobiliário",
+        "Recursos naturais"
+      ],
+      "notes": "Incluir pela oferta orbital explícita, não pelas atividades de geotecnia em geral. Alegações promocionais de pioneirismo e desempenho não foram verificadas.",
+      "sources": [
+        {
+          "url": "https://www.ilhageo.com.br/",
+          "title": "IlhaGeo — base e soluções",
+          "evidence": "A apresentação comercial informa base em Florianópolis e oferece análise de imagens orbitais com IA, detecção de mudanças e monitoramento ambiental.",
+          "supports": ["location", "offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.ilhageo.com.br/servicos/geoprocessamento",
+          "title": "IlhaGeo — geoprocessamento",
+          "evidence": "A página de serviços descreve aplicações de séries temporais de imagens em vigor vegetal, desmatamento e alterações territoriais.",
+          "supports": ["offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://www.ilhageo.com.br/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "metos-brasil",
+      "name": "METOS Brasil / representante Pessl Instruments",
+      "aliases": [],
+      "city": "Itajaí",
+      "state": "SC",
+      "presence": "representante_comercial_local",
+      "website": "https://metos.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "weather_intelligence",
+      "description": "Comercializa boletins de inteligência climática que combinam imagens orbitais e modelagem para decisões agrícolas.",
+      "technologies": [
+        "Imagens de satélite",
+        "Modelagem meteorológica",
+        "Agrometeorologia",
+        "Sensores",
+        "Comunicação por satélite"
+      ],
+      "markets": ["Agricultura", "Clima"],
+      "notes": "Oferta de inteligência climática documentada no site. Também representa sensores Pessl e apresenta opção de transmissão satelital, sem implicar que toda estação ou serviço use esse enlace.",
+      "sources": [
+        {
+          "url": "https://metos.com.br/solucao/inteligencia-climatica-operacional/",
+          "title": "METOS — Inteligência Climática Operacional",
+          "kind": "empresa",
+          "evidence": "A oferta comercial descreve boletim semanal em PDF com imagens de satélite e publica endereço em Itajaí.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://metos.com.br/",
+          "title": "metos.com.br",
+          "kind": "primary",
+          "evidence": "FAQ oficial descreve transmissão automática por celular, Wi-Fi ou satélite; plataforma e serviços comerciais apoiam agricultura e outros setores.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://metos.com.br/fale-conosco/",
+          "title": "metos.com.br",
+          "kind": "primary",
+          "evidence": "Contato oficial informa Rua Oswaldo Pereira, 61, Itajaí/SC.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://metos.com.br/sobre-a-metos/",
+          "title": "metos.com.br",
+          "kind": "primary",
+          "evidence": "Apresenta METOS Brasil como representante exclusiva da Pessl Instruments no Brasil.",
+          "supports": ["identity"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "nor-space",
+      "name": "NOR Space Intelligence",
+      "aliases": ["ORN Space", "ORN SPACE LTDA"],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Sede/endereço informado nas fontes",
+      "website": "https://www.nor.space/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Desenvolve inteligência baseada em imagens orbitais e IA para acompanhar mudanças e riscos em ativos.",
+      "technologies": [
+        "Imagens ópticas e multiespectrais",
+        "SAR",
+        "Inteligência artificial",
+        "Visão computacional"
+      ],
+      "markets": [
+        "Mineração",
+        "Energia e infraestrutura crítica",
+        "Defesa",
+        "Meio ambiente e carbono",
+        "Cidades"
+      ],
+      "notes": "O catálogo AEB usa o nome atual NOR, mas mantém orn-space-ltda no endereço da página. AEB lista 'Atividades espaciais: Não se aplica'; isso é um campo da taxonomia do catálogo e não contradiz a oferta downstream de observação da Terra.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/pt-br/catalogo/empresa/orn-space-ltda/",
+          "title": "spaceindustry.aeb.gov.br",
+          "kind": "government_catalog",
+          "evidence": "Nome NOR, município Florianópolis, endereço e oferta comercial combinando satélites e IA.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.nor.space/",
+          "title": "www.nor.space",
+          "kind": "corporate",
+          "evidence": "Soluções para monitorar ativos; endereço em Florianópolis; aplicações de SAR e imagens ópticas na oferta de defesa.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.linkedin.com/company/nor-space",
+          "title": "www.linkedin.com",
+          "kind": "corporate_profile",
+          "evidence": "Confirma sede, mudança ORN para NOR e uso de dados SAR e multiespectrais.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "quiron",
+      "name": "Quiron Digital / Quiron Soluções Agrodigitais",
+      "aliases": [],
+      "city": "Lages",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://quiron.digital/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Oferece soluções para risco de incêndios, sanidade florestal, prospecção territorial e mudanças de uso do solo com dados de satélite.",
+      "technologies": [
+        "Dados de satélite",
+        "Inteligência artificial",
+        "Sensoriamento remoto",
+        "Detecção de mudanças"
+      ],
+      "markets": [
+        "Silvicultura",
+        "Incêndios florestais",
+        "Meio ambiente",
+        "Gestão territorial"
+      ],
+      "notes": "Não confundir admissibilidade de proposta com recurso concedido. A fonte FAPESC consultada registra indeferimento; não usar como evidência de financiamento.",
+      "sources": [
+        {
+          "url": "https://quiron.digital/",
+          "title": "Quiron — Monitoramento remoto e inteligente de florestas",
+          "kind": "company",
+          "evidence": "A página comercial explicita dados obtidos por satélites, apresenta Flareless, Discover, Diagnosis e Mapper e publica endereço no Orion Parque Tecnológico, Lages.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://fapesc.sc.gov.br/wp-content/uploads/2024/10/Resultado_final_de_merito_CP_11.2024.pdf",
+          "title": "FAPESC — Resultado de mérito CP11/2024",
+          "kind": "government",
+          "evidence": "Lista Quiron Soluções Agrodigitais em Lages e projeto relacionado a dados de satélite e IA; a proposta consta como indeferida.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2024"
+        },
+        {
+          "url": "https://quiron.digital/politica-de-privacidade/",
+          "title": "Quiron — identificação institucional",
+          "kind": "empresa",
+          "evidence": "A política identifica a pessoa jurídica Quiron Soluções Agrodigitais e sede em Lages.",
+          "supports": ["location", "identity"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2023-03-10"
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "remap",
+      "name": "REMAP Geotecnologia",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Sede/endereço informado nas fontes",
+      "website": "https://remapgeo.com/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Produz mapeamentos agrícolas e ambientais e aplicações WebGIS com ciência de dados e sensoriamento orbital.",
+      "technologies": [
+        "Sensoriamento remoto orbital",
+        "Inteligência artificial",
+        "Ciência de dados",
+        "WebGIS",
+        "APIs geoespaciais"
+      ],
+      "markets": [
+        "Agricultura",
+        "Silvicultura",
+        "Irrigação",
+        "Monitoramento ambiental",
+        "Crédito rural e conformidade socioambiental"
+      ],
+      "notes": "Site atual é aplicação JavaScript; páginas antigas ainda indexadas fornecem informações técnicas e endereço. Evidência independente de aplicação consta na metodologia MapBiomas Collection 10.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/pt-br/catalogo/empresa/remap-geotecnologia/",
+          "title": "spaceindustry.aeb.gov.br",
+          "kind": "government_catalog",
+          "evidence": "Sede Florianópolis, sensoriamento remoto, IA, WebGIS, mapeamento agrícola e monitoramento ambiental.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://remapgeo.com/contact/",
+          "title": "remapgeo.com",
+          "kind": "corporate",
+          "evidence": "A empresa identifica Florianópolis como sua sede.",
+          "supports": ["location", "identity"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://remapgeo.com/cruzamento-e-analise-de-dados-espaciais/",
+          "title": "remapgeo.com",
+          "kind": "corporate",
+          "evidence": "Oferta de API, modelos para uso/cobertura, desmatamento e práticas agrícolas; integração de MapBiomas e CAR.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://brasil.mapbiomas.org/wp-content/uploads/sites/4/2025/08/Agriculture-and-Forest-Plantation-Appendix-ATBD-Collection-10-v1.pdf",
+          "title": "brasil.mapbiomas.org",
+          "kind": "project_partner_methodology",
+          "evidence": "Documento atribui à REMAP mapeamento de agricultura, plantações florestais e irrigação a partir da coleção 9.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.linkedin.com/company/remapgeo",
+          "title": "www.linkedin.com",
+          "kind": "corporate_profile",
+          "evidence": "Perfil corporativo explicita imagens de satélite e sede catarinense.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "rotaexata",
+      "name": "RotaExata Software",
+      "aliases": [],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "local_publicado",
+      "website": "https://www.rotaexata.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Plataforma comercial de rastreamento GPS, gestão e roteirização de frotas.",
+      "technologies": ["GPS", "GSM/GPRS"],
+      "markets": ["Frotas", "Logística"],
+      "notes": "GNSS downstream; não afirmar que o enlace de comunicação da frota é satelital. Artigo técnico é antigo, mas página comercial atual mantém produto e endereço.",
+      "sources": [
+        {
+          "url": "https://www.rotaexata.com.br/",
+          "title": "www.rotaexata.com.br",
+          "kind": "primary",
+          "evidence": "Site apresenta módulos de rastreamento, gestão e roteirização; rodapé informa Rua Cuiabá, 32, Costa e Silva, Joinville.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.rotaexata.com.br/blog/beneficios-do-rastreador-veicular/",
+          "title": "www.rotaexata.com.br",
+          "kind": "primary",
+          "evidence": "Artigo oficial identifica GPS como tecnologia utilizada pela RotaExata e distingue posicionamento satelital da transmissão por GPRS.",
+          "supports": ["identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "visaogeo",
+      "name": "VisãoGeo",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://visaogeo.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Oferece geotecnologia e governança de ativos territoriais, com evidência pública de uso de imagens orbitais e GPS.",
+      "technologies": [
+        "Imagens de satélite",
+        "GPS",
+        "Geoprocessamento",
+        "Sensoriamento remoto"
+      ],
+      "markets": [
+        "Energia",
+        "Mineração",
+        "Infraestrutura",
+        "Regularização fundiária"
+      ],
+      "notes": "A evidência técnica orbital mais específica está em textos comerciais históricos ainda publicados; confirmar portfólio atual e participação na receita.",
+      "sources": [
+        {
+          "url": "https://visaogeo.com.br/",
+          "title": "VisãoGeo — Página institucional",
+          "kind": "company",
+          "evidence": "A página comercial lista setores de energia, mineração e infraestrutura e publica endereço no Parque Tecnológico Alfa, Florianópolis.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://visaogeo.com.br/quais-sao-os-servicos-e-solucoes-oferecidas-pela-visaogeo/",
+          "title": "VisãoGeo — Serviços e soluções",
+          "kind": "company",
+          "evidence": "A empresa descreve coleta a partir de sensoriamento remoto com imagens de satélite e GPS.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2022-01-13"
+        },
+        {
+          "url": "https://visaogeo.com.br/mapeamento-com-imagens-de-satelite-entenda-por-que-e-a-melhor-solucao/",
+          "title": "VisãoGeo — Mapeamento com imagens de satélite",
+          "kind": "company",
+          "evidence": "Artigo comercial apresenta o serviço e relaciona imagens Landsat a mapeamento, uso da terra e gestão ambiental.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2020-04-23"
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "aguiasat",
+      "name": "ÁguiaSat Sistemas",
+      "aliases": [],
+      "city": "Tubarão",
+      "state": "SC",
+      "presence": "sede_declarada",
+      "website": "https://aguiasatsistemas.com.br/post/aguiasat-celebra-13-anos-de-historia-com-tecnologia-seguranca-e-confianca/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Serviços comerciais de localização GPS, monitoramento, gestão de ativos e rotas para frotas, cargas, equipamentos e embarcações.",
+      "technologies": ["GPS", "GSM/GPRS"],
+      "markets": ["Frotas", "Logística"],
+      "notes": "Nome “Sat” não demonstra comunicação satelital; oferta documentada usa GPS para posição e GPRS/4G para comunicação.",
+      "sources": [
+        {
+          "url": "https://aguiasatsistemas.com.br/post/aguiasat-celebra-13-anos-de-historia-com-tecnologia-seguranca-e-confianca/",
+          "title": "aguiasatsistemas.com.br",
+          "kind": "primary",
+          "evidence": "Artigo corporativo de 13/04/2026 identifica sede em Tubarão e oferta de rastreamento com GPS, GPRS e 4G; rodapé publica endereço e CNPJ.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "agrosatelite",
+      "name": "Agrosatélite Geotecnologia Aplicada / operação integrada à Serasa Experian",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Origem e operação histórica em Florianópolis; unidade atual a validar",
+      "website": "https://www.serasaexperian.com.br/solucoes/agro/",
+      "role": "downstream",
+      "status": "historical",
+      "segment": "earth_observation",
+      "description": "Capacidade originada em Florianópolis, integrada à Serasa, para monitoramento agrícola e análise territorial com dados orbitais.",
+      "technologies": [
+        "Imagens de satélite",
+        "Sensoriamento remoto",
+        "Geoprocessamento",
+        "Inteligência artificial"
+      ],
+      "markets": [
+        "Mapeamento de culturas",
+        "Monitoramento de safras",
+        "Risco e crédito rural",
+        "Conformidade socioambiental"
+      ],
+      "notes": "Aquisição pela Serasa em 2023 e continuidade da capacidade comercial são documentadas. A localização atual da equipe oriunda de Florianópolis requer confirmação. Não contar Serasa e Agrosatélite separadamente nem afirmar situação cadastral independente. Não foi realizada consulta Receita/JUCESC.",
+      "sources": [
+        {
+          "url": "https://www.serasaexperian.com.br/conteudos/serasa-experian-e-agrosatelite-sinergia-de-propositos-e-solucoes-fortalece-atuacao-no-agronegocio/",
+          "title": "www.serasaexperian.com.br",
+          "kind": "corporate_parent",
+          "evidence": "Aquisição em 2023; monitoramento agrícola por imagens orbitais; integração de dados agrícolas e IA.",
+          "supports": ["identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://br.linkedin.com/company/agrosatelite",
+          "title": "br.linkedin.com",
+          "kind": "corporate_profile",
+          "evidence": "Perfil corporativo informa sede em Florianópolis e integração à Serasa Experian.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.serasaexperian.com.br/sala-de-imprensa/agronegocios/imagens-de-satelite-otimizam-monitoramento-de-soja-no-brasil-explica-serasa-experian-em-novo-ano-de-parceria-com-o-rally-da-safra/",
+          "title": "www.serasaexperian.com.br",
+          "kind": "corporate_parent",
+          "evidence": "Ofertas Crop Maps e Crop Monitor e processamento comercial de imagens de satélite.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://gradmeteorologia.paginas.ufsc.br/files/2015/12/Edital_estagio_satelite_menor.pdf",
+          "title": "UFSC — edital histórico da Agrosatélite",
+          "kind": "universidade",
+          "evidence": "Anúncio histórico identifica fundação e endereço da Agrosatélite em Florianópolis e atuação em sensoriamento remoto.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2015-12"
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "geomais",
+      "name": "GeoMais Geotecnologia",
+      "aliases": [],
+      "city": "São José",
+      "state": "SC",
+      "presence": "Endereço da empresa em site e contrato",
+      "role": "downstream",
+      "status": "historical",
+      "segment": "earth_observation",
+      "description": "Combina SIG e cadastro territorial com fornecimento e processamento de imagens orbitais para municípios.",
+      "technologies": [
+        "Imagens de satélite",
+        "SIG",
+        "Cadastro multifinalitário"
+      ],
+      "markets": [
+        "Gestão municipal",
+        "Planejamento urbano",
+        "Cadastro imobiliário"
+      ],
+      "notes": "O vínculo orbital está documentado em contrato de 2022 com entregas previstas para 2023–2024. A oferta comercial atual enfatiza SIG, aerofotogrametria e imageamento terrestre; confirmar continuidade do fornecimento orbital.",
+      "sources": [
+        {
+          "url": "https://www.geomais.com.br/",
+          "title": "GeoMais — apresentação institucional",
+          "evidence": "O site comercial informa endereço em São José e soluções digitais para gestão territorial urbana.",
+          "supports": ["location", "offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://licitacoes.itapoa.sc.gov.br/uploads/sites/322/2023/07/2504463_Contrato_Adm_n_108_22___Geomais.pdf",
+          "title": "Município de Itapoá — contrato 108/2022",
+          "evidence": "O contrato da GeoMais contém fornecimento de imagens de satélite com resolução de 40 cm ou melhor para 2023 e 2024.",
+          "supports": ["offering"],
+          "kind": "contrato_publico",
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2022"
+        },
+        {
+          "url": "https://santarosa.rs.gov.br/downloads_ver.php?dow_id=2819",
+          "title": "Santa Rosa — inexigibilidade de 2018",
+          "evidence": "Publicação municipal identifica a contratada em São José e serviço de correção e georreferenciamento de imagem orbital.",
+          "supports": ["identity", "offering"],
+          "kind": "governo",
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2018-04-02"
+        }
+      ],
+      "website": "https://www.geomais.com.br/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "satmaps",
+      "name": "SatMaps",
+      "aliases": [],
+      "city": null,
+      "state": null,
+      "presence": "localização não confirmada em fonte primária",
+      "website": "https://www.satmaps.com.br/",
+      "role": "downstream",
+      "status": "pending",
+      "segment": "earth_observation",
+      "description": "Comercializa pôsteres e mapas turísticos baseados em imagens de satélite, incluindo Landsat 7.",
+      "technologies": [
+        "Imagens Landsat 7",
+        "Processamento de imagens",
+        "Cartografia"
+      ],
+      "markets": ["Turismo", "Cartografia editorial", "Comunicação visual"],
+      "notes": "Localização catarinense permanece pendente em fonte primária. DDD 48 e mapa de Florianópolis não bastam para comprovar sede. Não incluir em contagem confirmada de empresas em SC.",
+      "sources": [
+        {
+          "url": "https://www.satmaps.com.br/",
+          "title": "SatMaps — Coleção e projetos especiais",
+          "kind": "company",
+          "evidence": "O site comercial descreve mapas e pôsteres com imagens de satélite, modelos Landsat 7 e venda sob encomenda; não apresenta município da sede.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "tecnoraster",
+      "name": "Tecnoraster Soluções em Rastreamento",
+      "aliases": [],
+      "city": "Blumenau",
+      "state": "SC",
+      "presence": "local_publicado",
+      "website": "https://tecnoraster.com.br/sistema-de-rastreamento-veicular-tecnoraster/",
+      "role": "downstream",
+      "status": "pending",
+      "segment": "gnss",
+      "description": "Oferta comercial GPS e GSM/GPRS confirmada; cidade em SC ainda depende de fonte corporativa primária mais forte.",
+      "technologies": ["GPS", "GSM/GPRS"],
+      "markets": ["Frotas", "Logística"],
+      "notes": "Localização Blumenau aparece no perfil corporativo LinkedIn https://br.linkedin.com/company/tecnoraster mas endereço primário não foi recuperado. Manter pendente para critério territorial estrito.",
+      "sources": [
+        {
+          "url": "https://tecnoraster.com.br/sistema-de-rastreamento-veicular-tecnoraster/",
+          "title": "tecnoraster.com.br",
+          "kind": "primary",
+          "evidence": "Página comercial distingue informação de posição GPS da comunicação GSM/GPRS e oferece monitoramento/controle de veículos.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://tecnoraster.com.br/",
+          "title": "tecnoraster.com.br",
+          "kind": "primary",
+          "evidence": "Página atual oferece sistema comercial de rastreamento GPS e serviços para frotas.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://br.linkedin.com/company/tecnoraster",
+          "title": "Tecnoraster — perfil corporativo",
+          "kind": "perfil_corporativo",
+          "evidence": "Perfil corporativo indica Blumenau; o endereço primário de estabelecimento ainda precisa ser confirmado.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "chaccau",
+      "name": "CHACCAU Equipamentos Agrícolas",
+      "aliases": [],
+      "city": "Lebon Régis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://chaccau.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Oferta GPS agrícolas, torres RTK e direção automática FJD AT2 baseada em GNSS/RTK a clientes do agronegócio.",
+      "technologies": [
+        "GNSS",
+        "RTK",
+        "Piloto automático agrícola",
+        "FJD AT2",
+        "PPP",
+        "SBAS"
+      ],
+      "markets": ["Agricultura de precisão", "Mecanização agrícola"],
+      "notes": "Empresa de comércio e suporte agrícola, não fabricante nacional da tecnologia FJD. Não misturar a receita de irrigação com a parcela espacial.",
+      "sources": [
+        {
+          "url": "https://chaccau.com.br/",
+          "title": "CHACCAU — Equipamentos e georreferenciamento",
+          "kind": "company",
+          "evidence": "O catálogo comercial explicita GNSS e RTK no sistema FJD AT2 e o rodapé identifica Lebon Régis/SC e CNPJ 03.071.152/0001-73.",
+          "supports": ["location", "identity", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "dallabrida",
+      "name": "Dallabrida Engenharia",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://dallabridaengenharia.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Presta levantamentos cadastrais e georreferenciamento com infraestrutura que inclui receptores GNSS RTK e GPS.",
+      "technologies": [
+        "GNSS RTK",
+        "GPS de navegação",
+        "Georreferenciamento",
+        "LiDAR",
+        "Fotogrametria"
+      ],
+      "markets": [
+        "Construção civil",
+        "Cartografia",
+        "Meio ambiente",
+        "Regularização fundiária"
+      ],
+      "notes": "Aplicadora de navegação/posicionamento, sem evidência encontrada de oferta de análise de imagens orbitais.",
+      "sources": [
+        {
+          "url": "https://dallabridaengenharia.com.br/",
+          "title": "Dallabrida — Empresa, infraestrutura e serviços",
+          "kind": "company",
+          "evidence": "A página lista GNSS RTK e GPS de navegação, serviços topográficos e georreferenciamento, e endereço em Florianópolis.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "engmetria",
+      "name": "Engmetria Projetos e Licenciamentos",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://engmetria.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Aplica receptores e sistemas GNSS/RTK a levantamentos topográficos, geodésicos e hidrográficos para projetos de engenharia.",
+      "technologies": [
+        "GNSS multiconstelação",
+        "RTK",
+        "PPK",
+        "Drones",
+        "Batimetria"
+      ],
+      "markets": [
+        "Infraestrutura",
+        "Mineração",
+        "Meio ambiente",
+        "Regularização fundiária"
+      ],
+      "notes": "Incluir na camada de aplicações GNSS. Não inferir processamento de imagens de satélite a partir de fotogrametria ou LiDAR.",
+      "sources": [
+        {
+          "url": "https://engmetria.com.br/",
+          "title": "Engmetria — Página institucional",
+          "kind": "company",
+          "evidence": "A empresa declara sede em Florianópolis e oferta comercial para infraestrutura, mineração, ambiente e regularização.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://engmetria.com.br/equipamentos/",
+          "title": "Engmetria — Equipamentos",
+          "kind": "company",
+          "evidence": "Lista GNSS Gintec F90/F100 com suporte a sistemas de satélite e veículo hidrográfico equipado com GNSS/RTK.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "hazas",
+      "name": "Hazas Topografia",
+      "aliases": [],
+      "city": "Paulo Lopes",
+      "state": "SC",
+      "presence": "sede declarada",
+      "website": "https://hazastopografia.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Oferece levantamentos e regularização territorial com uso declarado de equipamentos GNSS; sede comercial publicada em Paulo Lopes.",
+      "technologies": ["GNSS", "Drones", "Topografia"],
+      "markets": [
+        "Construção civil",
+        "Agronegócio",
+        "Regularização fundiária",
+        "Obras"
+      ],
+      "notes": "A abrangência Grande Florianópolis não deve ser confundida com sede no município de Florianópolis. Papel de aplicação GNSS, não fabricante de tecnologia espacial.",
+      "sources": [
+        {
+          "url": "https://hazastopografia.com.br/sobre/",
+          "title": "Hazas — Sobre a empresa",
+          "kind": "company",
+          "evidence": "A história relata investimento em GNSS e o rodapé publica endereço em Paulo Lopes/SC.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "metrica-geoengenharia",
+      "name": "Métrica Geoengenharia e Aerolevantamentos",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Escritório publicado em Florianópolis",
+      "website": "https://www.metricageoengenharia.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Oferece levantamentos de engenharia e georreferenciamento com posicionamento GNSS.",
+      "technologies": ["GNSS geodésico", "Topografia", "Batimetria"],
+      "markets": ["Engenharia", "Regularização fundiária"],
+      "notes": "Oferece levantamentos com GNSS geodésico e informa endereço próprio em Florianópolis. Não inferir origem orbital das imagens de aerolevantamento.",
+      "sources": [
+        {
+          "url": "https://www.metricageoengenharia.com.br/",
+          "title": "www.metricageoengenharia.com.br",
+          "kind": "empresa",
+          "evidence": "Oferta de topografia/batimetria com GNSS; escritório Florianópolis.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "nolla-geotecnologias",
+      "name": "Nolla Geotecnologias",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Sede/endereço informado nas fontes",
+      "website": "https://nollageo.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Comercializa receptores GNSS e soluções de geomática para posicionamento profissional.",
+      "technologies": ["GNSS RTK", "GPS", "Geomática"],
+      "markets": [
+        "Comércio e suporte a equipamentos de posicionamento",
+        "Agrimensura e topografia"
+      ],
+      "notes": "Contar em categoria de distribuição/integração GNSS, não como produtora de imagens ou operadora de satélites.",
+      "sources": [
+        {
+          "url": "https://nollageo.com.br/",
+          "title": "nollageo.com.br",
+          "kind": "corporate",
+          "evidence": "Catálogo GNSS RTK Topcon HiPer VR e endereço de Florianópolis na mesma página.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://agrimensura.florianopolis.ifsc.edu.br/publicacoes/vagas/emprego/",
+          "title": "agrimensura.florianopolis.ifsc.edu.br",
+          "kind": "public_institution",
+          "evidence": "Anúncio da Nolla em 12/04/2024 confirma nome, representação Topcon e endereço catarinense.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "sologeo",
+      "name": "SoloGeo",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "endereços comerciais em Florianópolis e Balneário Camboriú",
+      "website": "https://www.sologeo.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Oferta topografia e georreferenciamento com GPS geodésico, além de sondagem e mapeamento aéreo.",
+      "technologies": [
+        "GPS geodésico",
+        "Georreferenciamento",
+        "Drones",
+        "LiDAR"
+      ],
+      "markets": [
+        "Construção civil",
+        "Regularização fundiária",
+        "Infraestrutura"
+      ],
+      "notes": "As atividades de sondagem e LiDAR aéreo não são espaciais por si. Manter separado o recorte de serviços baseados em GNSS.",
+      "sources": [
+        {
+          "url": "https://www.sologeo.com.br/",
+          "title": "SoloGeo — Soluções e contato",
+          "kind": "company",
+          "evidence": "O site inclui GPS geodésico na oferta topográfica e publica endereços em Florianópolis e Balneário Camboriú.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "sulgeo-tecnologias",
+      "name": "SulGeo-Tecnologias",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Sede/endereço informado nas fontes",
+      "website": "https://www.sulgeotecnologias.com.br/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Comercializa e loca receptores GNSS RTK e oferece suporte a profissionais de geomensura.",
+      "technologies": ["GNSS RTK"],
+      "markets": [
+        "Venda e locação de receptores de posicionamento",
+        "Topografia e georreferenciamento"
+      ],
+      "notes": "Oferta de equipamentos GNSS é downstream de navegação/posicionamento. Não atribuir capacidade de sensoriamento orbital.",
+      "sources": [
+        {
+          "url": "https://www.sulgeotecnologias.com.br/contato",
+          "title": "www.sulgeotecnologias.com.br",
+          "kind": "corporate",
+          "evidence": "Página declara venda e locação de GNSS RTK e endereço próprio em Florianópolis.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "tctec-itajai",
+      "name": "TCTEC Telecom / Trucks Comércio e Tecnologia — unidade Itajaí",
+      "aliases": [],
+      "city": "Itajaí",
+      "state": "SC",
+      "presence": "unidade/filial documentada; matriz fora de SC",
+      "website": "https://www.tctectelecom.com/",
+      "role": "integrator",
+      "status": "documented",
+      "segment": "satellite_communications",
+      "description": "Há unidade catarinense identificada em contratos federais de serviços móveis globais por satélite; a marca desenvolve conectividade e IoT para operações remotas.",
+      "technologies": [
+        "Iridium",
+        "Inmarsat",
+        "IoT",
+        "M2M",
+        "GNSS",
+        "Comunicação satelital"
+      ],
+      "markets": [
+        "Energia",
+        "Agronegócio",
+        "Mineração",
+        "Defesa",
+        "Marítimo",
+        "Aviação",
+        "Logística"
+      ],
+      "notes": "Classificar como presença local por unidade/filial, não como sede catarinense. O alvará de Itajaí de 2024 descreve escritório virtual: https://www.sertras.com/v3/wp-content/uploads/formidable/65/27755427000580-Inscricao-Municipal-18-11-2024.pdf . Confirmar estrutura física e equipes locais.",
+      "sources": [
+        {
+          "url": "https://www.gov.br/pf/pt-br/assuntos/licitacoes/2025/diretoria-de-tecnologia-da-informacao-e-inovacao-dti/contratos/contrato-10-2025-dti-pf/sei_66935195_contrato.pdf",
+          "title": "Polícia Federal — Contrato 10/2025-DTI/PF",
+          "kind": "government",
+          "evidence": "O contrato identifica o CNPJ 27.755.427/0005-80 em Itajaí e tem objeto SMGS do sistema Iridium.",
+          "supports": ["location", "identity"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025"
+        },
+        {
+          "url": "https://www.gov.br/casacivil/pt-br/acesso-a-informacao/licitacoes-e-contratos/secretaria-de-administracao/contratos/2025/contrato-ndeg-59-2025/sei-00094-000366_2025-43-ct-59.pdf",
+          "title": "Casa Civil — Contrato 59/2025",
+          "kind": "government",
+          "evidence": "A mesma unidade Itajaí figura como contratada em serviços de dados satelitais Inmarsat em banda L.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025-12-19"
+        },
+        {
+          "url": "https://www.tctectelecom.com/",
+          "title": "TCTEC Telecom — Site comercial",
+          "kind": "company",
+          "evidence": "Oferta atual de IoT e comunicação satelital para setores industriais e operações críticas.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.viasat.com/enterprise/elevate/find/partners/tctec-telecom/",
+          "title": "Viasat — Perfil da parceira TCTEC",
+          "kind": "partner",
+          "evidence": "A operadora descreve soluções integradas de rastreamento, comunicação e GNSS e informa sede da marca em Londrina/PR.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "brf-mbrf",
+      "name": "BRF — operação do grupo MBRF",
+      "aliases": [],
+      "city": "Itajaí",
+      "state": "SC",
+      "presence": "Operação com base histórica e presença industrial catarinense",
+      "role": "end_user",
+      "status": "documented",
+      "segment": "earth_observation",
+      "description": "Aplica imagens orbitais à análise socioambiental de fornecedores de grãos.",
+      "technologies": [
+        "Imagens de satélite",
+        "SIG",
+        "Monitoramento de fornecedores"
+      ],
+      "markets": ["Alimentos", "Cadeias agropecuárias", "Sustentabilidade"],
+      "notes": "É usuária industrial, não fornecedora de serviços espaciais. O endereço de sede BRF é do relatório 2024; a estrutura societária passou a MBRF em 2025. A evidência de aplicação é corporativa, não prova implantação por planta em SC.",
+      "sources": [
+        {
+          "url": "https://www.brf-global.com/sustentabilidade/nossa-parte-pelo-todo/",
+          "title": "BRF — monitoramento de fornecedores",
+          "evidence": "A política corporativa descreve acompanhamento socioambiental de fornecedores por SIG e imagens de satélite e apresenta presença produtiva em SC.",
+          "supports": ["usage"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.brf-global.com/wp-content/uploads/2025/05/Relatorio-Integrado-BRF.pdf",
+          "title": "BRF — relatório integrado 2024",
+          "evidence": "O relatório informa sede em Itajaí e descreve a operação industrial da BRF.",
+          "supports": ["location"],
+          "kind": "relatorio_corporativo",
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025"
+        },
+        {
+          "url": "https://www.mbrf.com/noticia/mbrf-recebe-premio-de-fusao-do-ano-da-latinfinance-em-nova-york/",
+          "title": "MBRF — fusão BRF e Marfrig",
+          "evidence": "Comunicado da companhia informa conclusão da fusão em setembro de 2025.",
+          "supports": ["identity"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2026-02-04"
+        }
+      ],
+      "website": "https://www.brf-global.com/sustentabilidade/nossa-parte-pelo-todo/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "corporate"
+    },
+    {
+      "id": "celesc",
+      "name": "Celesc",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "sede_e_uso_local",
+      "website": "https://www.celesc.com.br/listagem-noticias/celesc-elimina-pontos-cegos-de-comunicacao-com-uso-de-internet-via-satelite-em-toda-a-frota-de-emergencia",
+      "role": "end_user",
+      "status": "documented",
+      "segment": "satellite_communications",
+      "description": "Distribuidora elétrica catarinense relata uso de Starlink em frota de emergência.",
+      "technologies": ["Starlink", "Comunicação por satélite"],
+      "markets": ["Energia"],
+      "notes": "Usuária final de conectividade, não fornecedora downstream. A notícia de 02/06/2026 descreve aplicação na frota catarinense. A URL direta apresentou resposta 404 em uma tentativa; conteúdo recuperado pelo índice de busca, revalidar disponibilidade do link.",
+      "sources": [
+        {
+          "url": "https://www.celesc.com.br/listagem-noticias/celesc-elimina-pontos-cegos-de-comunicacao-com-uso-de-internet-via-satelite-em-toda-a-frota-de-emergencia",
+          "title": "www.celesc.com.br",
+          "kind": "primary",
+          "evidence": "Notícia corporativa de 02/06/2026 documenta internet satelital na frota; papel é usuária final.",
+          "supports": ["usage"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.celesc.com.br/listagem-noticias/celesc-e-uma-das-primeiras-distribuidoras-do-pais-a-usar-starlink-em-toda-a-frota-de-atendimento-emergencial",
+          "title": "Celesc — anúncio de adoção Starlink",
+          "kind": "empresa",
+          "evidence": "Anúncio corporativo apresenta adoção de conectividade satelital na frota emergencial catarinense.",
+          "supports": ["location", "usage"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025-10-14"
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "local_sc"
+    },
+    {
+      "id": "klabin-sc",
+      "name": "Klabin — operações em Santa Catarina",
+      "aliases": [],
+      "city": "Otacílio Costa",
+      "state": "SC",
+      "presence": "Unidades industriais e florestais em SC; sede do grupo fora do estado",
+      "role": "end_user",
+      "status": "pending",
+      "segment": "satellite_communications",
+      "description": "Grupo industrial com presença catarinense e caso corporativo de conectividade satelital; implantação em SC ainda precisa de confirmação.",
+      "technologies": [
+        "Comunicação por satélite",
+        "Starlink",
+        "Gestão de operações florestais"
+      ],
+      "markets": ["Florestas", "Papel e celulose", "Logística"],
+      "notes": "A fonte de 22/12/2023 informa implantação inicial no Paraná e expansão futura para Santa Catarina. Não comprova implantação catarinense. Registrar como demanda a verificar, não como fornecedor ou caso local concluído.",
+      "sources": [
+        {
+          "url": "https://klabin.com.br/reputacao/press-releases/-/2023-12-22-klabin-torre-florestal-faz-controle-on-line-do-transporte-de-madeira-1",
+          "title": "Klabin — torre de controle florestal",
+          "evidence": "A companhia descreve contratação de conectividade satelital para acompanhar operações florestais e transporte de madeira.",
+          "supports": ["usage"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2023-12-22"
+        },
+        {
+          "url": "https://klabin.com.br/en/nossa-essencia/onde-estamos",
+          "title": "Klabin — unidades",
+          "evidence": "A relação oficial apresenta unidades em Otacílio Costa, Correia Pinto, Lages e Itajaí.",
+          "supports": ["location"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://klabin.com.br/reputacao/press-releases/-/2023-12-22-klabin-torre-florestal-faz-controle-on-line-do-transporte-de-madeira-1",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_confirmed"
+    },
+    {
+      "id": "oceansat-treinamentos",
+      "name": "Oceansat do Brasil Treinamentos",
+      "aliases": [],
+      "city": "Itajaí",
+      "state": "SC",
+      "presence": "sede_historica_credenciamento",
+      "website": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=04%2F04%2F2018&jornal=515&pagina=83",
+      "role": "adjacent",
+      "status": "historical",
+      "segment": "geospatial",
+      "description": "Credenciamento histórico para ensino profissional marítimo em Itajaí, com cursos realizados em simulador em Balneário Camboriú.",
+      "technologies": ["Simulação marítima"],
+      "markets": ["Treinamento marítimo"],
+      "notes": "Não confundir com OceanSat Connect (Holanda), Ocean-Sat (Taiwan) nem Oceansat Tecnologia Espacial para Monitoramento Ambiental (Rio de Janeiro). Falta evidência contemporânea de downstream espacial.",
+      "sources": [
+        {
+          "url": "https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=04%2F04%2F2018&jornal=515&pagina=83",
+          "title": "pesquisa.in.gov.br",
+          "kind": "primary",
+          "evidence": "DOU de 04/04/2018 credencia Oceansat do Brasil Treinamentos em Itajaí para cursos marítimos; não documenta venda de serviço espacial.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://grupoacquaplan.com.br/centro-de-simulacoes-maritimas-acquasim-torna-se-polo-de-capacitacao-da-marinha-do-brasil-para-a-regiao-sul/",
+          "title": "grupoacquaplan.com.br",
+          "kind": "primary",
+          "evidence": "Notícia de 25/07/2017 descreve cursos da Oceansat no Acquasim em Balneário Camboriú.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "geosapiens-sc",
+      "name": "GeoSapiens Tecnologia e Informação",
+      "aliases": [],
+      "city": "Itajaí",
+      "state": "SC",
+      "presence": "Endereço do site institucional",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "geospatial",
+      "description": "Desenvolve sistemas de informação e soluções de posicionamento geográfico.",
+      "technologies": ["Sistemas geográficos", "Aplicações web"],
+      "markets": ["Gestão territorial"],
+      "notes": "Não confundir com a empresa canadense de risco climático Geosapiens nem com o recurso didático espanhol homônimo. Não foi comprovada dependência orbital específica na oferta catarinense.",
+      "sources": [
+        {
+          "url": "https://www.geosapiens.com.br/",
+          "title": "GeoSapiens — identificação e contato",
+          "evidence": "O site identifica a empresa e endereço em Itajaí. A apresentação corporativa em rede profissional descreve software de posicionamento, sem detalhar GNSS.",
+          "supports": ["location", "identity", "offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://www.geosapiens.com.br/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "giscaruso",
+      "name": "GISCARUSO",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Endereço no cadastro de parceiro oficial",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "geospatial",
+      "description": "Desenvolve aplicações GIS para energia, infraestrutura e meio ambiente.",
+      "technologies": [
+        "ArcGIS",
+        "SIG",
+        "Engenharia de dados",
+        "Sensoriamento remoto"
+      ],
+      "markets": ["Energia", "Infraestrutura", "Meio ambiente"],
+      "notes": "Parceiro GIS não equivale automaticamente a empresa espacial. Há indicação de sensoriamento remoto, mas o produto orbital comercial específico requer confirmação.",
+      "sources": [
+        {
+          "url": "https://www.esri.com/partners/giscaruso-geoecnolog-a2T5x00000ACJnnEAH",
+          "title": "Esri — perfil oficial GISCARUSO",
+          "evidence": "O perfil de parceiro descreve serviços GIS e endereço em Florianópolis; identifica a origem como spin-off do grupo CARUSO.",
+          "supports": ["location", "identity"],
+          "kind": "parceiro",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://parceirosepn.img.com.br/parceiro/giscaruso/",
+          "title": "Imagem / Esri — parceiro GISCARUSO",
+          "evidence": "A página de parceiro aponta imagens e sensoriamento remoto entre as competências e informa localização catarinense.",
+          "supports": ["location"],
+          "kind": "parceiro",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://www.esri.com/partners/giscaruso-geoecnolog-a2T5x00000ACJnnEAH",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "meris-agroflorestal",
+      "name": "Meris Agroflorestal",
+      "aliases": [],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "Base declarada no site",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "geospatial",
+      "description": "Oferece execução ambiental e inteligência territorial para projetos florestais.",
+      "technologies": ["Geoprocessamento", "Sensoriamento remoto", "Drones"],
+      "markets": ["Florestas", "Meio ambiente", "Carbono"],
+      "notes": "Sensoriamento remoto também pode ser aéreo. Confirmar uso de imagens orbitais antes de incluir na contagem downstream.",
+      "sources": [
+        {
+          "url": "https://merisagroflorestal.com.br/about",
+          "title": "Meris — apresentação da empresa",
+          "evidence": "A apresentação informa base em Joinville e oferta de geoprocessamento, sensoriamento remoto e levantamentos com drones.",
+          "supports": ["location", "offering"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://merisagroflorestal.com.br/about",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "noaa-geotecnologias",
+      "name": "NOAA Geotecnologias",
+      "aliases": [],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Sede declarada no site",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "geospatial",
+      "description": "Desenvolve análises territoriais, WebGIS e consultoria de sensoriamento remoto para infraestrutura.",
+      "technologies": ["SIG", "WebGIS", "Sensoriamento remoto"],
+      "markets": ["Energia", "Infraestrutura", "Licenciamento ambiental"],
+      "notes": "O site confirma sensoriamento remoto, mas não identifica expressamente satélite ou GNSS como insumo. Não contar como downstream orbital confirmado até validar o nexo.",
+      "sources": [
+        {
+          "url": "https://noaageotecnologias.com/",
+          "title": "NOAA Geotecnologias — apresentação e serviços",
+          "evidence": "A empresa declara sede em Florianópolis, serviços de sensoriamento remoto e análises para traçados de linhas de transmissão.",
+          "supports": ["location"],
+          "kind": "empresa",
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "website": "https://noaageotecnologias.com/",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    }
+  ],
+  "excluded": [
+    {
+      "name": "ACMON Rastreamento e Telemetria",
+      "reason": "Não contar como empresa/unidade catarinense; pode entrar em mapa de fornecedores externos. Fornecedor que atende SC, mas declara expressamente não ter escritório no estado.",
+      "sources": ["https://acmon.com.br/rastreamento-veicular-santa-catarina"]
+    },
+    {
+      "name": "RPS Electronics",
+      "reason": "Atendimento em Navegantes não prova unidade permanente no estado. Fornecedor com oferta marítima satelital e atendimento a portos, mas sede publicada em Santos/SP.",
+      "sources": [
+        "https://rps-electronics.com.br/sobre-a-empresa/",
+        "https://rps-electronics.com.br/catalogo/"
+      ]
+    },
+    {
+      "name": "Geoambiente Sensoriamento Remoto",
+      "reason": "Competência orbital confirmada, mas a localização encontrada é São José dos Campos/SP. Não confundir com Geoambiente GENUINE de São José do Rio Preto/SP ou outras homônimas.",
+      "sources": [
+        "https://geoambiente.com.br/",
+        "https://pitsjc.org.br/empresas/geoambiente-sensoriamento-remoto-ltda/"
+      ]
+    },
+    {
+      "name": "Engemap",
+      "reason": "Contato próprio lista Assis/SP, São Paulo/SP e Brasília/DF. Contratos com municípios catarinenses não são evidência de unidade em SC.",
+      "sources": ["https://engemap.com.br/contato/"]
+    },
+    {
+      "name": "Aerocarta",
+      "reason": "Cadastro oficial de aerolevantamento de fevereiro de 2026 aponta sede em São Paulo/SP. Atuação nacional não prova estabelecimento catarinense.",
+      "sources": [
+        "https://www.gov.br/defesa/pt-br/assuntos/aerolevantamento/arquivos/2026/relacao-de-empresas-de-aerolevantamento-categoria-a-28_02_2026.pdf"
+      ]
+    },
+    {
+      "name": "SCCON Geospatial",
+      "reason": "AEB e site próprio indicam São Paulo/SP. A sigla SCCON não é indício de origem catarinense.",
+      "sources": [
+        "https://spaceindustry.aeb.gov.br/pt-br/catalogo/empresa/sccon-geospatial-ltda/",
+        "https://sccon.com.br/contactus"
+      ]
+    },
+    {
+      "name": "Fototerra",
+      "reason": "Site próprio informa Santana de Parnaíba/SP. Não foi comprovada unidade em SC.",
+      "sources": ["https://www.fototerra.com.br/en"]
+    },
+    {
+      "name": "GeoJá",
+      "reason": "Site e documentos oficiais apontam origem e sede São Paulo/SP; não foi encontrada evidência de unidade catarinense.",
+      "sources": [
+        "https://www.geoja.com.br/",
+        "https://www.gov.br/defesa/pt-br/assuntos/aerolevantamento/arquivos/2024/relacao-de-empresas-de-aerolevantamento-categoria-a-30_11_2024.pdf"
+      ]
+    },
+    {
+      "name": "Geovale",
+      "reason": "Buscas retornam homônimas de engenharia em São José dos Campos/SP, consultoria indiana e marca histórica da Vale. Não foi estabelecida identidade catarinense downstream.",
+      "sources": [
+        "https://www.geovale.eng.br/sobre/",
+        "https://www.geovale.com/about-us/company"
+      ]
+    },
+    {
+      "name": "Geonex",
+      "reason": "Nenhuma entidade downstream catarinense verificada nesta rodada. Resultados principais são homônimas estrangeiras; não concluir inexistência.",
+      "sources": []
+    },
+    {
+      "name": "GeoDesign",
+      "reason": "Os resultados catarinenses encontrados se referem sobretudo a método, eventos e estudos acadêmicos, não empresa comercial comprovada.",
+      "sources": ["https://www.udesc.br/faed/geolab/eventos/gdsa19"]
+    },
+    {
+      "name": "GeoOne",
+      "reason": "Site próprio demonstra capacitação em GNSS e geoprocessamento. Não foi comprovada unidade em SC nem oferta de análise orbital comercial nesta rodada.",
+      "sources": ["https://geoone.com.br/"]
+    },
+    {
+      "name": "OnixSat",
+      "reason": "Endereço primário encontrado em Londrina/PR. Unidade catarinense não comprovada nesta rodada; não concluir inexistência.",
+      "sources": [
+        "https://www.marinha.mil.br/emgepron/sites/www.marinha.mil.br.emgepron/files/contrato/contrato_26-2024.0009-00_-_onixsat_rastreamento_-_nup_61984.004025-2023-45.pdf"
+      ]
+    }
+  ]
+}
