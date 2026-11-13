@@ -78,3 +78,19 @@ test("invalid IDs, missing sources and unsafe links fail validation", () => {
     assert.throws(() => validateCompanies(data), /Conteúdo inválido/);
   }
 });
+test("upstream records stay separate from downstream suppliers and keep pending cases out of documented counts", () => {
+  const upstream = filterCompanies(dataset, { ...all, role: "upstream" });
+  assert.ok(upstream.length > 0);
+  assert.ok(upstream.every((c) => c.segment !== "earth_observation"));
+  const documented = filterCompanies(dataset, {
+    ...all,
+    role: "upstream",
+    status: "documented",
+  }).map((c) => c.id);
+  assert.ok(!documented.includes("bold-jaragua"));
+  assert.ok(!documented.includes("wega-aircraft"));
+  assert.equal(
+    filterCompanies(dataset, { ...all, query: "Catarina-A2" }).length,
+    1,
+  );
+});

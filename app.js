@@ -52,7 +52,7 @@ function hydrateIcons(root = document) {
 let project, copy, companyDataset;
 const companyFilters = {
   query: "",
-  role: "downstream",
+  role: "all",
   segment: "all",
   status: "all",
 };

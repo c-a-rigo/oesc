@@ -1967,7 +1967,7 @@ button:disabled {
 }
 .catalog-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 13px;
 }
 .catalog-metrics > .panel {
@@ -2150,6 +2150,11 @@ button:disabled {
   }
   .catalog-intro {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .catalog-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media (max-width: 650px) {

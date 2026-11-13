@@ -1,11 +1,13 @@
 {
   "metadata": {
     "asOf": "2026-11-13",
-    "title": "Empresas e aplicações downstream",
+    "title": "Empresas e aplicações upstream e downstream",
     "subtitle": "Levantamento documental da economia espacial em Santa Catarina",
-    "scope": "Empresas, marcas e unidades com oferta comercial ou uso industrial de dados e serviços espaciais e vínculo catarinense documentado ou explicitamente pendente.",
+    "scope": "Empresas, marcas, unidades e centros tecnológicos com oferta comercial, desenvolvimento ou uso industrial de sistemas, dados e serviços espaciais ou aeroespaciais e vínculo catarinense documentado ou explicitamente pendente.",
     "notice": "Levantamento documental preliminar; não é censo, certificação, relação de membros da Rede OESC ou confirmação cadastral. Contagens representam registros desta pesquisa, não o total de empresas do estado.",
     "roles": {
+      "upstream": "Fabricação e engenharia upstream",
+      "research_unit": "Institutos e centros tecnológicos",
       "downstream": "Produtos e serviços downstream",
       "integrator": "Integração, equipamentos e serviços GNSS",
       "end_user": "Indústrias e organizações usuárias",
@@ -17,6 +19,9 @@
       "pending": "Validação pendente"
     },
     "segments": {
+      "space_systems": "Satélites e sistemas espaciais",
+      "launch_propulsion": "Foguetes e propulsão",
+      "aeronautics": "Aeronáutica e mobilidade aérea",
       "earth_observation": "Observação da Terra",
       "gnss": "GNSS e posicionamento",
       "satellite_communications": "Comunicação por satélite",
@@ -25,6 +30,7 @@
     },
     "methodology": [
       "Buscar oferta comercial explícita baseada em imagens orbitais, navegação GNSS ou comunicação via satélite. GIS, IA, drones e sensoriamento remoto sem identificação do insumo orbital não bastam.",
+      "Upstream: exigir evidência de desenvolvimento, integração, teste ou fabricação de satélites, subsistemas, foguetes, aeronaves ou componentes aeronáuticos com atividade em SC. Parcerias de P&D, protocolos e negociações de homologação são registrados como tal, sem presumir fornecimento seriado.",
       "Registrar separadamente evidência da aplicação e da presença em SC. Atender clientes catarinenses não comprova sede; filial, endereço comercial e origem histórica não equivalem a sede atual.",
       "Documentada significa existência de evidência pública, frequentemente autodeclarada; não comprova operação atual, desempenho, receitas, independência jurídica ou situação cadastral.",
       "Separar fornecedores downstream, integradores/distribuidores, prestadores especializados GNSS e usuários industriais. Não somar os papéis como empresas espaciais equivalentes.",
@@ -33,6 +39,7 @@
     ],
     "nextSteps": [
       "Confirmar CNPJ e estabelecimento ativo em Receita/JUCESC, com sede, filial e grupo econômico.",
+      "Upstream e aeronáutica: consultar o catálogo CESAER/IFI-DCTA, o cadastro de organizações de manutenção da ANAC e os participantes do Polo Aeroespacial Catarinense (Fapesc, Sapiens Parque, SCTI).",
       "Solicitar validação voluntária de produtos, sensores, constelações, clientes públicos e presença de equipe local.",
       "Identificar receita, emprego e carteira de projetos especificamente relacionados a atividades espaciais, sem atribuir o porte global do grupo a SC.",
       "Ampliar prospecção no Oeste, Norte, Vale, Serra e Sul por associações setoriais, parques tecnológicos e compras públicas.",
@@ -1721,6 +1728,354 @@
       "registryVerified": false,
       "confidence": "medium",
       "usageScope": "not_applicable"
+    },
+    {
+      "aliases": ["ISI-SE", "ISI Sistemas Embarcados"],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "senai-isi-sistemas-embarcados",
+      "name": "Instituto SENAI de Inovação em Sistemas Embarcados",
+      "city": "Florianópolis",
+      "presence": "unidade declarada",
+      "website": "https://fiesc.com.br/pt-br/imprensa/o-mercado-foi-para-o-espaco",
+      "role": "research_unit",
+      "status": "documented",
+      "segment": "space_systems",
+      "description": "Desenvolve, integra e testa nanossatélites: participou do VCUB1 com a Visiona e conduz o Catarina-A2 da Constelação Catarina, com sala limpa e laboratório de sistemas espaciais.",
+      "technologies": [
+        "Nanossatélites",
+        "Integração e testes",
+        "Sistemas embarcados",
+        "Comunicação solo-bordo"
+      ],
+      "markets": [
+        "Programa espacial",
+        "Defesa civil",
+        "Agro",
+        "Monitoramento climático"
+      ],
+      "notes": "Instituto do sistema FIESC/SENAI, não empresa. Fontes de imprensa e institucionais; lançamento do Catarina-A2 e equipe local dedicada ainda devem ser confirmados.",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://fiesc.com.br/pt-br/imprensa/o-mercado-foi-para-o-espaco",
+          "title": "FIESC — O mercado foi para o espaço",
+          "kind": "industry_association",
+          "evidence": "Descreve laboratório de sistemas espaciais com sala limpa para integração e capacidade de testar satélites; integração, testes e comunicação de solo do VCUB1.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://amanha.com.br/negocios-do-sul/santa-catarina-consolida-se-como-polo-de-desenvolvimento-de-satelites",
+          "title": "Amanhã — SC consolida-se como polo de desenvolvimento de satélites",
+          "kind": "press",
+          "evidence": "Relata três a quatro projetos espaciais do instituto, incluindo VCUB1 com a Visiona e participação na Constelação Catarina.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2022-12-19"
+        },
+        {
+          "url": "https://fiesc.com.br/pt-br/imprensa/senai-e-governo-de-sc-iniciam-integracao-de-nanossatelite-ao-agro",
+          "title": "FIESC — SENAI e governo de SC iniciam integração de nanossatélite ao agro",
+          "kind": "industry_association",
+          "evidence": "Informa dois nanossatélites em desenvolvimento, um no SENAI e outro na UFSC, para alimentar sistema de previsão meteorológica.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2024-03-13"
+        },
+        {
+          "url": "https://economiasc.com/2025/10/13/nanossatelite-criado-em-sc-inicia-fase-de-testes-no-inpe/",
+          "title": "Economia SC — Nanossatélite criado em SC inicia fase de testes no INPE",
+          "kind": "press",
+          "evidence": "Catarina-A2 entra em testes de aceitação no LIT/INPE (vibração e termovácuo) antes da revisão de aceitação e do lançamento.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025-10-13"
+        }
+      ]
+    },
+    {
+      "aliases": ["CETE-SC", "Embraer Florianópolis"],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "embraer-cete-sc",
+      "name": "Embraer — Centro de Engenharia e Tecnologia de Santa Catarina (CETE-SC)",
+      "city": "Florianópolis",
+      "presence": "unidade inaugurada em 2017",
+      "website": "https://portal.crea-sc.org.br/embraer-inaugura-novo-centro-de-engenharia-e-tecnologia-em-florianopolis/",
+      "role": "upstream",
+      "status": "historical",
+      "segment": "aeronautics",
+      "description": "Centro de engenharia da Embraer instalado no Parque Tecnológico Alfa, em parceria com a Fundação CERTI, dedicado ao desenvolvimento de sistemas eletrônicos aeronáuticos.",
+      "technologies": [
+        "Sistemas aeronáuticos",
+        "Eletrônica embarcada",
+        "Software",
+        "Metrologia"
+      ],
+      "markets": ["Aviação comercial", "Aviação executiva", "Defesa"],
+      "notes": "Evidência principal de 2017 (inauguração e nova fase do contrato com a CERTI). Operação atual não confirmada; a Embraer voltou a SC em 2025 nas tratativas do Polo Aeroespacial Catarinense. A Fundação CERTI é registrada aqui como parceira, não como perfil separado.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://portal.crea-sc.org.br/embraer-inaugura-novo-centro-de-engenharia-e-tecnologia-em-florianopolis/",
+          "title": "CREA-SC — Embraer inaugura novo Centro de Engenharia e Tecnologia em Florianópolis",
+          "kind": "press",
+          "evidence": "Engenheiros da Embraer dedicados ao desenvolvimento de sistemas aeronáuticos em centro instalado no prédio da incubadora CELTA, com parceria da CERTI.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2017-08-28"
+        },
+        {
+          "url": "https://tiinside.com.br/25/08/2017/embraer-vai-desenvolver-sistemas-aeronauticos-em-florianopolis/",
+          "title": "TI Inside — Embraer vai desenvolver sistemas aeronáuticos em Florianópolis",
+          "kind": "press",
+          "evidence": "CETE-SC criado com Fundação CERTI, Embrapii e FAPESC para desenvolver novos sistemas aeronáuticos, aproveitando competências em eletrônica e metrologia.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2017-08-25"
+        },
+        {
+          "url": "https://ndmais.com.br/tecnologia/por-que-santa-catarina-pode-se-tornar-um-polo-aeroespacial/",
+          "title": "ND+ — Por que Santa Catarina pode se tornar um polo aeroespacial?",
+          "kind": "press",
+          "evidence": "Governo de SC e Embraer iniciam tratativas para polo aeroespacial em rede; prioridades incluem sensores, comunicações, manufatura avançada e propulsão elétrica.",
+          "supports": ["identity"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2025-10-05"
+        }
+      ]
+    },
+    {
+      "aliases": ["WEG Equipamentos Elétricos"],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "weg-propulsao-eletrica-aeronautica",
+      "name": "WEG — propulsão elétrica para aeronaves",
+      "city": "Jaraguá do Sul",
+      "presence": "sede declarada",
+      "website": "https://tecnoblog.net/noticias/embraer-weg-aviao-motor-eletrico/",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "aeronautics",
+      "description": "Desenvolveu e fabricou em Jaraguá do Sul o motor elétrico e o inversor do demonstrador elétrico da Embraer baseado no Ipanema, em parceria anunciada em 2019.",
+      "technologies": ["Motores elétricos", "Inversores", "Propulsão elétrica"],
+      "markets": ["Aviação agrícola", "Mobilidade aérea elétrica"],
+      "notes": "Registro restrito à linha de P&D aeronáutica; o porte e a receita do grupo WEG não devem ser atribuídos ao setor aeroespacial. O demonstrador é de testes, sem produção seriada anunciada.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://tecnoblog.net/noticias/embraer-weg-aviao-motor-eletrico/",
+          "title": "Tecnoblog — Embraer anuncia acordo com WEG para desenvolver avião elétrico",
+          "kind": "press",
+          "evidence": "Acordo de 2019: a WEG é responsável por fabricar motor e inversor da aeronave em sua sede em Jaraguá do Sul (SC).",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2019-05-29"
+        },
+        {
+          "url": "https://tecnoblog.net/noticias/embraer-fotos-prototipo-aviao-eletrico-weg/",
+          "title": "Tecnoblog — Embraer mostra primeiras fotos de protótipo de avião elétrico",
+          "kind": "press",
+          "evidence": "Protótipo elétrico derivado do Ipanema com sistema de propulsão desenvolvido com a WEG.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.nsctotal.com.br/?p=6956423",
+          "title": "NSC Total — Avião elétrico da Embraer com motor WEG será exposto pela primeira vez",
+          "kind": "press",
+          "evidence": "Demonstrador em testes desde 2021, apresentado ao público; a Embraer não pretende comercializá-lo.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "aliases": [],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "bold-jaragua",
+      "name": "Bold — polímeros de engenharia",
+      "city": "Jaraguá do Sul",
+      "presence": "sede declarada em reportagem",
+      "website": "https://www.nsctotal.com.br/?p=7077063",
+      "role": "upstream",
+      "status": "pending",
+      "segment": "aeronautics",
+      "description": "Indústria de Jaraguá do Sul em negociação para fornecer polímeros plásticos de engenharia à Embraer, em processo de homologação.",
+      "technologies": ["Polímeros de engenharia", "Materiais aeronáuticos"],
+      "markets": ["Aviação comercial"],
+      "notes": "Fonte única de imprensa; homologação e fornecimento não confirmados. Revalidar com a empresa e a Embraer.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.nsctotal.com.br/?p=7077063",
+          "title": "NSC Total — Empresa de SC negocia com a Embraer e quer fazer o faturamento decolar",
+          "kind": "press",
+          "evidence": "Empresa de Jaraguá do Sul desenvolve polímeros para fabricação de aviões; processo ainda em homologação após visita da Embraer.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "aliases": ["SpaceLabRockets"],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "laboratorio-foguetes-joinville",
+      "name": "Laboratório de foguetes do Ágora Tech Park (SpaceLabRockets)",
+      "city": "Joinville",
+      "presence": "implantação anunciada",
+      "website": "https://www.nsctotal.com.br/noticias/joinville-recebe-o-primeiro-laboratorio-de-foguetes-do-sul-do-brasil",
+      "role": "research_unit",
+      "status": "pending",
+      "segment": "launch_propulsion",
+      "description": "Laboratório aberto de foguetes anunciado no Ágora Tech Park, com fomento do MCTI, para experimentação e teste de motor-foguete desenvolvido pela iniciativa privada.",
+      "technologies": [
+        "Motores-foguete",
+        "Foguetes experimentais",
+        "Bancada de testes"
+      ],
+      "markets": ["Educação aeroespacial", "Propulsão"],
+      "notes": "Entrega prevista para o 2º semestre de 2025; funcionamento, natureza jurídica e teste do motor não confirmados. Articulação com Join.Valle, Fab Lab Joinville, UFSC e ex-integrantes da Kosmos Rocketry.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://www.nsctotal.com.br/noticias/joinville-recebe-o-primeiro-laboratorio-de-foguetes-do-sul-do-brasil",
+          "title": "NSC Total — Joinville recebe o primeiro laboratório de foguetes do Sul do Brasil",
+          "kind": "press",
+          "evidence": "Laboratório no Ágora Tech Park com termo de fomento do MCTI e previsão de teste do primeiro motor-foguete privado do Sul.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://ndmais.com.br/tecnologia/inedito-laboratorio-de-foguetes-em-joinville-quer-levar-tecnologia-local-ao-espaco-ate-2030/",
+          "title": "ND+ — Laboratório de foguetes em Joinville quer levar tecnologia local ao espaço até 2030",
+          "kind": "press",
+          "evidence": "Reportagem sobre a meta de levar tecnologia de Joinville ao espaço até 2030.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "aliases": [],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "not_applicable",
+      "id": "wega-aircraft",
+      "name": "Wega Aircraft",
+      "city": "Palhoça",
+      "presence": "origem histórica; transferência ao Paraguai noticiada",
+      "website": "https://revistapesquisa.fapesp.br/asas-do-sul/",
+      "role": "upstream",
+      "status": "historical",
+      "segment": "aeronautics",
+      "description": "Fabricante de aeronaves leves em compósito (Wega 180 e 210), apontada como primeira fábrica de aviões de SC.",
+      "technologies": ["Fibra de carbono", "Compósitos", "Aeronaves leves"],
+      "markets": ["Aviação geral", "Aviação experimental"],
+      "notes": "Reportagem posterior noticia mudança da fábrica para Assunção (Paraguai). Não contar como atividade atual em SC sem revalidação.",
+      "confidence": "medium",
+      "sources": [
+        {
+          "url": "https://revistapesquisa.fapesp.br/asas-do-sul/",
+          "title": "Pesquisa FAPESP — Asas do Sul",
+          "kind": "press",
+          "evidence": "Wega, de Palhoça, é descrita como a primeira fábrica de aviões instalada em SC, com aeronaves em carbono e vidro.",
+          "supports": ["location", "offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://en.wikipedia.org/wiki/Wega_180",
+          "title": "Wikipedia — Wega 180",
+          "kind": "reference",
+          "evidence": "Aeronave brasileira apresentada em 2013, fornecida em kit ou pronta para voo.",
+          "supports": ["offering"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://www.nsctotal.com.br/?p=2858813",
+          "title": "NSC Total — Fabricante de aviões experimentais Wega muda de SC para o Paraguai",
+          "kind": "press",
+          "evidence": "A fábrica de Palhoça migraria para Assunção, no Paraguai.",
+          "supports": ["location"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ]
+    },
+    {
+      "aliases": ["SPDC/SC", "Cigerd"],
+      "state": "SC",
+      "membershipVerified": false,
+      "registryVerified": false,
+      "usageScope": "local_sc",
+      "id": "defesa-civil-sc-goes",
+      "name": "Defesa Civil de Santa Catarina — recepção direta GOES-19",
+      "city": "Florianópolis",
+      "presence": "órgão estadual",
+      "website": "https://noticias.sc.gov.br/boletim-defesa-civil-de-sc-e-a-unica-do-brasil-a-captar-imagens-diretas-de-satelite-para-monitoramento-em-tempo-real/",
+      "role": "end_user",
+      "status": "documented",
+      "segment": "weather_intelligence",
+      "description": "Opera antena própria no Cigerd para recepção direta de imagens do satélite geoestacionário GOES-19, usadas em monitoramento meteorológico e alertas.",
+      "technologies": [
+        "Estação de recepção GOES",
+        "Imagens meteorológicas",
+        "Radares"
+      ],
+      "markets": ["Defesa civil", "Alertas climáticos"],
+      "notes": "Órgão público usuário, não fornecedor. Antena instalada em 2018 (originalmente GOES-16), operando com GOES-19 desde 2025 segundo reportagens.",
+      "confidence": "high",
+      "sources": [
+        {
+          "url": "https://noticias.sc.gov.br/boletim-defesa-civil-de-sc-e-a-unica-do-brasil-a-captar-imagens-diretas-de-satelite-para-monitoramento-em-tempo-real/",
+          "title": "Governo de SC — Defesa Civil capta imagens diretas de satélite",
+          "kind": "government",
+          "evidence": "Defesa Civil de SC é a única do país com antena própria de recepção direta de imagens de satélite para monitoramento em tempo real.",
+          "supports": ["location", "usage"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2026-05"
+        },
+        {
+          "url": "https://www.correiodamanha.com.br/nacional/sul/2026/05/289052-defesa-civil-de-sc-e-a-unica-a-captar-imagens-em-tempo-real-do-satelite-goes-19.html",
+          "title": "Correio da Manhã — Defesa Civil de SC capta imagens do GOES-19",
+          "kind": "press",
+          "evidence": "Secretaria passou a receber imagens em tempo real do GOES-19 para monitorar condições meteorológicas e emitir alertas.",
+          "supports": ["usage"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": "2026-05"
+        },
+        {
+          "url": "https://ndmais.com.br/tempo/sc-e-o-unico-estado-do-brasil-com-antena-propria-para-monitorar-tempestades-direto-do-espaco/",
+          "title": "ND+ — SC é o único estado com antena própria para monitorar tempestades",
+          "kind": "press",
+          "evidence": "Antena no Cigerd, em Florianópolis, para recepção direta de imagens meteorológicas.",
+          "supports": ["location", "usage"],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ]
     }
   ],
   "excluded": [
@@ -1806,6 +2161,47 @@
       "reason": "Endereço primário encontrado em Londrina/PR. Unidade catarinense não comprovada nesta rodada; não concluir inexistência.",
       "sources": [
         "https://www.marinha.mil.br/emgepron/sites/www.marinha.mil.br.emgepron/files/contrato/contrato_26-2024.0009-00_-_onixsat_rastreamento_-_nup_61984.004025-2023-45.pdf"
+      ]
+    },
+    {
+      "name": "Visiona Tecnologia Espacial",
+      "reason": "Sede em São José dos Campos/SP. Vínculo catarinense é a parceria com o Instituto SENAI no VCUB1; industrialização em SC citada apenas como possibilidade.",
+      "sources": [
+        "https://amanha.com.br/negocios-do-sul/santa-catarina-consolida-se-como-polo-de-desenvolvimento-de-satelites"
+      ]
+    },
+    {
+      "name": "Novaer Craft",
+      "reason": "Protocolo de 2012 para fábrica de aviões em Lages sem evidência de implantação; sede em São José dos Campos/SP.",
+      "sources": [
+        "https://www.baguete.com.br/noticias/lages-ganha-fabrica-de-avioes"
+      ]
+    },
+    {
+      "name": "Innalogics",
+      "reason": "Fornecedora de subsistemas do nanossatélite Aldebaran-1 com origem no TecnoPUC (Porto Alegre/RS); presença atual em SC não comprovada.",
+      "sources": [
+        "https://geocracia.com/aldebaran-1-ufma-desenvolve-satelite-projetado-para-localizar-naufragos/",
+        "https://spacelab.ufsc.br/?p=203"
+      ]
+    },
+    {
+      "name": "Global Drones",
+      "reason": "Parceira do sistema operacional do Vertihub do Sapiens Parque (eVTOL); sede e unidade em SC não identificadas.",
+      "sources": [
+        "https://diariodopara.com.br/noticias/curiosidades/cidade-brasileira-vai-ganhar-primeiro-aeroporto-de-carros-voadores-do-pais/"
+      ]
+    },
+    {
+      "name": "Hummingbird Indústria Aeronáutica",
+      "reason": "Fabricante de helicópteros leves (H1) citada em ato fiscal com empresas de Jaraguá do Sul; sede e atividade atual não confirmadas.",
+      "sources": ["https://sprinkle.com/aircraft/PUMPP"]
+    },
+    {
+      "name": "Kosmos Rocketry (UFSC Joinville)",
+      "reason": "Equipe estudantil de competição de foguetes, não empresa. Relevante como formação de capital humano no upstream.",
+      "sources": [
+        "https://portal.crea-sc.org.br/kosmos-rocketry-da-ufsc-joinville-conquista-o-primeiro-lugar-geral-na-maior-competicao-de-foguetes-experimentais-da-america-latina/"
       ]
     }
   ]

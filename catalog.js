@@ -56,7 +56,11 @@ export function renderCatalog(dataset, filters, helpers) {
           `<option value="${id}" ${id === selected ? "selected" : ""}>${e(name)}</option>`,
       )
       .join("");
-  return `<section class="catalog-intro"><div><span class="eyebrow">${e(meta.subtitle)}</span><h2>${e(meta.title)}</h2><p>Fontes consultadas em ${e(meta.asOf.split("-").reverse().join("/"))}. Ofertas e presença territorial identificadas em documentos públicos.</p></div><button class="button button-outline" id="export-companies">${icon("download")} Baixar levantamento JSON</button></section><div class="notice">${e(meta.notice)}</div><div class="catalog-metrics">${[
+  return `<section class="catalog-intro"><div><span class="eyebrow">${e(meta.subtitle)}</span><h2>${e(meta.title)}</h2><p>Fontes consultadas em ${e(meta.asOf.split("-").reverse().join("/"))}. Atividades upstream, ofertas downstream e presença territorial identificadas em documentos públicos.</p></div><button class="button button-outline" id="export-companies">${icon("download")} Baixar levantamento JSON</button></section><div class="notice">${e(meta.notice)}</div><div class="catalog-metrics">${[
+    [
+      metric("upstream") + metric("research_unit"),
+      "Upstream e centros documentados",
+    ],
     [metric("downstream"), "Ofertas downstream documentadas"],
     [metric("integrator"), "Integradores documentados"],
     [metric("end_user"), "Usuárias documentadas¹"],

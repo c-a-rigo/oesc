@@ -63,12 +63,12 @@ Execute `npm run check` para verificar a sintaxe e validar todos os arquivos de 
 
 Sirva a aplicação por HTTP (`npm run dev`); abrir `index.html` diretamente por `file://` não permite carregar os módulos e os arquivos JSON.
 
-## Levantamento downstream catarinense
+## Levantamento upstream e downstream catarinense
 
 `data/companies.json` contém a pesquisa documental de empresas, marcas, unidades e usuárias industriais com vínculo catarinense. A seção **Rede OESC → Empresas e aplicações** oferece busca por empresa/cidade/tecnologia, filtros de papel, segmento e evidência, fichas de fontes e download integral. **Instituições do projeto** permanece em aba separada.
 
-O catálogo distingue `role` (`downstream`, `integrator`, `end_user`, `adjacent`) e `status` (`documented`, `historical`, `pending`). `documented` significa evidência pública, não empresa auditada. As métricas de fornecedores documentados excluem usuárias, adjacentes e registros históricos/pendentes. O campo `usageScope` distingue aplicação corporativa, uso local e implantação ainda não comprovada. Contagens são de perfis, não de CNPJs únicos ou da população total do setor.
+O catálogo distingue `role` (`upstream`, `research_unit`, `downstream`, `integrator`, `end_user`, `adjacent`) e `status` (`documented`, `historical`, `pending`). `documented` significa evidência pública, não empresa auditada. As métricas de fornecedores documentados excluem usuárias, adjacentes e registros históricos/pendentes. O campo `usageScope` distingue aplicação corporativa, uso local e implantação ainda não comprovada. Contagens são de perfis, não de CNPJs únicos ou da população total do setor.
 
 Cada registro inclui tecnologias, mercados, presença territorial, ressalvas, confiança documental e fontes com título, URL, data e fato sustentado. Marcas adquiridas não são contadas duas vezes. Não se presume filiação ao OESC nem situação cadastral ativa. Edite o arquivo, execute `npm run check` e publique por push em `main`.
 
-O relatório está em [`outputs/downstream-sc.md`](outputs/downstream-sc.md), acompanhado de [`outputs/downstream-sc.provenance.md`](outputs/downstream-sc.provenance.md). As fontes e os casos pendentes devem ser revalidados antes de produzir indicadores oficiais.
+O relatório está em [`outputs/downstream-sc.md`](outputs/downstream-sc.md), acompanhado de [`outputs/downstream-sc.provenance.md`](outputs/downstream-sc.provenance.md). A ampliação upstream e aeroespacial está em [`outputs/upstream-sc.md`](outputs/upstream-sc.md). As fontes e os casos pendentes devem ser revalidados antes de produzir indicadores oficiais.
