@@ -11,7 +11,7 @@
       "downstream": "Produtos e serviços downstream",
       "integrator": "Integração, equipamentos e serviços GNSS",
       "end_user": "Indústrias e organizações usuárias",
-      "adjacent": "Geotecnologias e casos adjacentes"
+      "adjacent": "Atividades adjacentes e apoio ao ecossistema"
     },
     "statuses": {
       "documented": "Oferta ou aplicação documentada",
@@ -26,7 +26,8 @@
       "gnss": "GNSS e posicionamento",
       "satellite_communications": "Comunicação por satélite",
       "weather_intelligence": "Inteligência climática",
-      "geospatial": "Geotecnologias e atividades adjacentes"
+      "geospatial": "Geotecnologias e atividades adjacentes",
+      "innovation_support": "Inovação e apoio ao ecossistema"
     },
     "methodology": [
       "Buscar oferta comercial explícita baseada em imagens orbitais, navegação GNSS ou comunicação via satélite. GIS, IA, drones e sensoriamento remoto sem identificação do insumo orbital não bastam.",
@@ -35,7 +36,10 @@
       "Documentada significa existência de evidência pública, frequentemente autodeclarada; não comprova operação atual, desempenho, receitas, independência jurídica ou situação cadastral.",
       "Separar fornecedores downstream, integradores/distribuidores, prestadores especializados GNSS e usuários industriais. Não somar os papéis como empresas espaciais equivalentes.",
       "Não duplicar marcas adquiridas: Agrosatélite/Serasa, Arvus/Hexagon e ORN/NOR. Registrar dúvidas de identidade e unidade de contagem antes do censo.",
-      "Registrar data de consulta e, quando disponível, data da fonte. Histórico ou promessa de implantação não comprova atividade atual. Ausência de evidência não prova inexistência."
+      "Registrar data de consulta e, quando disponível, data da fonte. Histórico ou promessa de implantação não comprova atividade atual. Ausência de evidência não prova inexistência.",
+      "Cruzar o filtro territorial SC do catálogo AEB com perfis individuais; preservar um registro por organização já identificada. Dados do catálogo são declarados pelas organizações, não auditoria da AEB.",
+      "Classificações e selos da AEB não equivalem aos papéis deste levantamento, certificação técnica ou filiação ao OESC. Consultorias genéricas e materiais sem aplicação espacial/aeronáutica específica ficam como adjacentes pendentes.",
+      "Separar a empresa Outer Space da infraestrutura de laboratório em Joinville; registros relacionados não representam necessariamente fornecedores independentes."
     ],
     "nextSteps": [
       "Confirmar CNPJ e estabelecimento ativo em Receita/JUCESC, com sede, filial e grupo econômico.",
@@ -43,7 +47,8 @@
       "Solicitar validação voluntária de produtos, sensores, constelações, clientes públicos e presença de equipe local.",
       "Identificar receita, emprego e carteira de projetos especificamente relacionados a atividades espaciais, sem atribuir o porte global do grupo a SC.",
       "Ampliar prospecção no Oeste, Norte, Vale, Serra e Sul por associações setoriais, parques tecnológicos e compras públicas.",
-      "Atualizar fontes e registrar confirmação, correção, fusão ou encerramento com histórico de revisões."
+      "Atualizar fontes e registrar confirmação, correção, fusão ou encerramento com histórico de revisões.",
+      "Validar projetos espaciais da 4C e fornecimentos aeronáuticos/espaciais da AJXTEC; confirmar contrato, implantação e relação entre Outer Space e laboratório do Ágora."
     ]
   },
   "companies": [
@@ -492,7 +497,10 @@
     {
       "id": "nor-space",
       "name": "NOR Space Intelligence",
-      "aliases": ["ORN Space", "ORN SPACE LTDA"],
+      "aliases": [
+        "ORN Space",
+        "ORN SPACE LTDA"
+      ],
       "city": "Florianópolis",
       "state": "SC",
       "presence": "Sede/endereço informado nas fontes",
@@ -518,10 +526,14 @@
       "sources": [
         {
           "url": "https://spaceindustry.aeb.gov.br/pt-br/catalogo/empresa/orn-space-ltda/",
-          "title": "spaceindustry.aeb.gov.br",
+          "title": "AEB — NOR Space Intelligence",
           "kind": "government_catalog",
           "evidence": "Nome NOR, município Florianópolis, endereço e oferta comercial combinando satélites e IA.",
-          "supports": ["location", "identity", "offering"],
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -530,7 +542,10 @@
           "title": "www.nor.space",
           "kind": "corporate",
           "evidence": "Soluções para monitorar ativos; endereço em Florianópolis; aplicações de SAR e imagens ópticas na oferta de defesa.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -539,7 +554,9 @@
           "title": "www.linkedin.com",
           "kind": "corporate_profile",
           "evidence": "Confirma sede, mudança ORN para NOR e uso de dados SAR e multiespectrais.",
-          "supports": ["location"],
+          "supports": [
+            "location"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         }
@@ -638,10 +655,14 @@
       "sources": [
         {
           "url": "https://spaceindustry.aeb.gov.br/pt-br/catalogo/empresa/remap-geotecnologia/",
-          "title": "spaceindustry.aeb.gov.br",
+          "title": "AEB — REMAP Geotecnologia",
           "kind": "government_catalog",
           "evidence": "Sede Florianópolis, sensoriamento remoto, IA, WebGIS, mapeamento agrícola e monitoramento ambiental.",
-          "supports": ["location"],
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -650,7 +671,10 @@
           "title": "remapgeo.com",
           "kind": "corporate",
           "evidence": "A empresa identifica Florianópolis como sua sede.",
-          "supports": ["location", "identity"],
+          "supports": [
+            "location",
+            "identity"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -659,7 +683,9 @@
           "title": "remapgeo.com",
           "kind": "corporate",
           "evidence": "Oferta de API, modelos para uso/cobertura, desmatamento e práticas agrícolas; integração de MapBiomas e CAR.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -668,7 +694,9 @@
           "title": "brasil.mapbiomas.org",
           "kind": "project_partner_methodology",
           "evidence": "Documento atribui à REMAP mapeamento de agricultura, plantações florestais e irrigação a partir da coleção 9.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -677,7 +705,10 @@
           "title": "www.linkedin.com",
           "kind": "corporate_profile",
           "evidence": "Perfil corporativo explicita imagens de satélite e sede catarinense.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         }
@@ -1730,7 +1761,10 @@
       "usageScope": "not_applicable"
     },
     {
-      "aliases": ["ISI-SE", "ISI Sistemas Embarcados"],
+      "aliases": [
+        "ISI-SE",
+        "ISI Sistemas Embarcados"
+      ],
       "state": "SC",
       "membershipVerified": false,
       "registryVerified": false,
@@ -1748,7 +1782,9 @@
         "Nanossatélites",
         "Integração e testes",
         "Sistemas embarcados",
-        "Comunicação solo-bordo"
+        "Comunicação solo-bordo",
+        "Geointeligência",
+        "Computação de borda"
       ],
       "markets": [
         "Programa espacial",
@@ -1756,7 +1792,7 @@
         "Agro",
         "Monitoramento climático"
       ],
-      "notes": "Instituto do sistema FIESC/SENAI, não empresa. Fontes de imprensa e institucionais; lançamento do Catarina-A2 e equipe local dedicada ainda devem ser confirmados.",
+      "notes": "Instituto do sistema FIESC/SENAI, não empresa. Fontes de imprensa e institucionais; lançamento do Catarina-A2 e equipe local dedicada ainda devem ser confirmados. O perfil AEB descreve também aplicações downstream; manter um único registro de centro tecnológico, sem duplicar como empresa.",
       "confidence": "high",
       "sources": [
         {
@@ -1764,7 +1800,10 @@
           "title": "FIESC — O mercado foi para o espaço",
           "kind": "industry_association",
           "evidence": "Descreve laboratório de sistemas espaciais com sala limpa para integração e capacidade de testar satélites; integração, testes e comunicação de solo do VCUB1.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -1773,7 +1812,9 @@
           "title": "Amanhã — SC consolida-se como polo de desenvolvimento de satélites",
           "kind": "press",
           "evidence": "Relata três a quatro projetos espaciais do instituto, incluindo VCUB1 com a Visiona e participação na Constelação Catarina.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2022-12-19"
         },
@@ -1782,7 +1823,9 @@
           "title": "FIESC — SENAI e governo de SC iniciam integração de nanossatélite ao agro",
           "kind": "industry_association",
           "evidence": "Informa dois nanossatélites em desenvolvimento, um no SENAI e outro na UFSC, para alimentar sistema de previsão meteorológica.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2024-03-13"
         },
@@ -1791,9 +1834,24 @@
           "title": "Economia SC — Nanossatélite criado em SC inicia fase de testes no INPE",
           "kind": "press",
           "evidence": "Catarina-A2 entra em testes de aceitação no LIT/INPE (vibração e termovácuo) antes da revisão de aceitação e do lançamento.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2025-10-13"
+        },
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/instituto-senai-de-inovacao-em-sistemas-embarcados/",
+          "title": "AEB — Instituto SENAI de Inovação em Sistemas Embarcados",
+          "kind": "government_catalog",
+          "evidence": "Perfil localiza o instituto no Sapiens Parque, Florianópolis, e descreve PD&I upstream e downstream, sistemas embarcados, estações de solo e geointeligência.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
         }
       ]
     },
@@ -1932,7 +1990,9 @@
       ]
     },
     {
-      "aliases": ["SpaceLabRockets"],
+      "aliases": [
+        "SpaceLabRockets"
+      ],
       "state": "SC",
       "membershipVerified": false,
       "registryVerified": false,
@@ -1951,8 +2011,11 @@
         "Foguetes experimentais",
         "Bancada de testes"
       ],
-      "markets": ["Educação aeroespacial", "Propulsão"],
-      "notes": "Entrega prevista para o 2º semestre de 2025; funcionamento, natureza jurídica e teste do motor não confirmados. Articulação com Join.Valle, Fab Lab Joinville, UFSC e ex-integrantes da Kosmos Rocketry.",
+      "markets": [
+        "Educação aeroespacial",
+        "Propulsão"
+      ],
+      "notes": "Entrega prevista para o 2º semestre de 2025; funcionamento, natureza jurídica e teste do motor não confirmados. Articulação com Join.Valle, Fab Lab Joinville, UFSC e ex-integrantes da Kosmos Rocketry. O perfil AEB da Outer Space atribui à empresa implantação e coordenação de laboratório em Joinville. A correspondência institucional com esta infraestrutura e a operação atual exigem confirmação; não contar laboratório e empresa como dois fornecedores independentes.",
       "confidence": "medium",
       "sources": [
         {
@@ -1960,7 +2023,10 @@
           "title": "NSC Total — Joinville recebe o primeiro laboratório de foguetes do Sul do Brasil",
           "kind": "press",
           "evidence": "Laboratório no Ágora Tech Park com termo de fomento do MCTI e previsão de teste do primeiro motor-foguete privado do Sul.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -1969,7 +2035,20 @@
           "title": "ND+ — Laboratório de foguetes em Joinville quer levar tecnologia local ao espaço até 2030",
           "kind": "press",
           "evidence": "Reportagem sobre a meta de levar tecnologia de Joinville ao espaço até 2030.",
-          "supports": ["location"],
+          "supports": [
+            "location"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        },
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/outer-space/",
+          "title": "AEB — Outer Space — vínculo com laboratório de Joinville",
+          "kind": "government_catalog",
+          "evidence": "Empresa declara implantação e coordenação de laboratório de foguetes em Joinville; fonte não comprova inauguração nem identifica explicitamente o nome SpaceLabRockets.",
+          "supports": [
+            "location"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         }
@@ -2076,6 +2155,236 @@
           "publishedAt": null
         }
       ]
+    },
+    {
+      "id": "esss",
+      "name": "ESSS — Engineering Simulation and Scientific Software",
+      "aliases": [
+        "ENGINEERING SIMULATION AND SCIENTIFIC SOFTWARE LTDA",
+        "Ansys"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização declarada no catálogo AEB; estabelecimento não auditado",
+      "website": "https://www.esss.com/",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "space_systems",
+      "description": "Fornece software e serviços de simulação CAE para engenharia espacial, incluindo projeto, teste e certificação de satélites, lançadores, aviônicos e sistemas de comunicação.",
+      "technologies": [
+        "Simulação multifísica",
+        "CAE",
+        "MBSE",
+        "Eletromagnetismo",
+        "Software de sistemas espaciais"
+      ],
+      "markets": [
+        "Engenharia espacial",
+        "Aeroespacial e defesa"
+      ],
+      "notes": "Oferta de ferramentas de engenharia, sem comprovação de fabricação própria de satélites. Portfólio e endereço autodeclarados à AEB; não atribuir toda a atividade global da ESSS a SC.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/engineering-simulation-and-scientific-software-ltda/",
+          "title": "AEB — ESSS — Engineering Simulation and Scientific Software",
+          "kind": "government_catalog",
+          "evidence": "O perfil informa endereço em Florianópolis e software de engenharia aplicado a satélites, lançadores, aviônicos e comunicações.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "outer-space",
+      "name": "Outer Space Ltda",
+      "aliases": [
+        "Outer Space Brasil"
+      ],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "Localização declarada no catálogo AEB; estabelecimento não auditado",
+      "website": "https://outerspacebrasil.com/",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "launch_propulsion",
+      "description": "Declara P&D de propulsão espacial, integração de sistemas e desenvolvimento de foguetes para pequenos lançadores, com modelagem e validação em bancada.",
+      "technologies": [
+        "Propulsão híbrida",
+        "Propulsão sólida e líquida",
+        "Integração de sistemas",
+        "Bancada de testes"
+      ],
+      "markets": [
+        "Pequenos veículos lançadores",
+        "Pesquisa em propulsão",
+        "Educação aeroespacial"
+      ],
+      "notes": "A empresa declara contratação pelo MCTI em 2024 para implantar e coordenar laboratório no Sul. Contrato e operação não auditados. Atingir 100 km até 2030 é meta. Relacionada ao registro laboratorio-foguetes-joinville; empresa e infraestrutura não equivalem a duas empresas independentes.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/outer-space/",
+          "title": "AEB — Outer Space Ltda",
+          "kind": "government_catalog",
+          "evidence": "AEB lista Joinville, Rua Dona Francisca, 8300, P&D de propulsão e integração; relata implantação de laboratório com apoio do MCTI.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "abiental-geospace",
+      "name": "Abiental Geospace",
+      "aliases": [
+        "Abiental"
+      ],
+      "city": "Rodeio",
+      "state": "SC",
+      "presence": "Localização declarada no catálogo AEB; estabelecimento não auditado",
+      "website": "https://abiental.com.br/",
+      "role": "downstream",
+      "status": "documented",
+      "segment": "gnss",
+      "description": "Plataforma de coleta ambiental em campo com coordenadas por satélite, identificação de espécies por IA, mapas e relatórios georreferenciados.",
+      "technologies": [
+        "GNSS",
+        "Coleta georreferenciada",
+        "Sincronização offline",
+        "Inteligência artificial"
+      ],
+      "markets": [
+        "Pesquisa ambiental",
+        "Biodiversidade",
+        "Equipes de campo"
+      ],
+      "notes": "Classificação downstream fundamentada no posicionamento por satélite. Menções genéricas a comunicação orbital e observação da Terra no catálogo não comprovam conectividade satelital, sensores próprios ou processamento de imagens orbitais. Oferta autodeclarada; desempenho não auditado.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/abiental-geospace/",
+          "title": "AEB — Abiental Geospace",
+          "kind": "government_catalog",
+          "evidence": "Perfil localiza a startup em Rodeio e descreve coleta de campo com coordenadas de satélite, mapas e identificação de espécies.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ajxtec",
+      "name": "AJXTEC — AJX Comércio e Fabricação de Artefatos em Vidro",
+      "aliases": [
+        "AJX",
+        "AJX COMÉRCIO E FABRICAÇÃO DE ARTEFATOS EM VIDRO LTDA"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização declarada no catálogo AEB; estabelecimento não auditado",
+      "website": "https://www.ajxtec.com.br/",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "aeronautics",
+      "description": "Declara fabricação de compósitos e soluções de engenharia e infraestrutura náutica e aeronáutica, com estruturas em fibras de carbono, vidro e Kevlar.",
+      "technologies": [
+        "Compósitos",
+        "Fibra de carbono",
+        "Fibra de vidro",
+        "Estruturas"
+      ],
+      "markets": [
+        "Infraestrutura náutica",
+        "Infraestrutura aeronáutica"
+      ],
+      "notes": "Presença em Florianópolis e competência em materiais constam na AEB. Não foi identificado produto aeronáutico específico, fornecimento espacial ou qualificação de voo; manter fora da contagem upstream documentada até validação.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/ajx-comercio-e-fabricacao-de-artefatos-em-vidro-ltda/",
+          "title": "AEB — AJXTEC — AJX Comércio e Fabricação de Artefatos em Vidro",
+          "kind": "government_catalog",
+          "evidence": "Perfil informa sede em Florianópolis, materiais compósitos e infraestrutura aeronáutica; não especifica atividade espacial.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "four-c-innovation",
+      "name": "4C Innovation Consulting Ltda",
+      "aliases": [
+        "4C Innovation",
+        "4C INNOVATION CONSULTING LTDA"
+      ],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "Localização declarada no catálogo AEB; estabelecimento não auditado",
+      "website": "https://4ci.com.br/",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "innovation_support",
+      "description": "Consultoria em inovação, desenvolvimento de produtos e captação para projetos de P&D, com experiência declarada em programas Finep e BNDES.",
+      "technologies": [
+        "Gestão de P&D",
+        "Desenvolvimento de produtos",
+        "Financiamento da inovação"
+      ],
+      "markets": [
+        "Indústria",
+        "Projetos tecnológicos"
+      ],
+      "notes": "AEB comprova perfil e localização declarada em Joinville, mas não identifica tecnologia ou projeto espacial específico. Caso de apoio ao ecossistema; não contar como fornecedor upstream ou downstream documentado.",
+      "sources": [
+        {
+          "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/4c-innovation-consulting-ltda/",
+          "title": "AEB — 4C Innovation Consulting Ltda",
+          "kind": "government_catalog",
+          "evidence": "Perfil lista Joinville e consultoria de inovação e financiamento; tecnologias e atividades espaciais não são especificadas.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-13",
+          "publishedAt": null
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
     }
   ],
   "excluded": [
