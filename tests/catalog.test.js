@@ -1,12 +1,33 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
-import { filterCompanies } from "../catalog.js";
+import { filterCompanies, renderCatalogSnapshot } from "../catalog.js";
 import { validateCompanies } from "../content.js";
 const dataset = JSON.parse(
   await readFile(new URL("../data/companies.json", import.meta.url), "utf8"),
 );
 const all = { query: "", role: "all", segment: "all", status: "all" };
+test("overview snapshot derives evidence totals and handles an empty catalog", () => {
+  const helpers = { escapeHtml: (s) => String(s), icon: () => "" };
+  const data = structuredClone(dataset);
+  data.companies = [
+    { role: "upstream", status: "documented" },
+    { role: "upstream", status: "pending" },
+    { role: "downstream", status: "historical" },
+  ];
+  const html = renderCatalogSnapshot(data, helpers);
+  assert.match(html, /<strong>3<\/strong><span>perfis no catálogo/);
+  assert.match(html, /1 documentados/);
+  assert.match(html, /2 históricos ou pendentes/);
+  assert.match(
+    html,
+    /data-catalog-role="upstream"><span>[^<]+<\/span><strong>2<\/strong>/,
+  );
+  data.companies = [];
+  const empty = renderCatalogSnapshot(data, helpers);
+  assert.match(empty, /--documented-share: 0%/);
+  assert.match(empty, /<strong>0<\/strong><span>perfis no catálogo/);
+});
 test("research records are valid and contain traceable sources", () => {
   assert.equal(validateCompanies(dataset), dataset);
   assert.ok(dataset.companies.every((c) => c.sources.length > 0));

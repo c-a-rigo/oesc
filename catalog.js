@@ -3,6 +3,21 @@ const normalize = (value) =>
     .toLocaleLowerCase("pt-BR")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "");
+export function renderCatalogSnapshot(dataset, { escapeHtml: e, icon }) {
+  const total = dataset.companies.length;
+  const documented = dataset.companies.filter(
+    (c) => c.status === "documented",
+  ).length;
+  const share = total ? (documented / total) * 100 : 0;
+  return `<section class="panel ecosystem-snapshot" aria-labelledby="snapshot-title"><div class="snapshot-summary"><span class="eyebrow">INTELIGÊNCIA DO ECOSSISTEMA</span><h2 id="snapshot-title">Do espaço ao território.</h2><p>Explore os perfis identificados na pesquisa documental catarinense.</p><a class="text-link" href="#network">Explorar o levantamento ${icon("arrow")}</a><small>Consulta: ${e(dataset.metadata.asOf.split("-").reverse().join("/"))} · Perfis, não CNPJs únicos. Não é censo.</small></div><div class="snapshot-evidence"><div class="evidence-ring" style="--documented-share: ${share}%"><div><strong>${total}</strong><span>perfis no catálogo</span></div></div><p><span class="evidence-key"></span>${documented} documentados<br><span class="evidence-key pending"></span>${total - documented} históricos ou pendentes</p></div><div class="snapshot-roles"><span class="eyebrow">EXPLORE POR PAPEL</span>${Object.entries(
+    dataset.metadata.roles,
+  )
+    .map(([role, label]) => {
+      const count = dataset.companies.filter((c) => c.role === role).length;
+      return `<button class="snapshot-role" data-catalog-role="${e(role)}"><span>${e(label)}</span><strong>${count}</strong>${icon("arrowUpRight")}</button>`;
+    })
+    .join("")}</div></section>`;
+}
 export function filterCompanies(dataset, filters) {
   const query = normalize(filters.query.trim());
   return dataset.companies.filter(

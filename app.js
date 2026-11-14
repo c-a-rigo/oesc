@@ -2,6 +2,7 @@ import {
   renderCatalog,
   renderCompanyResults,
   renderCompanyDetails,
+  renderCatalogSnapshot,
 } from "./catalog.js";
 import { loadContent } from "./content.js";
 ("use strict");
@@ -99,7 +100,7 @@ function roadmap(compact = false) {
   return `<section class="panel roadmap-panel">${panelHeading(copy.roadmapEyebrow, copy.roadmapTitle, compact ? sectionLink("roadmap", "Ver roadmap") : `<span class="badge neutral">Planejamento · ${metric("duration")} meses</span>`)}<div class="timeline">${phases.map((phase, i) => `<article class="phase"><div class="phase-dot">${String(i + 1).padStart(2, "0")}</div><span class="phase-month">${escapeHtml(phase.months)}</span><h3>${escapeHtml(phase.name)}</h3>${!compact ? `<p>${escapeHtml(phase.description)}</p>` : ""}</article>`).join("") || emptyState()}</div>${!compact ? `<div class="notice">${escapeHtml(copy.roadmapNotice)}</div>` : ""}</section>`;
 }
 function overview() {
-  return `<section class="welcome-banner"><div class="welcome-content"><span class="hero-eyebrow"><span class="status-dot"></span> ${escapeHtml(project.hero.eyebrow)}</span><h2>${project.hero.title.map(escapeHtml).join("<br>")}</h2><p>${project.hero.description.map(escapeHtml).join("<br>")}</p><a class="button button-light" href="#network">${escapeHtml(project.hero.linkLabel)} ${icon("arrow")}</a></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="planet-core"></div><span class="orbital-point point-one"></span><span class="orbital-point point-two"></span><span class="orbital-point point-three"></span><span class="orbit-caption">${escapeHtml(project.hero.caption)}</span></div><span class="hero-index">${escapeHtml(project.hero.index)}</span></section>${stats()}<div class="overview-grid">${mapPanel()}${opportunities(true)}</div><section class="areas-section">${panelHeading(copy.areasEyebrow, copy.areasTitle, sectionLink("areas", copy.areasLink))}${areaCards(true)}</section>${roadmap(true)}<div class="source-note">${icon("info")} ${escapeHtml(copy.sourceNote)}</div>`;
+  return `<section class="welcome-banner"><div class="welcome-content"><span class="hero-eyebrow"><span class="status-dot"></span> ${escapeHtml(project.hero.eyebrow)}</span><h2>${project.hero.title.map(escapeHtml).join("<br>")}</h2><p>${project.hero.description.map(escapeHtml).join("<br>")}</p><a class="button button-light" href="#network">${escapeHtml(project.hero.linkLabel)} ${icon("arrow")}</a></div><div class="orbit-art" aria-hidden="true"><div class="orbit-ring ring-one"></div><div class="orbit-ring ring-two"></div><div class="orbit-ring ring-three"></div><div class="planet-core"></div><span class="orbital-point point-one"></span><span class="orbital-point point-two"></span><span class="orbital-point point-three"></span><span class="orbit-caption">${escapeHtml(project.hero.caption)}</span></div><span class="hero-index">${escapeHtml(project.hero.index)}</span></section>${renderCatalogSnapshot(companyDataset, catalogHelpers)}<section class="project-numbers" aria-label="Informações do projeto"><div class="section-caption"><span class="eyebrow">O PROJETO OESC</span><span>Equipe e planejamento · fonte institucional</span></div>${stats()}</section><div class="overview-grid">${mapPanel()}${opportunities(true)}</div><section class="areas-section">${panelHeading(copy.areasEyebrow, copy.areasTitle, sectionLink("areas", copy.areasLink))}${areaCards(true)}</section>${roadmap(true)}<div class="source-note">${icon("info")} ${escapeHtml(copy.sourceNote)}</div>`;
 }
 function network() {
   return `<div class="filterbar network-tabs"><div class="tabs" role="group" aria-label="Conteúdo da rede"><button data-network-view="companies" class="${networkView === "companies" ? "selected" : ""}" aria-pressed="${networkView === "companies"}">Empresas e aplicações</button><button data-network-view="institutions" class="${networkView === "institutions" ? "selected" : ""}" aria-pressed="${networkView === "institutions"}">Instituições do projeto</button></div></div>${networkView === "companies" ? renderCatalog(companyDataset, companyFilters, catalogHelpers) : institutionsPage()}`;
@@ -263,6 +264,18 @@ main.addEventListener("click", (event) => {
     return;
   }
   if (!ready) return;
+  const catalogRole = event.target.closest("[data-catalog-role]");
+  if (catalogRole) {
+    Object.assign(companyFilters, {
+      query: "",
+      role: catalogRole.dataset.catalogRole,
+      segment: "all",
+      status: "all",
+    });
+    networkView = "companies";
+    location.hash = "network";
+    return;
+  }
   const networkTab = event.target.closest("[data-network-view]");
   if (networkTab) {
     networkView = networkTab.dataset.networkView;

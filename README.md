@@ -74,3 +74,7 @@ Cada registro inclui tecnologias, mercados, presença territorial, ressalvas, co
 O relatório está em [`outputs/downstream-sc.md`](outputs/downstream-sc.md), acompanhado de [`outputs/downstream-sc.provenance.md`](outputs/downstream-sc.provenance.md). A ampliação upstream e aeroespacial está em [`outputs/upstream-sc.md`](outputs/upstream-sc.md). As fontes e os casos pendentes devem ser revalidados antes de produzir indicadores oficiais.
 
 O cruzamento com os oito perfis catarinenses observados no catálogo AEB está em [`outputs/aeb-sc.md`](outputs/aeb-sc.md): cinco inclusões (ESSS, Outer Space, Abiental Geospace, AJXTEC e 4C Innovation), totalizando 48 registros. AJXTEC e 4C permanecem adjacentes pendentes; Outer Space e a infraestrutura de laboratório em Joinville têm ressalva contra dupla contagem. Os dados da AEB são declarados pelas organizações.
+
+## Interface e resumo do catálogo
+
+`modern.css` aplica a identidade visual sobre os componentes de `style.css`, com tipografia ampliada, navegação fixa, cards e filtros responsivos e respeito à preferência por movimento reduzido. Na visão geral, o resumo do ecossistema calcula totais e situação documental diretamente de `data/companies.json`. Os atalhos por papel abrem o catálogo já filtrado, incluindo registros históricos e pendentes. Os números do projeto aparecem em bloco separado dos perfis pesquisados.
