@@ -1,0 +1,287 @@
+{
+  "source": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+  "sha256": "7e9db0ab439b8013d95e641dca591658e3f50ae1c0e3a84bb01992ea2e0dbdff",
+  "documentAsOf": "2026-10-01",
+  "reviewedAt": "2026-11-14",
+  "previousProfiles": 48,
+  "addedProfiles": 19,
+  "totalProfiles": 67,
+  "matches": [
+    {
+      "companyId": "ufsc-spacelab",
+      "action": "added",
+      "pages": [
+        1,
+        8
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "ifsc-formacao-espacial",
+      "action": "added",
+      "pages": [
+        1,
+        2,
+        5
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "ifsc-satnogs-389",
+      "action": "added",
+      "pages": [
+        1
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "furb-florestasc",
+      "action": "added",
+      "pages": [
+        2,
+        9
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "furb-ceops",
+      "action": "added",
+      "pages": [
+        2
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "ufsc-formacao-divulgacao",
+      "action": "added",
+      "pages": [
+        2,
+        3
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "ifc-camboriu-defesa-civil",
+      "action": "added",
+      "pages": [
+        3
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "unisul-ciencias-aeronauticas",
+      "action": "added",
+      "pages": [
+        7
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "fundacao-certi",
+      "action": "added",
+      "pages": [
+        4,
+        7
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "mev-tech",
+      "action": "added",
+      "pages": [
+        4
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "vultis-industries",
+      "action": "added",
+      "pages": [
+        4,
+        9
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "electro-aco-altona",
+      "action": "added",
+      "pages": [
+        7,
+        9
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "webphy-tecnologia",
+      "action": "added",
+      "pages": [
+        4
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "hidrologica-research",
+      "action": "added",
+      "pages": [
+        5
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "telebras-gateway-florianopolis",
+      "action": "added",
+      "pages": [
+        6,
+        9
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "epagri-ciram",
+      "action": "added",
+      "pages": [
+        6
+      ],
+      "status": "pending"
+    },
+    {
+      "companyId": "fapesc-fomento-espacial",
+      "action": "added",
+      "pages": [
+        5
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "fiesc-condefesa",
+      "action": "added",
+      "pages": [
+        3,
+        5,
+        6
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "kosmos-rocketry",
+      "action": "added",
+      "pages": [
+        5,
+        9
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "senai-isi-sistemas-embarcados",
+      "action": "enriched",
+      "pages": [
+        3
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "outer-space",
+      "action": "enriched",
+      "pages": [
+        3
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "horus",
+      "action": "enriched",
+      "pages": [
+        3
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "agrosatelite",
+      "action": "enriched",
+      "pages": [
+        3
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "canopy",
+      "action": "enriched",
+      "pages": [
+        4
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "embraer-cete-sc",
+      "action": "enriched",
+      "pages": [
+        7
+      ],
+      "status": "historical"
+    },
+    {
+      "companyId": "weg-propulsao-eletrica-aeronautica",
+      "action": "enriched",
+      "pages": [
+        7
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "defesa-civil-sc-goes",
+      "action": "enriched",
+      "pages": [
+        6
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "nor-space",
+      "action": "matched_existing",
+      "pages": [
+        3
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "remap",
+      "action": "matched_existing",
+      "pages": [
+        3
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "esss",
+      "action": "matched_existing",
+      "pages": [
+        4
+      ],
+      "status": "documented"
+    },
+    {
+      "companyId": "laboratorio-foguetes-joinville",
+      "action": "matched_existing",
+      "pages": [
+        3
+      ],
+      "status": "pending"
+    }
+  ],
+  "excluded": [
+    "Innalogics",
+    "Dígitro",
+    "TS4",
+    "Teksea",
+    "Contronics",
+    "Eco Mach Tech",
+    "Fabricante não identificado de Jaraguá do Sul / carga Allog"
+  ],
+  "notImported": [
+    "Cargos e contatos pessoais",
+    "Editais e eventos como oportunidades abertas",
+    "Participação no Transporter-18 sem manifesto de cargas",
+    "Contagens agregadas de EED, radares ou estações sem base atualizada",
+    "Atores apenas sugeridos para pesquisa: Católica SC, Univille, Inovaparq, SATC, Unesc, LABRE-SC"
+  ]
+}

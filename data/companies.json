@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "asOf": "2026-11-13",
-    "title": "Empresas e aplicações upstream e downstream",
+    "asOf": "2026-11-14",
+    "title": "Organizações e aplicações do ecossistema espacial",
     "subtitle": "Levantamento documental da economia espacial em Santa Catarina",
-    "scope": "Empresas, marcas, unidades e centros tecnológicos com oferta comercial, desenvolvimento ou uso industrial de sistemas, dados e serviços espaciais ou aeroespaciais e vínculo catarinense documentado ou explicitamente pendente.",
+    "scope": "Empresas, unidades de pesquisa, instituições de formação, infraestrutura e organizações de apoio com vínculo catarinense documentado ou explicitamente pendente; inclui atividades espaciais, aeronáuticas e adjacentes identificadas separadamente.",
     "notice": "Levantamento documental preliminar; não é censo, certificação, relação de membros da Rede OESC ou confirmação cadastral. Contagens representam registros desta pesquisa, não o total de empresas do estado.",
     "roles": {
       "upstream": "Fabricação e engenharia upstream",
@@ -11,7 +11,10 @@
       "downstream": "Produtos e serviços downstream",
       "integrator": "Integração, equipamentos e serviços GNSS",
       "end_user": "Indústrias e organizações usuárias",
-      "adjacent": "Atividades adjacentes e apoio ao ecossistema"
+      "adjacent": "Atividades adjacentes e apoio ao ecossistema",
+      "education": "Formação e divulgação científica",
+      "infrastructure": "Infraestrutura espacial e segmento solo",
+      "ecosystem_support": "Fomento e articulação do ecossistema"
     },
     "statuses": {
       "documented": "Oferta ou aplicação documentada",
@@ -27,7 +30,9 @@
       "satellite_communications": "Comunicação por satélite",
       "weather_intelligence": "Inteligência climática",
       "geospatial": "Geotecnologias e atividades adjacentes",
-      "innovation_support": "Inovação e apoio ao ecossistema"
+      "innovation_support": "Inovação e apoio ao ecossistema",
+      "aerospace_components": "Componentes e engenharia aeroespacial",
+      "education_outreach": "Formação e divulgação científica"
     },
     "methodology": [
       "Buscar oferta comercial explícita baseada em imagens orbitais, navegação GNSS ou comunicação via satélite. GIS, IA, drones e sensoriamento remoto sem identificação do insumo orbital não bastam.",
@@ -39,7 +44,10 @@
       "Registrar data de consulta e, quando disponível, data da fonte. Histórico ou promessa de implantação não comprova atividade atual. Ausência de evidência não prova inexistência.",
       "Cruzar o filtro territorial SC do catálogo AEB com perfis individuais; preservar um registro por organização já identificada. Dados do catálogo são declarados pelas organizações, não auditoria da AEB.",
       "Classificações e selos da AEB não equivalem aos papéis deste levantamento, certificação técnica ou filiação ao OESC. Consultorias genéricas e materiais sem aplicação espacial/aeronáutica específica ficam como adjacentes pendentes.",
-      "Separar a empresa Outer Space da infraestrutura de laboratório em Joinville; registros relacionados não representam necessariamente fornecedores independentes."
+      "Separar a empresa Outer Space da infraestrutura de laboratório em Joinville; registros relacionados não representam necessariamente fornecedores independentes.",
+      "Complemento de outubro de 2026 incorporado com página e número da referência. Fontes document_reference foram lidas no PDF, sem confirmação independente da página citada; informações novas sustentadas apenas por essas referências ficam pendentes ou históricas.",
+      "Perfis de formação, infraestrutura e apoio são separados de fornecedores e centros tecnológicos. Câmpus e unidades não representam necessariamente organizações jurídicas independentes; a lista de instituições do projeto permanece distinta do catálogo.",
+      "Preservar evidência mais recente já cadastrada quando o complemento histórico pedir confirmação. Metas de voo, editais encerrados e usuários potenciais não são realizações atuais."
     ],
     "nextSteps": [
       "Confirmar CNPJ e estabelecimento ativo em Receita/JUCESC, com sede, filial e grupo econômico.",
@@ -48,7 +56,10 @@
       "Identificar receita, emprego e carteira de projetos especificamente relacionados a atividades espaciais, sem atribuir o porte global do grupo a SC.",
       "Ampliar prospecção no Oeste, Norte, Vale, Serra e Sul por associações setoriais, parques tecnológicos e compras públicas.",
       "Atualizar fontes e registrar confirmação, correção, fusão ou encerramento com histórico de revisões.",
-      "Validar projetos espaciais da 4C e fornecimentos aeronáuticos/espaciais da AJXTEC; confirmar contrato, implantação e relação entre Outer Space e laboratório do Ágora."
+      "Validar projetos espaciais da 4C e fornecimentos aeronáuticos/espaciais da AJXTEC; confirmar contrato, implantação e relação entre Outer Space e laboratório do Ágora.",
+      "Revalidar referências inacessíveis da UFSC e FURB; confirmar atividade dos projetos IFSC, da estação SatNOGS 389 e do curso da Unisul.",
+      "Confirmar aplicação orbital de Hidrológica e Webphy, operação de recepção do Catarina-A2 no Ciram e sede da Innalogics.",
+      "Conferir no ato oficial a pré-qualificação da Vultis, comprovar entregas/voos da MEV Tech e identificar fabricante atendido pela Allog."
     ]
   },
   "companies": [
@@ -84,7 +95,9 @@
           "title": "Canopy — Sobre",
           "kind": "company",
           "evidence": "A própria empresa declara uso de dados coletados por satélite, avião e drone em produtos comerciais para indústria, governos e ONGs.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -93,7 +106,10 @@
           "title": "Canopy — Soluções de geotecnologia na Expoforest",
           "kind": "company",
           "evidence": "A empresa informa sede em Florianópolis e oferta da plataforma Canopy Insight.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2024-05-30"
         },
@@ -102,7 +118,10 @@
           "title": "UFES — Projeto de evolução arquitetural Canopy Insight",
           "kind": "university",
           "evidence": "Documento institucional confirma Florianópolis, monitoramento florestal por satélite e aplicações de LiDAR e radar interferométrico.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -111,9 +130,28 @@
           "title": "FEST — Projeto 1069 Canopy Insight",
           "kind": "university",
           "evidence": "A fundação relata iniciativa financiada pela Canopy e levantamento nacional com imagens de satélite de alta resolução.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
+        },
+        {
+          "url": "https://www.gazetadopovo.com.br/brasil/satelite-da-nasa-inteligencia-artificial-tecnologia-avanca-para-evitar-incendios-florestais/",
+          "title": "Complemento, p. 4 — Gazeta do Povo: tecnologia contra incêndios florestais (Canopy)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 4, fonte 115); referência externa não revalidada nesta rodada. O complemento solicita confirmação de atividade atual; essa pendência não substitui as fontes comerciais mais recentes já cadastradas.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 115,
+            "verification": "document_only"
+          }
         }
       ],
       "membershipVerified": false,
@@ -338,7 +376,9 @@
     {
       "id": "horus",
       "name": "Horus Smart Detections",
-      "aliases": [],
+      "aliases": [
+        "Horus Aeronaves"
+      ],
       "city": "Florianópolis",
       "state": "SC",
       "presence": "sede declarada",
@@ -353,15 +393,24 @@
         "Inteligência artificial",
         "Visão computacional"
       ],
-      "markets": ["Cidades", "Meio ambiente", "Energia", "Telecomunicações"],
-      "notes": "Mappa aparece como plataforma/parceria no case histórico: não contar como segunda empresa sem comprovar identidade societária. Muitas ofertas atuais são exclusivamente aéreas e não devem ser descritas como satelitais.",
+      "markets": [
+        "Cidades",
+        "Meio ambiente",
+        "Energia",
+        "Telecomunicações"
+      ],
+      "notes": "Mappa aparece como plataforma/parceria no case histórico: não contar como segunda empresa sem comprovar identidade societária. Muitas ofertas atuais são exclusivamente aéreas e não devem ser descritas como satelitais. O complemento relata aquisição pela Nightingale Partners em 2025; não criar novo perfil do grupo adquirente.",
       "sources": [
         {
           "url": "https://horus.global/en/homepage/",
           "title": "Horus — Página comercial atual",
           "kind": "company",
           "evidence": "A seção Smart Cities anuncia monitoramento com satélites e drones; o rodapé informa endereço em Florianópolis e CNPJ 19.664.563/0001-02.",
-          "supports": ["location", "identity", "offering"],
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -370,9 +419,28 @@
           "title": "Horus — Sistema Monitora para prefeituras",
           "kind": "company",
           "evidence": "Case de implantação municipal descreve análise temporal por satélite combinada a drones e base cadastral da prefeitura.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2019-10-09"
+        },
+        {
+          "url": "https://scinova.com.br/horus-de-florianopolis-e-adquirida-por-private-equity-da-australia/",
+          "title": "Complemento, p. 3 — SC Inova: Horus é adquirida por private equity australiano",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 3, fonte 113); referência externa não revalidada nesta rodada. O documento relata aquisição pela Nightingale Partners em fevereiro de 2025.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 113,
+            "verification": "document_only"
+          }
         }
       ],
       "membershipVerified": false,
@@ -851,7 +919,9 @@
     {
       "id": "agrosatelite",
       "name": "Agrosatélite Geotecnologia Aplicada / operação integrada à Serasa Experian",
-      "aliases": ["Agrosatélite"],
+      "aliases": [
+        "Agrosatélite"
+      ],
       "city": "Florianópolis",
       "state": "SC",
       "presence": "Origem e operação histórica em Florianópolis; unidade atual a validar",
@@ -879,7 +949,10 @@
           "title": "www.serasaexperian.com.br",
           "kind": "corporate_parent",
           "evidence": "Aquisição em 2023; monitoramento agrícola por imagens orbitais; integração de dados agrícolas e IA.",
-          "supports": ["identity", "offering"],
+          "supports": [
+            "identity",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -888,7 +961,9 @@
           "title": "br.linkedin.com",
           "kind": "corporate_profile",
           "evidence": "Perfil corporativo informa sede em Florianópolis e integração à Serasa Experian.",
-          "supports": ["location"],
+          "supports": [
+            "location"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -897,7 +972,9 @@
           "title": "www.serasaexperian.com.br",
           "kind": "corporate_parent",
           "evidence": "Ofertas Crop Maps e Crop Monitor e processamento comercial de imagens de satélite.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -906,9 +983,30 @@
           "title": "UFSC — edital histórico da Agrosatélite",
           "kind": "universidade",
           "evidence": "Anúncio histórico identifica fundação e endereço da Agrosatélite em Florianópolis e atuação em sensoriamento remoto.",
-          "supports": ["location", "identity", "offering"],
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2015-12"
+        },
+        {
+          "url": "https://github.com/agrosatelite",
+          "title": "Complemento, p. 3 — GitHub: Agrosatélite (scripts do MapBiomas)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 3, fonte 111); referência externa não revalidada nesta rodada. O documento aponta scripts públicos da Agrosatélite relacionados ao MapBiomas; não confirma estabelecimento atual em SC.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 111,
+            "verification": "document_only"
+          }
         }
       ],
       "membershipVerified": false,
@@ -1792,7 +1890,7 @@
         "Agro",
         "Monitoramento climático"
       ],
-      "notes": "Instituto do sistema FIESC/SENAI, não empresa. Fontes de imprensa e institucionais; lançamento do Catarina-A2 e equipe local dedicada ainda devem ser confirmados. O perfil AEB descreve também aplicações downstream; manter um único registro de centro tecnológico, sem duplicar como empresa.",
+      "notes": "Instituto do sistema FIESC/SENAI, não empresa. Fontes de imprensa e institucionais; lançamento do Catarina-A2 e equipe local dedicada ainda devem ser confirmados. O perfil AEB descreve também aplicações downstream; manter um único registro de centro tecnológico, sem duplicar como empresa. O estudo SENAI/MIT de 2025 trata da estruturação de cluster; não comprova implantação industrial nem parceria permanente.",
       "confidence": "high",
       "sources": [
         {
@@ -1852,11 +1950,31 @@
           ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
+        },
+        {
+          "url": "https://fiesc.com.br/pt-br/imprensa/senai-e-mit-iniciam-projeto-para-criacao-de-cluster-aeroespacial-no-sul-do-brasil",
+          "title": "FIESC: SENAI e MIT iniciam projeto de cluster aeroespacial",
+          "kind": "institutional",
+          "evidence": "Projeto de quatro meses do programa GO-Lab do MIT, com foco em Florianópolis e primeira atividade presencial em março de 2025.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-03-17",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 104,
+            "verification": "direct"
+          }
         }
       ]
     },
     {
-      "aliases": ["CETE-SC", "Embraer Florianópolis"],
+      "aliases": [
+        "CETE-SC",
+        "Embraer Florianópolis"
+      ],
       "state": "SC",
       "membershipVerified": false,
       "registryVerified": false,
@@ -1876,7 +1994,11 @@
         "Software",
         "Metrologia"
       ],
-      "markets": ["Aviação comercial", "Aviação executiva", "Defesa"],
+      "markets": [
+        "Aviação comercial",
+        "Aviação executiva",
+        "Defesa"
+      ],
       "notes": "Evidência principal de 2017 (inauguração e nova fase do contrato com a CERTI). Operação atual não confirmada; a Embraer voltou a SC em 2025 nas tratativas do Polo Aeroespacial Catarinense. A Fundação CERTI é registrada aqui como parceira, não como perfil separado.",
       "confidence": "medium",
       "sources": [
@@ -1885,7 +2007,10 @@
           "title": "CREA-SC — Embraer inaugura novo Centro de Engenharia e Tecnologia em Florianópolis",
           "kind": "press",
           "evidence": "Engenheiros da Embraer dedicados ao desenvolvimento de sistemas aeronáuticos em centro instalado no prédio da incubadora CELTA, com parceria da CERTI.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2017-08-28"
         },
@@ -1894,7 +2019,10 @@
           "title": "TI Inside — Embraer vai desenvolver sistemas aeronáuticos em Florianópolis",
           "kind": "press",
           "evidence": "CETE-SC criado com Fundação CERTI, Embrapii e FAPESC para desenvolver novos sistemas aeronáuticos, aproveitando competências em eletrônica e metrologia.",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2017-08-25"
         },
@@ -1903,14 +2031,35 @@
           "title": "ND+ — Por que Santa Catarina pode se tornar um polo aeroespacial?",
           "kind": "press",
           "evidence": "Governo de SC e Embraer iniciam tratativas para polo aeroespacial em rede; prioridades incluem sensores, comunicações, manufatura avançada e propulsão elétrica.",
-          "supports": ["identity"],
+          "supports": [
+            "identity"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2025-10-05"
+        },
+        {
+          "url": "https://amanha.com.br/categoria/negocios-do-sul1/embraer-inaugura-centro-de-tecnologia-em-florianopolis",
+          "title": "Complemento, p. 7 — Grupo Amanhã: CETE-SC e convênio FAPESC/CERTI",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 7, fonte 147); referência externa não revalidada nesta rodada. Centro inaugurado em 2017 e parceria histórica com a CERTI; continuidade em Florianópolis a confirmar.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 7,
+            "reference": 147,
+            "verification": "document_only"
+          }
         }
       ]
     },
     {
-      "aliases": ["WEG Equipamentos Elétricos"],
+      "aliases": [
+        "WEG Equipamentos Elétricos"
+      ],
       "state": "SC",
       "membershipVerified": false,
       "registryVerified": false,
@@ -1924,8 +2073,15 @@
       "status": "documented",
       "segment": "aeronautics",
       "description": "Desenvolveu e fabricou em Jaraguá do Sul o motor elétrico e o inversor do demonstrador elétrico da Embraer baseado no Ipanema, em parceria anunciada em 2019.",
-      "technologies": ["Motores elétricos", "Inversores", "Propulsão elétrica"],
-      "markets": ["Aviação agrícola", "Mobilidade aérea elétrica"],
+      "technologies": [
+        "Motores elétricos",
+        "Inversores",
+        "Propulsão elétrica"
+      ],
+      "markets": [
+        "Aviação agrícola",
+        "Mobilidade aérea elétrica"
+      ],
       "notes": "Registro restrito à linha de P&D aeronáutica; o porte e a receita do grupo WEG não devem ser atribuídos ao setor aeroespacial. O demonstrador é de testes, sem produção seriada anunciada.",
       "confidence": "medium",
       "sources": [
@@ -1934,7 +2090,10 @@
           "title": "Tecnoblog — Embraer anuncia acordo com WEG para desenvolver avião elétrico",
           "kind": "press",
           "evidence": "Acordo de 2019: a WEG é responsável por fabricar motor e inversor da aeronave em sua sede em Jaraguá do Sul (SC).",
-          "supports": ["location", "offering"],
+          "supports": [
+            "location",
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2019-05-29"
         },
@@ -1943,7 +2102,9 @@
           "title": "Tecnoblog — Embraer mostra primeiras fotos de protótipo de avião elétrico",
           "kind": "press",
           "evidence": "Protótipo elétrico derivado do Ipanema com sistema de propulsão desenvolvido com a WEG.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
         },
@@ -1952,9 +2113,28 @@
           "title": "NSC Total — Avião elétrico da Embraer com motor WEG será exposto pela primeira vez",
           "kind": "press",
           "evidence": "Demonstrador em testes desde 2021, apresentado ao público; a Embraer não pretende comercializá-lo.",
-          "supports": ["offering"],
+          "supports": [
+            "offering"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
+        },
+        {
+          "url": "https://www.weg.net/institutional/BR/en/news/products-and-solutions/embraer-advances-in-the-development-of-the-demonstrator-aircraft-with-electric-propulsion-technology",
+          "title": "Complemento, p. 7 — WEG: demonstrador de propulsão elétrica com a Embraer",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 7, fonte 148); referência externa não revalidada nesta rodada. O complemento relaciona o demonstrador de propulsão elétrica desenvolvido com a Embraer.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 7,
+            "reference": 148,
+            "verification": "document_only"
+          }
         }
       ]
     },
@@ -2104,7 +2284,10 @@
       ]
     },
     {
-      "aliases": ["SPDC/SC", "Cigerd"],
+      "aliases": [
+        "SPDC/SC",
+        "Cigerd"
+      ],
       "state": "SC",
       "membershipVerified": false,
       "registryVerified": false,
@@ -2123,7 +2306,10 @@
         "Imagens meteorológicas",
         "Radares"
       ],
-      "markets": ["Defesa civil", "Alertas climáticos"],
+      "markets": [
+        "Defesa civil",
+        "Alertas climáticos"
+      ],
       "notes": "Órgão público usuário, não fornecedor. Antena instalada em 2018 (originalmente GOES-16), operando com GOES-19 desde 2025 segundo reportagens.",
       "confidence": "high",
       "sources": [
@@ -2132,7 +2318,10 @@
           "title": "Governo de SC — Defesa Civil capta imagens diretas de satélite",
           "kind": "government",
           "evidence": "Defesa Civil de SC é a única do país com antena própria de recepção direta de imagens de satélite para monitoramento em tempo real.",
-          "supports": ["location", "usage"],
+          "supports": [
+            "location",
+            "usage"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2026-05"
         },
@@ -2141,7 +2330,9 @@
           "title": "Correio da Manhã — Defesa Civil de SC capta imagens do GOES-19",
           "kind": "press",
           "evidence": "Secretaria passou a receber imagens em tempo real do GOES-19 para monitorar condições meteorológicas e emitir alertas.",
-          "supports": ["usage"],
+          "supports": [
+            "usage"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": "2026-05"
         },
@@ -2150,9 +2341,29 @@
           "title": "ND+ — SC é o único estado com antena própria para monitorar tempestades",
           "kind": "press",
           "evidence": "Antena no Cigerd, em Florianópolis, para recepção direta de imagens meteorológicas.",
-          "supports": ["location", "usage"],
+          "supports": [
+            "location",
+            "usage"
+          ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
+        },
+        {
+          "url": "https://www.defesacivil.sc.gov.br/2026/05/26/defesa-civil-de-sc-e-a-unica-do-brasil-a-captar-imagens-diretas-de-satelite-para-monitoramento-em-tempo-real/",
+          "title": "Complemento, p. 6 — Defesa Civil SC: única do Brasil a captar imagens diretas de satélite (26/05/2026)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 6, fonte 134); referência externa não revalidada nesta rodada. O complemento descreve recepção direta GOES-19 no Cigerd; contagens de radares e estações não foram atualizadas por esta importação.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 6,
+            "reference": 134,
+            "verification": "document_only"
+          }
         }
       ]
     },
@@ -2207,7 +2418,8 @@
       "id": "outer-space",
       "name": "Outer Space Ltda",
       "aliases": [
-        "Outer Space Brasil"
+        "Outer Space Brasil",
+        "Lab Foguetes"
       ],
       "city": "Joinville",
       "state": "SC",
@@ -2228,7 +2440,7 @@
         "Pesquisa em propulsão",
         "Educação aeroespacial"
       ],
-      "notes": "A empresa declara contratação pelo MCTI em 2024 para implantar e coordenar laboratório no Sul. Contrato e operação não auditados. Atingir 100 km até 2030 é meta. Relacionada ao registro laboratorio-foguetes-joinville; empresa e infraestrutura não equivalem a duas empresas independentes.",
+      "notes": "A empresa declara contratação pelo MCTI em 2024 para implantar e coordenar laboratório no Sul. Contrato e operação não auditados. Atingir 100 km até 2030 é meta. Relacionada ao registro laboratorio-foguetes-joinville; empresa e infraestrutura não equivalem a duas empresas independentes. O Pathfinder I é plano de desenvolvimento relatado no complemento; não registrar meta de altitude ou cargas previstas como lançamento realizado.",
       "sources": [
         {
           "url": "https://spaceindustry.aeb.gov.br/en/catalog/company/outer-space/",
@@ -2242,6 +2454,23 @@
           ],
           "checkedAt": "2026-11-13",
           "publishedAt": null
+        },
+        {
+          "url": "https://brazilianspace.blogspot.com/2025/10/projeto-de-foguete-do-lab-foguetes-de.html",
+          "title": "Complemento, p. 3 — Brazilian Space: projeto Pathfinder I do Lab Foguetes",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 3, fonte 103); referência externa não revalidada nesta rodada. Projeto Pathfinder I relatado com meta de voo e cargas educacionais; andamento em 2026 a confirmar.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 103,
+            "verification": "document_only"
+          }
         }
       ],
       "membershipVerified": false,
@@ -2385,13 +2614,1139 @@
       "registryVerified": false,
       "confidence": "medium",
       "usageScope": "not_applicable"
+    },
+    {
+      "id": "ufsc-spacelab",
+      "name": "UFSC — SpaceLab",
+      "aliases": [
+        "SpaceLab UFSC"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://noticias.ufsc.br/2026/06/novo-satelite-do-spacelab-podera-embarcar-experimento-de-interessados/",
+      "role": "research_unit",
+      "status": "pending",
+      "segment": "space_systems",
+      "description": "Laboratório universitário associado ao desenvolvimento de CubeSats, experimentos embarcados e infraestrutura de estação terrena.",
+      "technologies": [
+        "CubeSats",
+        "Experimentos embarcados",
+        "Estação terrena"
+      ],
+      "markets": [
+        "Pesquisa espacial",
+        "Formação aeroespacial"
+      ],
+      "notes": "O complemento relata o FloripaSat-RO e chamada encerrada em junho de 2026. A referência da chamada retornou 404 nesta rodada. Não inferir lançamento, disponibilidade de vagas ou embarque no Transporter-18. Perfil de unidade da UFSC, não empresa independente.",
+      "sources": [
+        {
+          "url": "https://noticias.ufsc.br/2026/06/novo-satelite-do-spacelab-podera-embarcar-experimento-de-interessados/",
+          "title": "Complemento, p. 1 — Notícias da UFSC: chamada de experimentos no FloripaSat-RO (03/06/2026)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 1, fonte 81); referência externa não revalidada nesta rodada. O documento relata chamada para experimentos no FloripaSat-RO, CubeSat 6U em desenvolvimento.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 1,
+            "reference": 81,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ifsc-formacao-espacial",
+      "name": "IFSC — formação e projetos espaciais",
+      "aliases": [
+        "GFIG",
+        "Grupo de Foguetes do IFSC Gaspar",
+        "IFSC Xanxerê",
+        "IFSC São Carlos",
+        "METEOSAT IFSC"
+      ],
+      "city": null,
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://www.ifsc.edu.br/en/curso-tecnicos/-/visualizar/meteorologia/Campus-Florianopolis/190/260/iInnIYLz2yYU",
+      "role": "education",
+      "status": "historical",
+      "segment": "education_outreach",
+      "description": "Reúne formação em meteorologia e experiências educacionais dos câmpus Florianópolis, Xanxerê, Gaspar e São Carlos: imagens meteorológicas, experimento de microgravidade e foguetes estudantis.",
+      "technologies": [
+        "Meteorologia",
+        "Recepção Meteosat",
+        "Foguetes educacionais",
+        "Microgravidade"
+      ],
+      "markets": [
+        "Educação técnica",
+        "Divulgação científica"
+      ],
+      "notes": "Perfil agregado de atividades do IFSC; não contar câmpus, GFIG e instituição como empresas independentes. METEOSAT e participações do GFIG após 2023 precisam de confirmação. O experimento de Xanxerê é histórico (ISS em 2019). A estação SatNOGS possui ficha de infraestrutura separada.",
+      "sources": [
+        {
+          "url": "https://www.ifsc.edu.br/en/curso-tecnicos/-/visualizar/meteorologia/Campus-Florianopolis/190/260/iInnIYLz2yYU",
+          "title": "Complemento, p. 2 — IFSC: Curso Técnico em Meteorologia (Câmpus Florianópolis)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 87); referência externa não revalidada nesta rodada. Curso técnico em Meteorologia em Florianópolis.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 87,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://www.cursodemeteorologia.com.br/meteosat.html",
+          "title": "Complemento, p. 2 — MeteoTec/IFSC: projeto METEOSAT",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 89); referência externa não revalidada nesta rodada. Projeto METEOSAT; continuidade em 2026 a confirmar.",
+          "supports": [
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 89,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://www.ifsc.edu.br/conteudo-aberto/-/asset_publisher/1UWKZAkiOauK/content/id/1640858/experimento-leva-estudantes-e-professores-do-ifsc-para-a-nasa",
+          "title": "Complemento, p. 2 — Portal do IFSC: experimento leva estudantes de Xanxerê à NASA (2019)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 90); referência externa não revalidada nesta rodada. Experimento de estudantes de Xanxerê enviado à ISS em 2019.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 90,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://www.ifsc.edu.br/web/noticias/w/equipe-do-campus-gaspar-participa-da-maior-competicao-de-engenharia-de-foguetes-da-america-latina",
+          "title": "Complemento, p. 2 — Portal do IFSC: Grupo de Foguetes do Câmpus Gaspar na LASC (29/08/2023)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 92); referência externa não revalidada nesta rodada. GFIG de Gaspar participa de competições de foguetes, com registro em 2023.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 92,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://ifsc.edu.br/web/noticias/w/parceria-entre-campus-sao-carlos-e-ufsm-estimula-estudo-da-fisica-com-lancamento-de-foguetes-de-garrafa-pet",
+          "title": "Complemento, p. 2 — Portal do IFSC: foguetes de garrafa PET com a UFSM (25/09/2026)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 93); referência externa não revalidada nesta rodada. Extensão de foguetes PET com a UFSM em São Carlos.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 93,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ifsc-satnogs-389",
+      "name": "IFSC — estação SatNOGS 389",
+      "aliases": [],
+      "city": "São José",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://network.satnogs.org/stations/389/",
+      "role": "infrastructure",
+      "status": "historical",
+      "segment": "satellite_communications",
+      "description": "Estação educacional de recepção VHF/UHF cadastrada na rede SatNOGS, no câmpus São José.",
+      "technologies": [
+        "VHF/UHF",
+        "Antena turnstile",
+        "SatNOGS"
+      ],
+      "markets": [
+        "Recepção de satélites",
+        "Ensino de telecomunicações"
+      ],
+      "notes": "Na consulta de 14/11/2026, a rede indica estação desconectada e em teste, com 13 observações; último estado de desconexão em 12/05/2026. Reativação a confirmar. Infraestrutura do IFSC, não organização jurídica adicional.",
+      "sources": [
+        {
+          "url": "https://network.satnogs.org/stations/389/",
+          "title": "SatNOGS Network: estação 389 IFSC",
+          "kind": "institutional",
+          "evidence": "Página da rede identifica o câmpus São José e marca a estação como desconectada, indisponível e em teste.",
+          "supports": [
+            "location",
+            "identity",
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 1,
+            "reference": 85,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "furb-florestasc",
+      "name": "FURB — IFFSC / FlorestaSC",
+      "aliases": [
+        "IFFSC",
+        "FlorestaSC",
+        "Inventário Florístico Florestal de Santa Catarina"
+      ],
+      "city": "Blumenau",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://www.furb.br/web/1704/noticias/classificacao/2/pesquisa/inventario-floristico-florestal-firma-acordo-com-a-nasa/7494",
+      "role": "research_unit",
+      "status": "pending",
+      "segment": "earth_observation",
+      "description": "Inventário florestal coordenado pela FURB com parceiros estaduais; o complemento relata intercâmbio de dados de campo para calibração e validação de missões de observação da Terra.",
+      "technologies": [
+        "Inventário florestal",
+        "LiDAR",
+        "Radar",
+        "Dados de campo"
+      ],
+      "markets": [
+        "Florestas",
+        "Calibração e validação orbital"
+      ],
+      "notes": "As ligações com GEDI, NISAR e Biomass são relatadas no documento; as páginas da FURB não ficaram acessíveis nesta rodada. Não implica fabricação de satélites nem contrato vigente. FURB, UFSC, UDESC e Epagri são parceiras; não criar um perfil de fornecedor para cada parceria.",
+      "sources": [
+        {
+          "url": "https://www.furb.br/web/1704/noticias/classificacao/2/pesquisa/inventario-floristico-florestal-firma-acordo-com-a-nasa/7494",
+          "title": "Complemento, p. 2 — FURB: Inventário Florístico Florestal firma acordo com a NASA (12/12/2018)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 94); referência externa não revalidada nesta rodada. Acordo com a NASA em 2018 para dados do inventário.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 94,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://www.furb.br/pt/noticias/inventario-elabora-mapa-detalhado-das-florestas-de-sc",
+          "title": "Complemento, p. 2 — FURB: Inventário elabora mapa detalhado das florestas de SC",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 95); referência externa não revalidada nesta rodada. O documento associa dados do inventário a GEDI, NISAR e Biomass.",
+          "supports": [
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 95,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "furb-ceops",
+      "name": "FURB — CEOPS",
+      "aliases": [
+        "Centro de Operação do Sistema de Alerta"
+      ],
+      "city": "Blumenau",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "http://ceops.furb.br/index.php/institucional",
+      "role": "end_user",
+      "status": "pending",
+      "segment": "weather_intelligence",
+      "description": "Centro de operação do sistema de alerta da bacia do Itajaí-Açu; o complemento relata uso de imagens de satélite na previsão meteorológica e hidrológica.",
+      "technologies": [
+        "Imagens meteorológicas",
+        "Modelagem hidrológica"
+      ],
+      "markets": [
+        "Alertas de enchentes",
+        "Defesa civil"
+      ],
+      "notes": "Confirmar operação atual e insumos orbitais; a página institucional não ficou acessível nesta rodada. Unidade da FURB, relacionada ao perfil FURB/FlorestaSC, sem representar uma segunda empresa.",
+      "sources": [
+        {
+          "url": "http://ceops.furb.br/index.php/institucional",
+          "title": "Complemento, p. 2 — CEOPS/FURB: institucional",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 97); referência externa não revalidada nesta rodada. Centro utiliza imagens de satélite e previsão dos níveis do rio.",
+          "supports": [
+            "location",
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 97,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ufsc-formacao-divulgacao",
+      "name": "UFSC — formação e divulgação espacial",
+      "aliases": [
+        "Planetário da UFSC",
+        "Observatório Astronômico da UFSC",
+        "Sagittarius A"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://noticias.ufsc.br/2022/08/projeto-do-curso-de-meteorologia-da-ufsc-detecta-ilhas-de-calor-em-florianopolis/",
+      "role": "education",
+      "status": "pending",
+      "segment": "education_outreach",
+      "description": "Atividades de meteorologia com dados Landsat, Planetário, Observatório Astronômico e experiências estudantis do Colégio de Aplicação.",
+      "technologies": [
+        "Landsat",
+        "Astronomia",
+        "Satélites educacionais"
+      ],
+      "markets": [
+        "Educação",
+        "Divulgação científica"
+      ],
+      "notes": "Perfil agregado de formação e extensão, distinto da unidade SpaceLab. Revalidar atividades de 2026 e o ano da participação da equipe Sagittarius A na OBSAT; o próprio complemento registra essa pendência. Não contar projetos educacionais como fornecedores.",
+      "sources": [
+        {
+          "url": "https://noticias.ufsc.br/2022/08/projeto-do-curso-de-meteorologia-da-ufsc-detecta-ilhas-de-calor-em-florianopolis/",
+          "title": "Complemento, p. 2 — Notícias da UFSC: ilhas de calor com dados Landsat",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 98); referência externa não revalidada nesta rodada. Pesquisa de ilhas de calor com dados Landsat.",
+          "supports": [
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 98,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://noticias.ufsc.br/2026/03/observatorio-astronomico-e-planetario-reabrem-atividades-de-observacao-nesta-quarta/",
+          "title": "Complemento, p. 2 — Notícias da UFSC: Observatório e Planetário (16/03/2026)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 2, fonte 99); referência externa não revalidada nesta rodada. Atividades públicas do Planetário e Observatório; página retornou 404 nesta rodada.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 2,
+            "reference": 99,
+            "verification": "document_only"
+          }
+        },
+        {
+          "url": "https://noticias.ufsc.br/tags/satelite/",
+          "title": "Complemento, p. 3 — Notícias da UFSC: tag satélite (OBSAT, Colégio de Aplicação)",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 3, fonte 101); referência externa não revalidada nesta rodada. Relato de participação do Colégio de Aplicação na OBSAT.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 101,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "ifc-camboriu-defesa-civil",
+      "name": "IFC Camboriú — formação em Defesa Civil",
+      "aliases": [
+        "Instituto Federal Catarinense — Camboriú"
+      ],
+      "city": "Camboriú",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://ciram.epagri.sc.gov.br/index.php/2024/10/22/epagri-ciram-participa-em-semana-academica-do-curso-em-defesa-civil-em-camboriu/",
+      "role": "education",
+      "status": "historical",
+      "segment": "education_outreach",
+      "description": "Curso técnico subsequente em Defesa Civil com atividade acadêmica de meteorologia e gestão de riscos documentada em 2024.",
+      "technologies": [
+        "Meteorologia",
+        "Gestão de riscos"
+      ],
+      "markets": [
+        "Formação técnica",
+        "Defesa civil"
+      ],
+      "notes": "A fonte comprova o curso e o evento de 2024; não comprova utilização operacional de dados espaciais nem oferta de turma em 2026. Classificação de formação, não fornecedor downstream.",
+      "sources": [
+        {
+          "url": "https://ciram.epagri.sc.gov.br/index.php/2024/10/22/epagri-ciram-participa-em-semana-academica-do-curso-em-defesa-civil-em-camboriu/",
+          "title": "Epagri/Ciram: semana acadêmica do curso de Defesa Civil do IFC Camboriú",
+          "kind": "institutional",
+          "evidence": "Epagri/Ciram relata semana acadêmica no IFC Camboriú e palestra sobre meteorologia e gestão de riscos.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2024-10-22",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 102,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "unisul-ciencias-aeronauticas",
+      "name": "Unisul — Ciências Aeronáuticas",
+      "aliases": [
+        "Unisul",
+        "Ânima — Unisul"
+      ],
+      "city": "Palhoça",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://estaticos.animaeducacao.com.br/medias/20251210102319/PPC_R_E2A_EAD_Bach.pdf",
+      "role": "education",
+      "status": "pending",
+      "segment": "education_outreach",
+      "description": "O complemento identifica bacharelado a distância em Ciências Aeronáuticas vinculado à Unisul/Ânima.",
+      "technologies": [
+        "Ciências aeronáuticas",
+        "Ensino a distância"
+      ],
+      "markets": [
+        "Formação aeronáutica"
+      ],
+      "notes": "Revalidar vínculo territorial, oferta e vagas no PPC e na instituição. Curso EAD não comprova infraestrutura espacial física em Palhoça.",
+      "sources": [
+        {
+          "url": "https://estaticos.animaeducacao.com.br/medias/20251210102319/PPC_R_E2A_EAD_Bach.pdf",
+          "title": "Complemento, p. 7 — Unisul (Ânima): PPC de Ciências Aeronáuticas EAD",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 7, fonte 153); referência externa não revalidada nesta rodada. PPC de Ciências Aeronáuticas citado pelo documento.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 7,
+            "reference": 153,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fundacao-certi",
+      "name": "Fundação CERTI",
+      "aliases": [
+        "CERTI"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://certi.org.br/arquivos/ra/RA-CERTI-2025-PTBR.pdf",
+      "role": "research_unit",
+      "status": "documented",
+      "segment": "aerospace_components",
+      "description": "ICT com desenvolvimento de sistemas e eletrônica para aplicações críticas; o relatório de 2025 inclui aeroespacial e defesa entre os segmentos atendidos.",
+      "technologies": [
+        "Sistemas eletrônicos",
+        "Software",
+        "Sistemas críticos"
+      ],
+      "markets": [
+        "Aeroespacial",
+        "Defesa",
+        "Pesquisa e desenvolvimento"
+      ],
+      "notes": "O atendimento setorial não comprova fabricação de satélites. A parceria histórica com a Embraer se relaciona ao registro CETE-SC; ICT e centro da empresa não representam o mesmo estabelecimento.",
+      "sources": [
+        {
+          "url": "https://certi.org.br/arquivos/ra/RA-CERTI-2025-PTBR.pdf",
+          "title": "CERTI: relatório de atividades 2025",
+          "kind": "institutional",
+          "evidence": "Relatório institucional de 2025 descreve P&D e atendimento aos segmentos aeroespacial e defesa (p. 22).",
+          "supports": [
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 119,
+            "verification": "direct"
+          }
+        },
+        {
+          "url": "https://portal.crea-sc.org.br/embraer-inaugura-novo-centro-de-engenharia-e-tecnologia-em-florianopolis/",
+          "title": "Complemento, p. 7 — CREA-SC: Embraer inaugura o CETE-SC",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 7, fonte 146); referência externa não revalidada nesta rodada. Parceria com o CETE-SC da Embraer em Florianópolis.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 7,
+            "reference": 146,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "mev-tech",
+      "name": "MEV Tech Ltda",
+      "aliases": [
+        "MEV Tech"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "aerospace_components",
+      "description": "Projeto de módulo de baterias com gerenciamento integrado e aplicação aeroespacial, apresentado no programa de fomento da Fapesc.",
+      "technologies": [
+        "Baterias",
+        "Gerenciamento de energia"
+      ],
+      "markets": [
+        "Aplicações aeroespaciais",
+        "Pesquisa e desenvolvimento"
+      ],
+      "notes": "A fonte documenta projeto apoiado pelo edital 23/2024; não confirma produto homologado, aplicação em voo ou fornecimento seriado.",
+      "sources": [
+        {
+          "url": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+          "title": "Fapesc: projetos do edital 23/2024 apresentados na FIESC (16/09/2025)",
+          "kind": "institutional",
+          "evidence": "Fapesc identifica MEV Tech em Florianópolis e o projeto de módulo de baterias para aplicação aeroespacial.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-09-16",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 120,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "vultis-industries",
+      "name": "Vultis Industries",
+      "aliases": [
+        "Vultis"
+      ],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://fiesc.com.br/pt-br/imprensa/de-satelites-coletes-balisticos-evento-na-fiesc-reune-inovacoes-para-defesa-e-seguranca",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "aeronautics",
+      "description": "Startup de origem universitária que desenvolve drones de interceptação aérea; apresentou equipamento na SC Expo Defense de maio de 2026.",
+      "technologies": [
+        "Drones",
+        "Engenharia aeronáutica",
+        "Sistemas autônomos"
+      ],
+      "markets": [
+        "Defesa",
+        "Mobilidade aérea"
+      ],
+      "notes": "Atividade aeronáutica, sem evidência de produto orbital. A velocidade anunciada é meta de projeto. A pré-qualificação de quatro drones relatada no complemento requer consulta ao ato oficial; não equivale a homologação espacial ou contrato de fornecimento.",
+      "sources": [
+        {
+          "url": "https://fiesc.com.br/pt-br/imprensa/de-satelites-coletes-balisticos-evento-na-fiesc-reune-inovacoes-para-defesa-e-seguranca",
+          "title": "FIESC: de satélites a coletes balísticos na SC Expo Defense (22/05/2026)",
+          "kind": "institutional",
+          "evidence": "FIESC relata empresa de Joinville formada por estudantes da UFSC e lançamento de drone interceptador no evento.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2026-05-22",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 106,
+            "verification": "direct"
+          }
+        },
+        {
+          "url": "https://www.apufsc.org.br/2026/09/21/drones-de-ataque-criados-por-estudantes-da-ufsc-sao-aprovados-em-testes-do-exercito-brasileiro/",
+          "title": "Complemento, p. 4 — APUFSC: drones da Vultis pré-qualificados pelo Exército",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 4, fonte 123); referência externa não revalidada nesta rodada. O documento relata pré-qualificação de drones pelo Exército.",
+          "supports": [
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 123,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "electro-aco-altona",
+      "name": "Electro Aço Altona",
+      "aliases": [
+        "Altona",
+        "Fundição Altona"
+      ],
+      "city": "Blumenau",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://observatorio.fiesc.com.br/publicacoes/industria-catarinense-participa-de-projeto-da-nasa-com-pecas-de-alta-precisao",
+      "role": "upstream",
+      "status": "documented",
+      "segment": "launch_propulsion",
+      "description": "Fundição catarinense com fornecimento documentado de componentes de grande porte para infraestrutura de lançamento ligada à NASA.",
+      "technologies": [
+        "Fundição",
+        "Ligas especiais",
+        "Componentes de grande porte"
+      ],
+      "markets": [
+        "Infraestrutura de lançamento",
+        "Cadeia aeroespacial"
+      ],
+      "notes": "Fornecimento para infraestrutura em solo; não atribuir fabricação de motores, foguetes ou veículos espaciais. A identificação específica como Mobile Launcher 2 é relatada no complemento e precisa de documentação contratual adicional.",
+      "sources": [
+        {
+          "url": "https://observatorio.fiesc.com.br/publicacoes/industria-catarinense-participa-de-projeto-da-nasa-com-pecas-de-alta-precisao",
+          "title": "Observatório FIESC: Altona e a NASA",
+          "kind": "institutional",
+          "evidence": "Observatório FIESC identifica a Altona de Blumenau e fabricação de peças para base de lançamento da NASA.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-08-13",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 7,
+            "reference": 150,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "webphy-tecnologia",
+      "name": "Webphy Tecnologia",
+      "aliases": [
+        "Webphy"
+      ],
+      "city": null,
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://acontecendoaqui.com.br/inovacao/1a-edicao-do-evento-urban-tech-forum-ocorre-em-florianopolis/",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "innovation_support",
+      "description": "Empresa mencionada no complemento por atuação em cidades inteligentes e participação na rede de elaboração do OESC.",
+      "technologies": [
+        "Cidades inteligentes"
+      ],
+      "markets": [
+        "Inovação urbana"
+      ],
+      "notes": "Confirmar município e aplicação espacial específica. Presença na lista Instituições do projeto não comprova fornecimento espacial; este é o perfil de atividade da mesma organização, não outra instituição.",
+      "sources": [
+        {
+          "url": "https://acontecendoaqui.com.br/inovacao/1a-edicao-do-evento-urban-tech-forum-ocorre-em-florianopolis/",
+          "title": "Complemento, p. 4 — Acontecendo Aqui: Webphy no Urban Tech Forum",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 4, fonte 121); referência externa não revalidada nesta rodada. Referência a participação da Webphy em evento de cidades inteligentes.",
+          "supports": [
+            "identity"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 4,
+            "reference": 121,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "hidrologica-research",
+      "name": "Hidrológica Research Associates Engenharia e Meio Ambiente Ltda",
+      "aliases": [
+        "Hidrológica Research Associates"
+      ],
+      "city": "Lages",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+      "role": "adjacent",
+      "status": "pending",
+      "segment": "weather_intelligence",
+      "description": "Projeto de plataforma de previsão de inundações e estiagens e mapeamento em tempo real, apoiado pela Fapesc.",
+      "technologies": [
+        "Modelagem hidrológica",
+        "Mapeamento em tempo real"
+      ],
+      "markets": [
+        "Eventos extremos",
+        "Gestão de riscos"
+      ],
+      "notes": "A Fapesc confirma o projeto e Lages; não identifica insumo orbital. A condição de potencial usuária da Constelação Catarina é hipótese do complemento, não implantação comprovada.",
+      "sources": [
+        {
+          "url": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+          "title": "Fapesc: projetos do edital 23/2024 apresentados na FIESC (16/09/2025)",
+          "kind": "institutional",
+          "evidence": "Fapesc lista empresa de Lages e projeto de previsão de eventos extremos e mapeamento.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-09-16",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 5,
+            "reference": 120,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "telebras-gateway-florianopolis",
+      "name": "Telebras — gateway SGDC de Florianópolis",
+      "aliases": [
+        "Gateway SGDC Florianópolis"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://www.telebras.com.br/telebras-sat/conheca-o-cope/",
+      "role": "infrastructure",
+      "status": "documented",
+      "segment": "satellite_communications",
+      "description": "Estação de acesso do segmento terrestre do Satélite Geoestacionário de Defesa e Comunicações Estratégicas em Florianópolis.",
+      "technologies": [
+        "SGDC",
+        "Gateway satelital",
+        "Segmento solo"
+      ],
+      "markets": [
+        "Telecomunicações",
+        "Infraestrutura pública"
+      ],
+      "notes": "Infraestrutura local de uma organização de atuação nacional, sem inferir sede catarinense. O endereço em área militar e detalhes de capacidade descritos no complemento não foram revalidados nesta rodada.",
+      "sources": [
+        {
+          "url": "https://www.telebras.com.br/telebras-sat/conheca-o-cope/",
+          "title": "Telebras: COPE e gateways do SGDC",
+          "kind": "institutional",
+          "evidence": "A Telebras relaciona Florianópolis entre os gateways de sua estrutura terrestre de operação do SGDC.",
+          "supports": [
+            "location",
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 6,
+            "reference": 137,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "epagri-ciram",
+      "name": "Epagri/Ciram",
+      "aliases": [
+        "Ciram",
+        "Epagri — Ciram"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://www.epagri.sc.gov.br/monitoramento-do-tempo-em-sc-conheca-a-tecnologia-por-tras-desse-importante-servico-a-sociedade/",
+      "role": "end_user",
+      "status": "pending",
+      "segment": "weather_intelligence",
+      "description": "Centro estadual de monitoramento de tempo e clima com rede de estações e serviços agrometeorológicos; apontado como beneficiário planejado de dados da Constelação Catarina.",
+      "technologies": [
+        "Agrometeorologia",
+        "Estações hidrometeorológicas",
+        "Telemetria"
+      ],
+      "markets": [
+        "Agricultura",
+        "Defesa civil",
+        "Tempo e clima"
+      ],
+      "notes": "A página da Epagri de 2023 informa mais de 250 estações; não adotar como atual a contagem de cerca de 320 do complemento. Recepção operacional de dados do Catarina-A2 não confirmada; não contar como fornecedora espacial.",
+      "sources": [
+        {
+          "url": "https://www.epagri.sc.gov.br/monitoramento-do-tempo-em-sc-conheca-a-tecnologia-por-tras-desse-importante-servico-a-sociedade/",
+          "title": "Epagri: rede de monitoramento do tempo em SC",
+          "kind": "institutional",
+          "evidence": "Epagri documenta rede de monitoramento meteorológico mantida pelo Ciram.",
+          "supports": [
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2023-11-10",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 6,
+            "reference": 140,
+            "verification": "direct"
+          }
+        },
+        {
+          "url": "https://brazilianspace.blogspot.com/2025/10/o-primeiro-nanossatelite-da-constelacao.html",
+          "title": "Complemento, p. 6 — Brazilian Space: Catarina-A2 e o Ciram",
+          "kind": "document_reference",
+          "evidence": "Relatado no complemento (p. 6, fonte 142); referência externa não revalidada nesta rodada. O documento relata uso planejado de dados do Catarina-A2 em benefício do Ciram.",
+          "supports": [
+            "usage"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": null,
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 6,
+            "reference": 142,
+            "verification": "document_only"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fapesc-fomento-espacial",
+      "name": "Fapesc — fomento aeroespacial e defesa",
+      "aliases": [
+        "Fapesc"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+      "role": "ecosystem_support",
+      "status": "documented",
+      "segment": "innovation_support",
+      "description": "Fundação estadual que apoia projetos de pesquisa e inovação, incluindo tecnologias com aplicações aeroespaciais no programa de soberania e defesa.",
+      "technologies": [
+        "Fomento à inovação"
+      ],
+      "markets": [
+        "Pesquisa",
+        "Aeroespacial",
+        "Defesa"
+      ],
+      "notes": "Perfil de apoio institucional. Editais citados no complemento têm datas históricas; não representam chamadas abertas. Não atribuir todos os projetos de defesa ao setor espacial.",
+      "sources": [
+        {
+          "url": "https://fapesc.sc.gov.br/com-fomento-do-governo-do-estado-fapesc-incentiva-empresas-catarinenses-no-desenvolvimento-de-projetos-produtos-e-solucoes-inovadoras-para-o-setor-de-defesa/",
+          "title": "Fapesc: projetos do edital 23/2024 apresentados na FIESC (16/09/2025)",
+          "kind": "institutional",
+          "evidence": "Fapesc apresenta projetos apoiados pelo edital 23/2024, incluindo bateria aeroespacial.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-09-16",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 5,
+            "reference": 120,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "fiesc-condefesa",
+      "name": "FIESC — Condefesa",
+      "aliases": [
+        "Condefesa FIESC",
+        "Condefesa SC"
+      ],
+      "city": "Florianópolis",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://fiesc.com.br/pt-br/imprensa/senai-e-mit-iniciam-projeto-para-criacao-de-cluster-aeroespacial-no-sul-do-brasil",
+      "role": "ecosystem_support",
+      "status": "documented",
+      "segment": "innovation_support",
+      "description": "Articulação institucional da indústria de defesa e da inovação aeroespacial catarinense, com conexão ao projeto de cluster New Space e à SC Expo Defense.",
+      "technologies": [
+        "Articulação de ecossistemas",
+        "Inovação"
+      ],
+      "markets": [
+        "Indústria",
+        "Defesa",
+        "Aeroespacial"
+      ],
+      "notes": "Conselho da FIESC; não confundir com o Condefesa da CNI. Não é fornecedor industrial. Cargos e titulares descritos no complemento não foram tratados como atuais.",
+      "sources": [
+        {
+          "url": "https://fiesc.com.br/pt-br/imprensa/senai-e-mit-iniciam-projeto-para-criacao-de-cluster-aeroespacial-no-sul-do-brasil",
+          "title": "FIESC: SENAI e MIT iniciam projeto de cluster aeroespacial",
+          "kind": "institutional",
+          "evidence": "FIESC documenta projeto SENAI/MIT para cluster de inovação New Space com foco em Florianópolis.",
+          "supports": [
+            "location",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-03-17",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 3,
+            "reference": 104,
+            "verification": "direct"
+          }
+        },
+        {
+          "url": "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-mira-o-setor-de-new-space-em-parceria-com-o-mit",
+          "title": "FIESC DefesaSC: Santa Catarina mira o New Space com o MIT (28/04/2025)",
+          "kind": "institutional",
+          "evidence": "FIESC documenta participação do Condefesa nas reuniões do projeto New Space e sua atuação em editais, articulação industrial e apoio a credenciamentos.",
+          "supports": [
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-04-28",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 5,
+            "reference": 105,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "high",
+      "usageScope": "not_applicable"
+    },
+    {
+      "id": "kosmos-rocketry",
+      "name": "Kosmos Rocketry — UFSC Joinville",
+      "aliases": [
+        "Kosmos Rocketry"
+      ],
+      "city": "Joinville",
+      "state": "SC",
+      "presence": "Localização indicada nas fontes; cadastro e estabelecimento não auditados",
+      "website": "https://portal.crea-sc.org.br/kosmos-rocketry-da-ufsc-joinville-conquista-o-primeiro-lugar-geral-na-maior-competicao-de-foguetes-experimentais-da-america-latina/",
+      "role": "education",
+      "status": "historical",
+      "segment": "education_outreach",
+      "description": "Equipe universitária de foguetes experimentais, com projetos Phobos, Deimos e cargas educacionais CubeSat e CanSat; campeã geral da LASC de novembro de 2025.",
+      "technologies": [
+        "Foguetes experimentais",
+        "CubeSat educacional",
+        "CanSat"
+      ],
+      "markets": [
+        "Formação aeroespacial",
+        "Competições estudantis"
+      ],
+      "notes": "Equipe estudantil da UFSC, não empresa. Cargas lançadas em competição não equivalem a satélites em órbita. Resultados posteriores a 2025 não foram revalidados.",
+      "sources": [
+        {
+          "url": "https://portal.crea-sc.org.br/kosmos-rocketry-da-ufsc-joinville-conquista-o-primeiro-lugar-geral-na-maior-competicao-de-foguetes-experimentais-da-america-latina/",
+          "title": "CREA-SC: Kosmos Rocketry campeã geral da LASC",
+          "kind": "institutional",
+          "evidence": "CREA-SC relata equipe da UFSC Joinville e resultados da competição de 5 a 8/11/2025.",
+          "supports": [
+            "location",
+            "identity",
+            "offering"
+          ],
+          "checkedAt": "2026-11-14",
+          "publishedAt": "2025-11-11",
+          "provenance": {
+            "document": "Complemento_Ecossistema_Espacial_SC.docx.pdf",
+            "page": 5,
+            "reference": 127,
+            "verification": "direct"
+          }
+        }
+      ],
+      "membershipVerified": false,
+      "registryVerified": false,
+      "confidence": "medium",
+      "usageScope": "not_applicable"
     }
   ],
   "excluded": [
     {
       "name": "ACMON Rastreamento e Telemetria",
       "reason": "Não contar como empresa/unidade catarinense; pode entrar em mapa de fornecedores externos. Fornecedor que atende SC, mas declara expressamente não ter escritório no estado.",
-      "sources": ["https://acmon.com.br/rastreamento-veicular-santa-catarina"]
+      "sources": [
+        "https://acmon.com.br/rastreamento-veicular-santa-catarina"
+      ]
     },
     {
       "name": "RPS Electronics",
@@ -2412,7 +3767,9 @@
     {
       "name": "Engemap",
       "reason": "Contato próprio lista Assis/SP, São Paulo/SP e Brasília/DF. Contratos com municípios catarinenses não são evidência de unidade em SC.",
-      "sources": ["https://engemap.com.br/contato/"]
+      "sources": [
+        "https://engemap.com.br/contato/"
+      ]
     },
     {
       "name": "Aerocarta",
@@ -2432,7 +3789,9 @@
     {
       "name": "Fototerra",
       "reason": "Site próprio informa Santana de Parnaíba/SP. Não foi comprovada unidade em SC.",
-      "sources": ["https://www.fototerra.com.br/en"]
+      "sources": [
+        "https://www.fototerra.com.br/en"
+      ]
     },
     {
       "name": "GeoJá",
@@ -2458,12 +3817,16 @@
     {
       "name": "GeoDesign",
       "reason": "Os resultados catarinenses encontrados se referem sobretudo a método, eventos e estudos acadêmicos, não empresa comercial comprovada.",
-      "sources": ["https://www.udesc.br/faed/geolab/eventos/gdsa19"]
+      "sources": [
+        "https://www.udesc.br/faed/geolab/eventos/gdsa19"
+      ]
     },
     {
       "name": "GeoOne",
       "reason": "Site próprio demonstra capacitação em GNSS e geoprocessamento. Não foi comprovada unidade em SC nem oferta de análise orbital comercial nesta rodada.",
-      "sources": ["https://geoone.com.br/"]
+      "sources": [
+        "https://geoone.com.br/"
+      ]
     },
     {
       "name": "OnixSat",
@@ -2488,7 +3851,7 @@
     },
     {
       "name": "Innalogics",
-      "reason": "Fornecedora de subsistemas do nanossatélite Aldebaran-1 com origem no TecnoPUC (Porto Alegre/RS); presença atual em SC não comprovada.",
+      "reason": "Fornecedora de subsistemas do nanossatélite Aldebaran-1 com origem no TecnoPUC (Porto Alegre/RS); presença atual em SC não comprovada. O complemento (p. 4 e 8) mantém sede e atividade atual como pendências; a descrição como catarinense não resolve a presença territorial.",
       "sources": [
         "https://geocracia.com/aldebaran-1-ufma-desenvolve-satelite-projetado-para-localizar-naufragos/",
         "https://spacelab.ufsc.br/?p=203"
@@ -2504,13 +3867,50 @@
     {
       "name": "Hummingbird Indústria Aeronáutica",
       "reason": "Fabricante de helicópteros leves (H1) citada em ato fiscal com empresas de Jaraguá do Sul; sede e atividade atual não confirmadas.",
-      "sources": ["https://sprinkle.com/aircraft/PUMPP"]
+      "sources": [
+        "https://sprinkle.com/aircraft/PUMPP"
+      ]
     },
     {
-      "name": "Kosmos Rocketry (UFSC Joinville)",
-      "reason": "Equipe estudantil de competição de foguetes, não empresa. Relevante como formação de capital humano no upstream.",
+      "name": "Dígitro",
+      "reason": "Relacionada no complemento (p. 4–5) à Base Industrial de Defesa; aplicação espacial ou aeronáutica específica não demonstrada. Não equiparar cadastro de defesa a fornecimento espacial.",
       "sources": [
-        "https://portal.crea-sc.org.br/kosmos-rocketry-da-ufsc-joinville-conquista-o-primeiro-lugar-geral-na-maior-competicao-de-foguetes-experimentais-da-america-latina/"
+        "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-no-catalogo-da-base-industrial-de-defesa-diversidade-industrial-inovacao-e"
+      ]
+    },
+    {
+      "name": "TS4",
+      "reason": "Relacionada no complemento (p. 4–5) à Base Industrial de Defesa; aplicação espacial ou aeronáutica específica não demonstrada. Não equiparar cadastro de defesa a fornecimento espacial.",
+      "sources": [
+        "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-no-catalogo-da-base-industrial-de-defesa-diversidade-industrial-inovacao-e"
+      ]
+    },
+    {
+      "name": "Teksea",
+      "reason": "Relacionada no complemento (p. 4–5) à Base Industrial de Defesa; aplicação espacial ou aeronáutica específica não demonstrada. Não equiparar cadastro de defesa a fornecimento espacial.",
+      "sources": [
+        "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-no-catalogo-da-base-industrial-de-defesa-diversidade-industrial-inovacao-e"
+      ]
+    },
+    {
+      "name": "Contronics",
+      "reason": "Relacionada no complemento (p. 4–5) à Base Industrial de Defesa; aplicação espacial ou aeronáutica específica não demonstrada. Não equiparar cadastro de defesa a fornecimento espacial.",
+      "sources": [
+        "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-no-catalogo-da-base-industrial-de-defesa-diversidade-industrial-inovacao-e"
+      ]
+    },
+    {
+      "name": "Eco Mach Tech",
+      "reason": "Relacionada no complemento (p. 4–5) à Base Industrial de Defesa; aplicação espacial ou aeronáutica específica não demonstrada. Não equiparar cadastro de defesa a fornecimento espacial.",
+      "sources": [
+        "https://fiesc.com.br/pt-br/DefesaSC/santa-catarina-no-catalogo-da-base-industrial-de-defesa-diversidade-industrial-inovacao-e"
+      ]
+    },
+    {
+      "name": "Fabricante não identificado de Jaraguá do Sul / carga Allog",
+      "reason": "Complemento, p. 7: transporte de carga para cadeia de combustível de foguetes sem identificação pública do fabricante. Não criar empresa anônima nem atribuir a WEG, Bold ou outro perfil.",
+      "sources": [
+        "https://www.tecnologistica.com.br/noticias/transporte-aereo/21110/allog-movimenta-carga-de-30-toneladas-para-industria-do-setor-aeroespacial-dos-eua"
       ]
     }
   ]
