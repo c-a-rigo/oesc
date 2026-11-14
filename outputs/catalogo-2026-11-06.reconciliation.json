@@ -1,0 +1,85 @@
+{
+  "source": "catalogo_organizacoes_publicas_2026-11-06.csv",
+  "sha256": "e6186187d184df33c92761fa2539ef69e1529593cfa316e14a5397a51bc97a59",
+  "reviewedAt": "2026-11-14",
+  "inputRows": 10,
+  "matchedOrganizations": 9,
+  "addedOrganizations": 0,
+  "catalogTotal": 48,
+  "matches": [
+    {
+      "record": 1,
+      "name": "ENGINEERING SIMULATION AND SCIENTIFIC SOFTWARE LTDA",
+      "companyId": "esss",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 2,
+      "name": "Instituto SENAI de Inovação em Sistemas Embarcados",
+      "companyId": "senai-isi-sistemas-embarcados",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 3,
+      "name": "NOR SPACE INTELLIGENCE",
+      "companyId": "nor-space",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 4,
+      "name": "OUTER SPACE LTDA",
+      "companyId": "outer-space",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 5,
+      "name": "REMAP GEOTECNOLOGIA",
+      "companyId": "remap",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 6,
+      "name": "4C INNOVATION CONSULTING LTDA",
+      "companyId": "four-c-innovation",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 7,
+      "name": "Abiental Geospace",
+      "companyId": "abiental-geospace",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 8,
+      "name": "AJX COMÉRCIO E FABRICAÇÃO DE ARTEFATOS EM VIDRO LTDA",
+      "companyId": "ajxtec",
+      "action": "matched_existing",
+      "issues": []
+    },
+    {
+      "record": 9,
+      "name": "ORN Space",
+      "companyId": "nor-space",
+      "action": "matched_existing",
+      "issues": [
+        "Campos Estado, Email e Site desalinhados; não importar. Duplicata de NOR SPACE INTELLIGENCE (registro 3)."
+      ]
+    },
+    {
+      "record": 10,
+      "name": "Agrosatélite",
+      "companyId": "agrosatelite",
+      "action": "matched_existing",
+      "issues": [
+        "Cidade não identifica município; Estado contém descrição; não importar."
+      ]
+    }
+  ]
+}

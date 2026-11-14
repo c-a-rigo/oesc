@@ -851,7 +851,7 @@
     {
       "id": "agrosatelite",
       "name": "Agrosatélite Geotecnologia Aplicada / operação integrada à Serasa Experian",
-      "aliases": [],
+      "aliases": ["Agrosatélite"],
       "city": "Florianópolis",
       "state": "SC",
       "presence": "Origem e operação histórica em Florianópolis; unidade atual a validar",

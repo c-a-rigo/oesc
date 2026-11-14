@@ -77,4 +77,6 @@ O cruzamento com os oito perfis catarinenses observados no catálogo AEB está e
 
 ## Interface e resumo do catálogo
 
+O CSV local `catalogo_organizacoes_publicas_2026-11-06.csv` foi conciliado em 14/11/2026: suas 10 linhas representam 9 organizações já presentes, incluindo a duplicata NOR/ORN. O catálogo permanece com 48 perfis. Veja o [cruzamento e as ressalvas de qualidade](outputs/catalogo-2026-11-06.md) e o [registro estruturado da conciliação](outputs/catalogo-2026-11-06.reconciliation.json).
+
 `modern.css` aplica a identidade visual sobre os componentes de `style.css`, com tipografia ampliada, navegação fixa, cards e filtros responsivos e respeito à preferência por movimento reduzido. Na visão geral, o resumo do ecossistema calcula totais e situação documental diretamente de `data/companies.json`. Os atalhos por papel abrem o catálogo já filtrado, incluindo registros históricos e pendentes. Os números do projeto aparecem em bloco separado dos perfis pesquisados.
